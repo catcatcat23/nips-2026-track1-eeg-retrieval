@@ -1,0 +1,9 @@
+{
+  "syntax": true,
+  "stage1_checkpoint_strict_load": true,
+  "effective_adapter_dropout": 0.2,
+  "stage2_checkpoint_strict_load": true,
+  "historical_vs_handoff_head_output_bitwise_equal_on_8_real_cached_samples": true,
+  "full_training_rerun": false,
+  "gpu_preflight_rerun": false
+}

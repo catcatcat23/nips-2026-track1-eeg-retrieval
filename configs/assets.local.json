@@ -1,0 +1,11 @@
+{
+  "data_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+  "hf_home": "/mnt/DATA-4/anteng/eeg-retrieval/huggingface",
+  "stage1_checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/dropout/best.pt",
+  "stage1_checkpoint_sha256": "c7093ff8b099eaf01a7ec2d70a180af08e2f35570a2d36d3e73494f36cb6aa8e",
+  "stage2_checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v39_ridge_recovery/B/best.pt",
+  "stage2_checkpoint_sha256": "86d2250f0047e5e7936ea61a18770bd27646bb9c7f01f715f590792ea9370de3",
+  "cached_h": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v38_frozen_v33_recovery/cache",
+  "stage1_source_sha": "7b3a0a28b72a",
+  "stage2_source_sha": "f361302dfd765ffa2b9be7386e91c477561202ca"
+}

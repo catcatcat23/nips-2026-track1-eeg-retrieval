@@ -1,0 +1,16 @@
+{
+  "zip": "submissions/reve_v39b_epoch8_track1.zip",
+  "sha256": "d7354a0350a8bb6572bb1acc88caa44feaf5aed17221bacc36b490fda0d04541",
+  "files": [
+    "submission.py",
+    "weights.pt",
+    "positions.json",
+    "LICENSE_BRAINDECODE.txt"
+  ],
+  "audit_dir": "/tmp/reve_ingestion_audit_ylegq5xh",
+  "official_ingestion": "passed",
+  "official_scoring": "passed",
+  "data": "synthetic matching warmup shape; not an accuracy evaluation",
+  "environment": "local project environment, not official Docker",
+  "platform_failure_cause": "unknown; no server logs available"
+}

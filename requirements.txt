@@ -1,0 +1,10 @@
+torch==2.14.1+cu126
+numpy==2.5.4
+braindecode==1.8.1
+mne==1.13.2
+einops==0.8.2
+huggingface-hub==2.2.0
+safetensors==0.8.0
+scipy==1.18.1
+scikit-learn==1.9.1
+pandas==3.0.6
