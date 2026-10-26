@@ -1,0 +1,25 @@
+{
+  "subjects": [
+    "Gifford2022Large/1",
+    "Gifford2022Large/10",
+    "Gifford2022Large/2",
+    "Gifford2022Large/3",
+    "Gifford2022Large/4",
+    "Gifford2022Large/5",
+    "Gifford2022Large/6",
+    "Gifford2022Large/7",
+    "Gifford2022Large/8",
+    "Gifford2022Large/9"
+  ],
+  "folds": 5,
+  "standardization_and_pca": "fit on each training fold only",
+  "image_disjoint_folds": true,
+  "sample": "mean official EEG training trials per subject/image; time-bin 120 to 24 for probe only",
+  "score": "mean across folds of median positive component correlation per patch",
+  "ridge_alpha": 100,
+  "training_splits": [
+    "train",
+    "val"
+  ],
+  "test_used": false
+}

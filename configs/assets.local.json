@@ -1,11 +1,11 @@
 {
-  "data_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+  "things_data_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+  "things_test_blur_shards": "/home/Anteng/eeg-retrieval/audits/blur_head_probe/test_blur_shards",
+  "things_local_features": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/local.npy",
+  "alljoined_data_manifest": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v67_alljoined2025_v64recipe/data_manifest.json",
   "hf_home": "/mnt/DATA-4/anteng/eeg-retrieval/huggingface",
-  "stage1_checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/dropout/best.pt",
-  "stage1_checkpoint_sha256": "c7093ff8b099eaf01a7ec2d70a180af08e2f35570a2d36d3e73494f36cb6aa8e",
-  "stage2_checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v39_ridge_recovery/B/best.pt",
-  "stage2_checkpoint_sha256": "86d2250f0047e5e7936ea61a18770bd27646bb9c7f01f715f590792ea9370de3",
-  "cached_h": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v38_frozen_v33_recovery/cache",
-  "stage1_source_sha": "7b3a0a28b72a",
-  "stage2_source_sha": "f361302dfd765ffa2b9be7386e91c477561202ca"
+  "local_ot_upstream_script": "/home/Anteng/eeg-retrieval/EEG-Image-IntraSubject-Retrieval/EEG_Image_IntraSubject_SelectiveLocalOT/intrasubject_retrieval/scripts/train_intrasubject_local_ot.py",
+  "submission_checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/stage1/ema0.999_epoch_009.pt",
+  "submission_checkpoint_sha256": "cbeff60bc1d887c802c416e6086d8988089c9f84548e380e15fa9b5cc0b312f4",
+  "things_local_features_sha256": "d5e4e28ca3277e82caae8f906df7bc6554c9aca3e8ad0f4fb6f13a914dafff29"
 }

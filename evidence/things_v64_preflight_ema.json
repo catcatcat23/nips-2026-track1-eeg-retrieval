@@ -1,0 +1,62 @@
+{
+ "base_preflight": true,
+ "ema_init_equals_model": true,
+ "ema_does_not_change_training_bitwise": true,
+ "params_changed_by_steps": 183,
+ "ema_formula_max_abs_err": 2.384185791015625e-07,
+ "persistent_buffers_copied": [
+  "positions"
+ ],
+ "non_persistent_buffers_ignored": [
+  "encoder._position_bank.embedding"
+ ],
+ "stage2_loader_strict_load_and_keys_match_v57_global": true,
+ "train_trials": 668400,
+ "train_test_image_overlap": 0,
+ "real_batch": {
+  "loss": 11.687662124633789,
+  "parts": {
+   "clean": 5.587398529052734,
+   "blur": 5.747754096984863,
+   "local": 3.5250906944274902
+  },
+  "grad_norm": 3.4996144771575928,
+  "repeat_counts": [
+   0,
+   125,
+   71,
+   0,
+   60
+  ],
+  "seconds": 0.5533671379089355
+ },
+ "eval_seconds_per_variant": 154.01661157608032,
+ "epoch0_untrained": {
+  "blur": {
+   "single_trial": {
+    "top1": 0.004826183431952662,
+    "top5": 0.024919871794871797,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.004,
+    "top5": 0.025,
+    "count": 2000
+   }
+  },
+  "clean": {
+   "single_trial": {
+    "top1": 0.004974112426035503,
+    "top5": 0.025,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.005,
+    "top5": 0.024,
+    "count": 2000
+   }
+  }
+ },
+ "peak_gpu_mem_gb": 18.85502976,
+ "passed": true
+}

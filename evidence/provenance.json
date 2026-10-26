@@ -1,117 +1,167 @@
 [
   {
-    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/source-7b3a0a28b72a/data.py",
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/augment_trials.py",
+    "destination": "src/augment_trials.py",
+    "source_sha256": "1dd8693f41e05235f86c81eb550eb877d985572cc949bdac2850c5d4488757ea",
+    "sha256": "1dd8693f41e05235f86c81eb550eb877d985572cc949bdac2850c5d4488757ea"
+  },
+  {
+    "destination": "src/clip_loss.py",
+    "source": "kept from previous handoff (v39b): neuraltrain ClipLoss",
+    "sha256": "6f06eda5675893b34d67fbfc4dc520cf817c2f6f5e83b465a9a0627f3a0dcf7a"
+  },
+  {
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/data.py",
     "destination": "src/data.py",
+    "source_sha256": "cc978d284de9ef8c965d267c31280e1d4e33827a754f5a9d4cf4fa9d108e7e86",
     "sha256": "cc978d284de9ef8c965d267c31280e1d4e33827a754f5a9d4cf4fa9d108e7e86"
   },
   {
-    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/source-7b3a0a28b72a/reference_model.py",
-    "destination": "src/reference_model.py",
-    "sha256": "0d35570be56bb4d89cdc3a0d301469ac5485a58bd7eca7e54987443fe28d12c5"
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/evaluate.py",
+    "destination": "src/evaluate.py",
+    "source_sha256": "dcb543cf75330bad9579a49dda4295793ebafdc1d215a451b3fd8011ef793583",
+    "sha256": "55cdd8dc0face6a8deb654adc2f0dbe14eb2b675a2b70d6a982c87a55a5ac95d",
+    "patch": "competition metrics import -> vendored src/official_metrics.py"
   },
   {
-    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/source-7b3a0a28b72a/reve_model.py",
-    "destination": "src/reve_model.py",
-    "sha256": "73440a13a59ade715454e4f1d5ae181d2cb0830e07fa861a0625ef93776d0e2e"
-  },
-  {
-    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/source-7b3a0a28b72a/train_augmentation.py",
-    "destination": "src/train_augmentation.py",
-    "sha256": "2d5aa31e4ef99d8a5572b9dc38b26944b7cb2c96e326bfc021d50edde2463eea"
-  },
-  {
-    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/source-7b3a0a28b72a/evaluate_parallel.py",
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/evaluate_parallel.py",
     "destination": "src/evaluate_parallel.py",
+    "source_sha256": "e700bfdb67d87d74aad6aa174e863a5a9466f5b45e769c2ff8bc8abb0917ee06",
     "sha256": "e700bfdb67d87d74aad6aa174e863a5a9466f5b45e769c2ff8bc8abb0917ee06"
   },
   {
-    "source": "/home/Anteng/eeg-retrieval/competition-2026/benchmark_utils/metrics.py",
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/image_id_loss.py",
+    "destination": "src/image_id_loss.py",
+    "source_sha256": "60a0d0f1d679d7c68e94d3ad8b70dff0886e4e559b99807267915ddc5ee7abd2",
+    "sha256": "bb4d2e705822ac77888febe291a4c9645b87fa71583babf03f42fb4d574958f9",
+    "patch": "ClipLoss from src/clip_loss.py"
+  },
+  {
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/local_ot_model.py",
+    "destination": "src/local_ot_model.py",
+    "source_sha256": "f5b7a466646e01c7b671861e9c55269f38c288f259c106675f4450b629caa113",
+    "sha256": "f5b7a466646e01c7b671861e9c55269f38c288f259c106675f4450b629caa113"
+  },
+  {
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/local_ot_train.py",
+    "destination": "src/local_ot_train.py",
+    "source_sha256": "74f384b856b80bd8e0fae69840a89bd2ffbc88acf14683184b003e3e757d6164",
+    "sha256": "ca2f723e08fdaea7b9a23de41d7fd81c96f886791b24bd00a6cd94e2c6d9d4be",
+    "patch": "upstream OT parity script path from LOCAL_OT_UPSTREAM_SCRIPT; ClipLoss from src/clip_loss.py"
+  },
+  {
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/local_ot_train_ema.py",
+    "destination": "src/local_ot_train_ema.py",
+    "source_sha256": "ac664a31fb23e42b019f591a08ad486b5ba17fa23a05310830b24266c6079bbd",
+    "sha256": "ac664a31fb23e42b019f591a08ad486b5ba17fa23a05310830b24266c6079bbd"
+  },
+  {
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/local_ot_weights.py",
+    "destination": "src/local_ot_weights.py",
+    "source_sha256": "8d89af15cba1163112a8c591daf76bed8d1a6bbe577753a54623d41f0fbf4188",
+    "sha256": "8d89af15cba1163112a8c591daf76bed8d1a6bbe577753a54623d41f0fbf4188"
+  },
+  {
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/losses.py",
+    "destination": "src/losses.py",
+    "source_sha256": "0b0db63511b079d747694a41ea396ff57e60cd8da7faf525de20265796f9e11b",
+    "sha256": "0b0db63511b079d747694a41ea396ff57e60cd8da7faf525de20265796f9e11b"
+  },
+  {
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/model.py",
+    "destination": "src/model.py",
+    "source_sha256": "d27ef68659693cf352416e1a9b4849115101df9b0e4a68b5335de519d8b5b140",
+    "sha256": "d27ef68659693cf352416e1a9b4849115101df9b0e4a68b5335de519d8b5b140"
+  },
+  {
     "destination": "src/official_metrics.py",
+    "source": "kept from previous handoff (v39b): /home/Anteng/eeg-retrieval/competition-2026/benchmark_utils/metrics.py",
     "sha256": "fcc739400806a74259f248618501376a4fe53f2b5a40ccdc20db6a9e2369787d"
   },
   {
-    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/dropout/config.json",
-    "destination": "configs/stage1.original.json",
-    "sha256": "4d9c4b00973fdc94550f6a1b7fd30ce99f65c4234d66dceb586dd642ae91b824"
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/preflight_ema.py",
+    "destination": "src/preflight_ema.py",
+    "source_sha256": "89f1021ad02f99a9e679736d3ef92d7ccf41a2a254c7c46ed3a6519c3cf43575",
+    "sha256": "69af393b7e7ddb30cb4f1a75af7f5fe80eb205d321a36c0f99c9b329e73e49fa",
+    "patch": "v57 key-compatibility check optional via cfg v57_global_reference"
   },
   {
-    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v39_ridge_recovery/config.json",
-    "destination": "configs/stage2.original.json",
-    "sha256": "d2035f45e88859dc2141c51d9c838784c76c89a8dde44bc6b99373ce4de0c1ac"
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/recovery_ablation.py",
+    "destination": "src/recovery_ablation.py",
+    "source_sha256": "18e21bb254b5ece4a4ae8f00312fb31a0e249140a9e69430dd75c9cf0885d4cc",
+    "sha256": "2cd80d71a003516bdeaa5c5b2ebe08acf3425976170d28866e729654f5819d66",
+    "patch": "ClipLoss from src/clip_loss.py"
   },
   {
-    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/dropout/result.json",
-    "destination": "evidence/stage1_result.json",
-    "sha256": "a3eb9aee20ed0eb97bd03f52763313d6b313d8314105b13b0691c22d6b14173d"
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/reference_model.py",
+    "destination": "src/reference_model.py",
+    "source_sha256": "0d35570be56bb4d89cdc3a0d301469ac5485a58bd7eca7e54987443fe28d12c5",
+    "sha256": "0d35570be56bb4d89cdc3a0d301469ac5485a58bd7eca7e54987443fe28d12c5"
   },
   {
-    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v39_ridge_recovery/B/result.json",
-    "destination": "evidence/stage2_result.json",
-    "sha256": "5c97268335514018eb22c2d2ca25bbf1085e3281a0dc1888ccedeadd8139187f"
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/reve_model.py",
+    "destination": "src/reve_model.py",
+    "source_sha256": "73440a13a59ade715454e4f1d5ae181d2cb0830e07fa861a0625ef93776d0e2e",
+    "sha256": "73440a13a59ade715454e4f1d5ae181d2cb0830e07fa861a0625ef93776d0e2e"
   },
   {
-    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/dropout/history.jsonl",
-    "destination": "evidence/stage1_history.jsonl",
-    "sha256": "f38e47c56ef5b8886d1b6068c9e5bc81cf2d6181b8d8e113701edab593ba0016"
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/stability_ablation.py",
+    "destination": "src/stability_ablation.py",
+    "source_sha256": "6e744cbea631cbdbc59bc6b9f16a134d0d64d0e269ac6d967bd0aafeb68ae22c",
+    "sha256": "f96fb8acac8cbfbb2b445225b0d937491298662a43ef0baf58190864849465e6",
+    "patch": "historical BASE path from REVE_EXPERIMENTS; ClipLoss from src/clip_loss.py"
   },
   {
-    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v39_ridge_recovery/B/history.jsonl",
-    "destination": "evidence/stage2_history.jsonl",
-    "sha256": "4c3bd521d3d796c9f8f258eb9dd42b4bb60ea659684e363328adafb6fc8ebdad"
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/train_augmentation.py",
+    "destination": "src/train_augmentation.py",
+    "source_sha256": "2d5aa31e4ef99d8a5572b9dc38b26944b7cb2c96e326bfc021d50edde2463eea",
+    "sha256": "2d5aa31e4ef99d8a5572b9dc38b26944b7cb2c96e326bfc021d50edde2463eea"
   },
   {
-    "source": "/home/Anteng/eeg-retrieval/submissions/reve_v39b_epoch8_track1.real_replay.json",
-    "destination": "evidence/submission_real_replay.json",
-    "sha256": "0cccce672f8c9fec8ffcdc48ea85d777715eeb4ad617d52b7ef99877068ef648"
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/v33_recovery_stage2.py",
+    "destination": "src/v33_recovery_stage2.py",
+    "source_sha256": "80edda421ab3679ba756433261a595fc8a8733c9ae2c8a779a518c62ee90f42e",
+    "sha256": "9c342e809cd099e72c9c21c675f7f0111ee22d27fafd9d8459a3557917dcd9d2",
+    "patch": "ClipLoss from src/clip_loss.py"
   },
   {
-    "source": "/home/Anteng/eeg-retrieval/submissions/reve_v39b_epoch8_track1.audit.json",
-    "destination": "evidence/submission_audit.json",
-    "sha256": "7a2728eb6f658bdb8ea3ffe9243f5c6a766f22db4600463ac3043114b0729b51"
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/local_ot_extract.py",
+    "destination": "cache_reference/local_ot_extract.py",
+    "source_sha256": "c14739b3927ee9df63db3c62769183f5f021d6e07f26d848c515bce1e0e529f8",
+    "sha256": "c14739b3927ee9df63db3c62769183f5f021d6e07f26d848c515bce1e0e529f8"
   },
   {
-    "source": "/home/Anteng/eeg-retrieval/submissions/reve_v39b_epoch8_track1.zip",
-    "destination": "submission/reve_v39b_epoch8_track1.zip",
-    "sha256": "d7354a0350a8bb6572bb1acc88caa44feaf5aed17221bacc36b490fda0d04541"
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/upstream_blur.py",
+    "destination": "cache_reference/upstream_blur.py",
+    "source_sha256": "757141f726efc460fb842b641399a53ae2e01c9b3a96dc32284382494e3dda16",
+    "sha256": "757141f726efc460fb842b641399a53ae2e01c9b3a96dc32284382494e3dda16"
   },
   {
-    "source": "/home/Anteng/eeg-retrieval/submissions/reve_v39b_epoch8/submission.py",
-    "destination": "submission/submission.py",
-    "sha256": "c4bc72a9a1ba9fa1a99e05213ad90a9138e4cdf56613953d2f38c747ab882583"
-  },
-  {
-    "source": "/home/Anteng/eeg-retrieval/submissions/reve_v39b_epoch8/positions.json",
-    "destination": "submission/positions.json",
-    "sha256": "92ab93c83042c05765873f94037131cc0359189cec4fafda0a88b561f81764a7"
-  },
-  {
-    "source": "/home/Anteng/eeg-retrieval/submissions/reve_v39b_epoch8/README.txt",
-    "destination": "submission/README.txt",
-    "sha256": "a5e5170ab08442591395c3967315bf49175a970383307a0bdf17b38f2191df72"
-  },
-  {
-    "source": "/home/Anteng/eeg-retrieval/submissions/reve_v39b_epoch8/LICENSE_BRAINDECODE.txt",
-    "destination": "submission/LICENSE_BRAINDECODE.txt",
-    "sha256": "eeb83b93a8728fc9bdc2143b76929baa70acb28384c7f31bb6a6f8b923a39631"
-  },
-  {
-    "source": "/home/Anteng/eeg-retrieval/neuroai/neuraltrain-repo/LICENSE",
-    "destination": "licenses/neuraltrain_LICENSE",
-    "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
-  },
-  {
-    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v39_ridge_recovery/source-f361302dfd76/UPSTREAM_LICENSE",
-    "destination": "licenses/UPSTREAM_LICENSE",
-    "sha256": "c5e1a39bed35f9104848d88cc9f1bb798188633ebe328104bf21596426d22075"
-  },
-  {
-    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/source-7b3a0a28b72a/extract_reference.py",
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/source/extract_reference.py",
     "destination": "cache_reference/extract_reference.py",
+    "source_sha256": "d8ed6fa2355dc6a0ba159bfec0a1d96c9ad66eb7a8d5a4429c82ffbff7dc96a0",
     "sha256": "d8ed6fa2355dc6a0ba159bfec0a1d96c9ad66eb7a8d5a4429c82ffbff7dc96a0"
   },
   {
-    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/source-7b3a0a28b72a/upstream_blur.py",
-    "destination": "cache_reference/upstream_blur.py",
-    "sha256": "757141f726efc460fb842b641399a53ae2e01c9b3a96dc32284382494e3dda16"
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v67_alljoined2025_v64recipe/source/alljoined_v67.py",
+    "destination": "alljoined/alljoined_v67.py",
+    "source_sha256": "dcc205b16387e710ba6ffbc6d3a5d7721b3048c4541bc89c88e5f769097d7cb8",
+    "sha256": "dcc205b16387e710ba6ffbc6d3a5d7721b3048c4541bc89c88e5f769097d7cb8"
+  },
+  {
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/submissions/reve_v64_ema0999_ep9/submission.py",
+    "destination": "submission/submission.py",
+    "source_sha256": "e7b6f39dae2e7196b7b9688b6087e3574c51dad2b1d82db4736b2db8a6ee41de",
+    "sha256": "e7b6f39dae2e7196b7b9688b6087e3574c51dad2b1d82db4736b2db8a6ee41de"
+  },
+  {
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/config.json",
+    "destination": "configs/things_v64.original.json",
+    "sha256": "55045317f6457413f87bcd511a33f57da7e0c310d97022f7977993e7ae2ba17f"
+  },
+  {
+    "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v67_alljoined2025_v64recipe/config.json",
+    "destination": "configs/alljoined_v67.original.json",
+    "sha256": "5dd4bf21ea6183ba470ab84da491e3ffb058434a8298ce2e03c0ffcdefb81a8a"
   }
 ]

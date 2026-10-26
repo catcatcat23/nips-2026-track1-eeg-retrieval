@@ -276,14 +276,17 @@ class ResidualBlock(nn.Module):
         return x + self.alpha * self.net(x)
 
 
-class RidgeResidual(nn.Module):
+class ProjectedHead(nn.Module):
     def __init__(self):
         super().__init__()
-        for name, shape in [('mean',(1536,)),('scale',(1536,)),('weight',(1536,1536)),('bias',(1536,))]:
-            self.register_buffer(name, torch.zeros(shape))
-        self.delta=nn.Sequential(nn.LayerNorm(1536),ResidualBlock(),ResidualBlock(),nn.LayerNorm(1536),nn.Linear(1536,1536))
-    def forward(self,h):
-        return ((h-self.mean)/self.scale)@self.weight+self.bias+0.1*self.delta(h)
+        self.net = nn.Sequential(nn.LayerNorm(1536), nn.Linear(1536, 1536),
+                                 ResidualBlock(), ResidualBlock(),
+                                 nn.LayerNorm(1536), nn.Linear(1536, 1536))
+
+    def forward(self, h):
+        # Raw outputs intentionally retained for official mean-then-normalize scoring.
+        return self.net(h)
+
 
 
 class ReveRetrieval(nn.Module):
@@ -302,7 +305,7 @@ class ReveRetrieval(nn.Module):
         self.ln = nn.LayerNorm(512)
         self.transformer = TransformerBackbone(512,22,8,64,int(512*2.66),True)
         self.head = nn.Linear(512,1536)
-        self.recovery = RidgeResidual()
+        self.recovery = ProjectedHead()
 
     def forward(self, eeg):
         patches = eeg.unfold(2,200,180)
@@ -336,7 +339,7 @@ class ReveRetrieval(nn.Module):
 
 
 class Solver(CompetSolver):
-    name = 'REVE-v39B-RidgeResidual-Epoch8'
+    name = 'REVE-v64-ema0.999-Epoch9'
     requirements = []
 
     def load_model(self, meta):

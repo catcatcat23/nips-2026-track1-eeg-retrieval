@@ -1,0 +1,172 @@
+{
+  "source_checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/stage1/ema0.999_epoch_009.pt",
+  "source_sha256": "cbeff60bc1d887c802c416e6086d8988089c9f84548e380e15fa9b5cc0b312f4",
+  "weights_sha256": "894672a3865730076c058aefa1bfc3af6b435f4e829b38027e94b1faabb88202",
+  "template": "reve_b_epoch6_compat_v2 (submission.py unchanged except Solver.name)",
+  "dropped": [
+    "attention.in_proj_bias",
+    "attention.in_proj_weight",
+    "attention.out_proj.bias",
+    "attention.out_proj.weight",
+    "image_adapter.0.bias",
+    "image_adapter.0.weight",
+    "image_adapter.3.bias",
+    "image_adapter.3.weight",
+    "image_positions",
+    "image_projection.0.bias",
+    "image_projection.0.weight",
+    "image_projection.2.bias",
+    "image_projection.2.weight",
+    "local_norm.bias",
+    "local_norm.weight",
+    "local_projection.0.bias",
+    "local_projection.0.weight",
+    "local_projection.1.bias",
+    "local_projection.1.weight",
+    "positions",
+    "queries"
+  ],
+  "real_samples": 257,
+  "max_abs_error": 0.00013113021850585938,
+  "batch_permutation_invariance": "passed",
+  "CPU_GPU_equivalence": "passed",
+  "empty_batch": "passed",
+  "synthetic_32_channel": "passed",
+  "network": "blocked",
+  "expected_clean": {
+    "candidate_images": 200,
+    "per_subject": {
+      "Gifford2022Large/1": {
+        "single_trial": {
+          "top1": 0.20401873767258383,
+          "top5": 0.4598126232741617,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.77,
+          "top5": 0.98,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/10": {
+        "single_trial": {
+          "top1": 0.2543145956607495,
+          "top5": 0.5478303747534516,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.79,
+          "top5": 0.98,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/2": {
+        "single_trial": {
+          "top1": 0.15729783037475345,
+          "top5": 0.3901010848126233,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.675,
+          "top5": 0.93,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/3": {
+        "single_trial": {
+          "top1": 0.21412721893491124,
+          "top5": 0.4890285996055227,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.745,
+          "top5": 0.965,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/4": {
+        "single_trial": {
+          "top1": 0.17252218934911243,
+          "top5": 0.4243713017751479,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.715,
+          "top5": 0.94,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/5": {
+        "single_trial": {
+          "top1": 0.1306706114398422,
+          "top5": 0.34418145956607493,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.63,
+          "top5": 0.885,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/6": {
+        "single_trial": {
+          "top1": 0.20136834319526628,
+          "top5": 0.46708579881656803,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.695,
+          "top5": 0.96,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/7": {
+        "single_trial": {
+          "top1": 0.22509861932938857,
+          "top5": 0.5096770216962525,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.67,
+          "top5": 0.95,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/8": {
+        "single_trial": {
+          "top1": 0.27218934911242604,
+          "top5": 0.567862426035503,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.825,
+          "top5": 0.97,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/9": {
+        "single_trial": {
+          "top1": 0.10878944773175542,
+          "top5": 0.30800049309664695,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.565,
+          "top5": 0.885,
+          "count": 200
+        }
+      }
+    },
+    "single_trial": {
+      "top1": 0.1940396942800789,
+      "top5": 0.45079511834319524,
+      "count": 162240
+    },
+    "subject_aggregated": {
+      "top1": 0.708,
+      "top5": 0.9445,
+      "count": 2000
+    }
+  },
+  "role": "public test model selection; THINGS-EEG2 development score, not hidden Alljoined estimate"
+}

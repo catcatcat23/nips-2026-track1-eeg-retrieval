@@ -1,9 +1,35 @@
 {
-  "syntax": true,
-  "stage1_checkpoint_strict_load": true,
-  "effective_adapter_dropout": 0.2,
-  "stage2_checkpoint_strict_load": true,
-  "historical_vs_handoff_head_output_bitwise_equal_on_8_real_cached_samples": true,
-  "full_training_rerun": false,
-  "gpu_preflight_rerun": false
+  "date": "2026-10-26",
+  "environment": "local project environment, GPU0",
+  "run.py check": "passed",
+  "run.py prepare --reuse-local": "passed; predictability/subjects.json identical to original v64 run",
+  "run.py evaluate (EMA0.999 epoch 9)": {
+    "blur": {
+      "single_trial": {
+        "top1": 0.22071005917159764,
+        "top5": 0.49364521696252467,
+        "count": 162240
+      },
+      "subject_aggregated": {
+        "top1": 0.878,
+        "top5": 0.9865,
+        "count": 2000
+      }
+    },
+    "clean": {
+      "single_trial": {
+        "top1": 0.1940396942800789,
+        "top5": 0.45079511834319524,
+        "count": 162240
+      },
+      "subject_aggregated": {
+        "top1": 0.708,
+        "top5": 0.9445,
+        "count": 2000
+      }
+    }
+  },
+  "matches_original_history": true,
+  "tools/export_submission.py": "passed; exported weights.pt tensors identical to submitted weights.pt, submission.py byte-identical",
+  "not_rerun": "full training, preflight, Alljoined v67 training (packaging only)"
 }

@@ -1,5 +1,5 @@
 """Independent v14-based dropout, paired-supervision, and attention ablations."""
-import argparse,json,time,hashlib,random
+import argparse,json,time,hashlib,random,os
 from pathlib import Path
 import numpy as np
 import torch
@@ -14,7 +14,7 @@ from reve_model import optimizer_groups
 
 from train_augmentation import TrainAugmentation
 
-BASE=Path('/mnt/DATA-4/anteng/eeg-retrieval/experiments')
+BASE=Path(os.environ.get('REVE_EXPERIMENTS','experiments')) # only used by this module's historical CLI
 DATA=BASE/'reve_v13_reference'
 
 class AttentionPool(nn.Module):
@@ -78,9 +78,9 @@ def objective(model,b,arm,criterion):
     return lc+lb+.1*avg,{'clean':lc.item(),'blur':lb.item(),'repeat_mean':avg.item()}
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('arm',choices=['dropout']);ap.add_argument('--root',type=Path,required=True);ap.add_argument('--preflight',action='store_true');args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('arm',choices=['baseline','dropout','paired_control','repeat','attention','noise','feature_dropout']);ap.add_argument('--root',type=Path,required=True);ap.add_argument('--preflight',action='store_true');args=ap.parse_args()
     root=args.root/args.arm;root.mkdir(parents=True,exist_ok=True)
-    cfg=json.loads((Path(__file__).resolve().parents[1]/'configs/stage1.json').read_text());cfg.update(arm=args.arm,baseline='B ProjectedHead; full-parameter training from pretrained REVE; original diagonal clean+blur loss; matched baseline arm',recovery_head='ProjectedHead; no outer raw-h residual',only_change={'baseline':'B head matched control; image adapter dropout .85','dropout':'image adapter dropout .85 -> .2','paired_control':'128 genuine subject-image pairs per batch, no auxiliary loss','repeat':'paired_control + .1 mean-prediction clean contrastive loss','attention':'mean pooling + gated 4-head learned-query attention','noise':'B-head dropout=.2 baseline + post-zscore Gaussian noise std=.02 trial probability=.5','feature_dropout':'B-head dropout=.2 baseline + pooled EEG feature dropout p=.1'}[args.arm],reference_root=str(BASE/'reve_v14_trainval_public_selection'),run_root=str(root),test_role='public test single Top5 model selection, not independent test',runtime='single CUDA process; v14 used one-rank DDP, no cross-rank loss changes')
+    cfg=json.loads((BASE/'reve_v14_trainval_public_selection/training/config.json').read_text());cfg.update(arm=args.arm,baseline='B ProjectedHead; full-parameter training from pretrained REVE; original diagonal clean+blur loss; matched baseline arm',recovery_head='ProjectedHead; no outer raw-h residual',only_change={'baseline':'B head matched control; image adapter dropout .85','dropout':'image adapter dropout .85 -> .2','paired_control':'128 genuine subject-image pairs per batch, no auxiliary loss','repeat':'paired_control + .1 mean-prediction clean contrastive loss','attention':'mean pooling + gated 4-head learned-query attention','noise':'B-head dropout=.2 baseline + post-zscore Gaussian noise std=.02 trial probability=.5','feature_dropout':'B-head dropout=.2 baseline + pooled EEG feature dropout p=.1'}[args.arm],reference_root=str(BASE/'reve_v14_trainval_public_selection'),run_root=str(root),test_role='public test single Top5 model selection, not independent test',runtime='single CUDA process; v14 used one-rank DDP, no cross-rank loss changes')
     random.seed(33);np.random.seed(33);torch.manual_seed(33);torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False
     manifest=json.loads((DATA/'data/manifest.json').read_text());model=AblationModel(manifest,args.arm).cuda()
     datasets=[DatasetEEG(DATA,s,aux=True,local_aux=False) for s in ['train','val']];ds=ConcatDataset(datasets)

@@ -1,13 +1,13 @@
 {
-  "zip": "submissions/reve_v39b_epoch8_track1.zip",
-  "sha256": "d7354a0350a8bb6572bb1acc88caa44feaf5aed17221bacc36b490fda0d04541",
+  "zip": "/mnt/DATA-4/anteng/eeg-retrieval/submissions/reve_v64_ema0999_ep9_track1.zip",
+  "sha256": "39786a46a7fb6f2ed61d7e94c9913b1a93f9abd193d0d0c2c79f9e9c21bb0ccd",
   "files": [
     "submission.py",
     "weights.pt",
     "positions.json",
     "LICENSE_BRAINDECODE.txt"
   ],
-  "audit_dir": "/tmp/reve_ingestion_audit_ylegq5xh",
+  "audit_dir": "/mnt/DATA-4/anteng/eeg-retrieval/cache/tmp/reve_ingestion_audit_ri8k12ph",
   "official_ingestion": "passed",
   "official_scoring": "passed",
   "data": "synthetic matching warmup shape; not an accuracy evaluation",
