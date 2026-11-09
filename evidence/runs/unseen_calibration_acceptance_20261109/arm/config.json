@@ -1,0 +1,6 @@
+{
+  "source_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/unseen_calibration_acceptance_20261109/source_data",
+  "source_snapshot": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/unseen_calibration_acceptance_20261109/source",
+  "source_hashes_path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/unseen_calibration_acceptance_20261109/source_sha256.json",
+  "validation_ids_path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/unseen_calibration_acceptance_20261109/validation_ids.json"
+}

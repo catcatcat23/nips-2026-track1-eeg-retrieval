@@ -1,0 +1,38 @@
+{
+  "source_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v56_noise_stage2/source_global.pt",
+  "checkpoint_sha256": "2c1b154892fb3d41d3107ae5dd7cb056a38c4f012f02d3f40b6d24fc691995e6",
+  "cache_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v56_noise_stage2/cache",
+  "initial_reference": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v39_ridge_recovery/B/initial_head.pt",
+  "seed": 33,
+  "batch_size": 256,
+  "epochs": 40,
+  "patience": 5,
+  "lr": 0.0001,
+  "weight_decay": 0.05,
+  "scheduler": "OneCycle pct_start=.1 div_factor25 final_div_factor10000",
+  "selection": "clean subject_aggregated Top5; top3 checkpoints; public test development",
+  "source_epoch": 10,
+  "training_splits": [
+    "train",
+    "val"
+  ],
+  "loss": "original one-way ClipLoss norm_kind=y temperature=False; no distillation",
+  "condition": "disabled; v45 only",
+  "baseline": "v45 exact original initialization; frozen v55 noise",
+  "blur_reference": {
+    "single_trial": {
+      "top1": 0.1903784516765286,
+      "top5": 0.449026134122288,
+      "count": 162240
+    },
+    "subject_aggregated": {
+      "top1": 0.7995,
+      "top5": 0.9745,
+      "count": 2000
+    }
+  },
+  "run_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v56_noise_stage2",
+  "stage1_checkpoint": "/home/Anteng/eeg-retrieval/runs/reve_v55_mixed_trials/noise/stage1/epoch_010.pt",
+  "stage1_checkpoint_sha256": "3b40b539eab5c48aecf266a1a7fb375c176a158fdabf304d01c77ca08fe10fd0"
+}

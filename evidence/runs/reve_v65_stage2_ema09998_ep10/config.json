@@ -1,0 +1,52 @@
+{
+  "source_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v65_stage2_ema09998_ep10/source_global.pt",
+  "checkpoint_sha256": "7f7c15ec4f7d1e257189771e3bbdd8f635c45eee98181f59d273e396f9393742",
+  "cache_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v65_stage2_ema09998_ep10/cache",
+  "initial_reference": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v39_ridge_recovery/B/initial_head.pt",
+  "seed": 33,
+  "batch_size": 256,
+  "epochs": 40,
+  "patience": 5,
+  "lr": 0.0001,
+  "weight_decay": 0.05,
+  "scheduler": "OneCycle pct_start=.1 div_factor25 final_div_factor10000",
+  "selection": "clean subject_aggregated Top5; top3 checkpoints; public test development",
+  "source_epoch": 10,
+  "training_splits": [
+    "train",
+    "val"
+  ],
+  "loss": "original one-way ClipLoss norm_kind=y temperature=False; no distillation",
+  "condition": "disabled; v45 only",
+  "baseline": "v45 exact original initialization; frozen v64 ema0.9998 epoch10 (Local OT keys stripped)",
+  "blur_reference": {
+    "single_trial": {
+      "top1": 0.22345907297830375,
+      "top5": 0.497189349112426,
+      "count": 162240
+    },
+    "subject_aggregated": {
+      "top1": 0.8665,
+      "top5": 0.986,
+      "count": 2000
+    }
+  },
+  "run_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v65_stage2_ema09998_ep10",
+  "stage1_checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/stage1/ema0.9998_epoch_010.pt",
+  "stage1_checkpoint_sha256": "4c7e51b36d11dfaa000c4d12417db6b64ed17f10168f5f4095fb394fa29076b1",
+  "purpose": "Only change vs reve_v60_stage2_epoch9: frozen stage1 = v64 ema0.9998 epoch10 instead of v57 raw epoch9. Must beat stage1's own jointly-trained recovery head (stage1_clean_reference) to be useful.",
+  "comparison": "reve_v60_stage2_epoch9 and stage1_clean_reference",
+  "stage1_clean_reference": {
+    "single_trial": {
+      "top1": 0.19755917159763314,
+      "top5": 0.45583086785009863,
+      "count": 162240
+    },
+    "subject_aggregated": {
+      "top1": 0.698,
+      "top5": 0.9395,
+      "count": 2000
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "auxiliary_negatives": {
+    "before": null,
+    "after": "different images across all subjects; 248 per anchor",
+    "before_present": false,
+    "after_present": true
+  },
+  "auxiliary_positives": {
+    "before": null,
+    "after": "same image across all subjects, self excluded; 7 per anchor",
+    "before_present": false,
+    "after_present": true
+  },
+  "auxiliary_seed": {
+    "before": null,
+    "after": 810033,
+    "before_present": false,
+    "after_present": true
+  },
+  "experiment": {
+    "before": "v82: v81 matched control, identity weight 0.1 -> 1.0",
+    "after": "v92 EEG-EEG image SupCon, same-image positives across subjects",
+    "before_present": true,
+    "after_present": true
+  },
+  "identity_head": {
+    "before": "Identity; zero additional parameters",
+    "after": null,
+    "before_present": true,
+    "after_present": false
+  },
+  "identity_location": {
+    "before": "pooled512",
+    "after": null,
+    "before_present": true,
+    "after_present": false
+  },
+  "identity_positives": {
+    "before": "same image AND same subject; negatives same image different subjects; other images excluded",
+    "after": null,
+    "before_present": true,
+    "after_present": false
+  },
+  "identity_temperature": {
+    "before": 0.1,
+    "after": null,
+    "before_present": true,
+    "after_present": false
+  },
+  "identity_weight": {
+    "before": 1.0,
+    "after": 0,
+    "before_present": true,
+    "after_present": true
+  },
+  "image_contrastive_location": {
+    "before": null,
+    "after": "pooled512",
+    "before_present": false,
+    "after_present": true
+  },
+  "image_contrastive_temperature": {
+    "before": null,
+    "after": 0.1,
+    "before_present": false,
+    "after_present": true
+  },
+  "image_contrastive_weight": {
+    "before": null,
+    "after": 1.0,
+    "before_present": false,
+    "after_present": true
+  },
+  "only_change": {
+    "before": "identity_weight 0.1 -> 1.0",
+    "after": "Replace auxiliary image-conditioned subject SupCon with image SupCon; same auxiliary sampling and budget",
+    "before_present": true,
+    "after_present": true
+  },
+  "parent": {
+    "before": "reve_v57_mixed_channel (not step-exact reproducible: v57 was resumed at epoch10 without worker RNG)",
+    "after": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1",
+    "before_present": true,
+    "after_present": true
+  },
+  "run_root": {
+    "before": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1",
+    "after": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive",
+    "before_present": true,
+    "after_present": true
+  },
+  "selection": {
+    "before": "public test blur single_trial Top5, per variant (raw, ema0.999, ema0.9998); public test development, not independent test",
+    "after": "public test development: blur single-trial Top5 per raw/EMA variant; not independent heldout evaluation",
+    "before_present": true,
+    "after_present": true
+  }
+}

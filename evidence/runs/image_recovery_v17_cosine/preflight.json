@@ -1,0 +1,8 @@
+{
+  "initial_loss": 1.0315403938293457,
+  "tiny_top1": 1.0,
+  "tiny_cosine": 0.9530167579650879,
+  "final_loss": 0.2684301733970642,
+  "steps": 10,
+  "batch256_gradients": "finite"
+}

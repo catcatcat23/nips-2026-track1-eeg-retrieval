@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "steps": 5,
+  "metrics": {
+    "single_trial": {
+      "top1": 0.00022416498542927594,
+      "top5": 0.0014944332361951729,
+      "count": 13383
+    },
+    "subject_aggregated": {
+      "top1": 0.0,
+      "top5": 0.0015114873035066505,
+      "count": 3308
+    },
+    "candidate_images": 3308
+  },
+  "allocated_gib": 0.3724184036254883
+}

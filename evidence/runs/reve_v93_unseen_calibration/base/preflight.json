@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "gradients": {
+    "encoder": 15292.149924516678,
+    "blur_head": 1855.4707624912262,
+    "recovery": 7914.004879191518,
+    "image_adapter": 8772.649355888367
+  },
+  "initial_loss": 4.447389602661133,
+  "final_loss": 1.874287486076355,
+  "tiny_blur_top1": 1.0,
+  "steps": 4,
+  "updates_discarded": true,
+  "excluded_subjects": [
+    "Gifford2022Large/1",
+    "Gifford2022Large/2"
+  ],
+  "config_sha256": "c0f5c387e4c045473f2112c4baccbb244400985e9d701467402fa1b2755cf61b",
+  "source_hashes_sha256": "f76656315b097b5d470a4b043eeecad67be70ad0cfbc14ca412d0e127b9c35c4"
+}

@@ -1,0 +1,41 @@
+{
+  "run_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v52_token_transformer",
+  "source_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/dropout/best.pt",
+  "checkpoint_sha256": "c7093ff8b099eaf01a7ec2d70a180af08e2f35570a2d36d3e73494f36cb6aa8e",
+  "seed": 33,
+  "batch_size": 256,
+  "epochs": 40,
+  "patience": 5,
+  "lr": 0.0001,
+  "weight_decay": 0.05,
+  "scheduler": "OneCycleLR pct_start=0.1 default div_factor=25 final_div_factor=10000",
+  "training_splits": [
+    "train",
+    "val"
+  ],
+  "selection": "public test single_trial top5; not independent evaluation",
+  "arms": {
+    "B": "token Transformer + fresh original B; unchanged clean ClipLoss"
+  },
+  "frozen": "v33 EEG encoder, projection and image adapter; only recovery trainable",
+  "output": "raw output; official average predictions then normalize",
+  "precision": "float32 TF32 disabled",
+  "initial_reference": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/recovery_v15_frozen_v13/B/initial_head.pt",
+  "source_sha": "55907c0efa6666133cb5d9217f896f2bbf7a79e5",
+  "cache_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v38_frozen_v33_recovery/cache",
+  "architecture": "fresh original B head + 2 token self-attention encoder layers + 2 h-conditioned decoder layers; d256 heads4 ff1024 dropout.1; learned 63-token positions; zero-init branch output",
+  "blur_reference": "/home/Anteng/eeg-retrieval/audits/v33_v36_blur/v33_results.json",
+  "token_cache_dtype": "float32",
+  "token_cache_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v42_token_recovery/tokens",
+  "purpose": "test multi-layer interaction of unpooled REVE tokens for clean recovery; compare v42 single cross-attention and v38 B",
+  "initialization": "fresh seed33 B weights match reference; no trained recovery loaded",
+  "transformer": {
+    "width": 256,
+    "heads": 4,
+    "encoder_layers": 2,
+    "decoder_layers": 2,
+    "ff_width": 1024,
+    "dropout": 0.1
+  }
+}

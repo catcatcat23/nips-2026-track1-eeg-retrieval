@@ -1,0 +1,30 @@
+{
+  "run_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v42_token_recovery",
+  "source_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/dropout/best.pt",
+  "checkpoint_sha256": "c7093ff8b099eaf01a7ec2d70a180af08e2f35570a2d36d3e73494f36cb6aa8e",
+  "seed": 33,
+  "batch_size": 256,
+  "epochs": 40,
+  "patience": 5,
+  "lr": 0.0001,
+  "weight_decay": 0.05,
+  "scheduler": "OneCycleLR pct_start=0.1 default div_factor=25 final_div_factor=10000",
+  "training_splits": [
+    "train",
+    "val"
+  ],
+  "selection": "public test single_trial top5; not independent evaluation",
+  "arms": {
+    "B": "token-conditioned recovery, original clean ClipLoss only"
+  },
+  "frozen": "v33 EEG encoder, projection and image adapter; only recovery trainable",
+  "output": "raw output; official average predictions then normalize",
+  "precision": "float32 TF32 disabled",
+  "initial_reference": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/recovery_v15_frozen_v13/B/initial_head.pt",
+  "source_sha": "5e6ab786b808a552d155ce0c1d88d3950e925680",
+  "cache_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v38_frozen_v33_recovery/cache",
+  "architecture": "original B ProjectedHead + h-query cross-attention over last-layer EEG tokens 63x512; dimension256 heads4; zero-initialized output residual",
+  "blur_reference": "/home/Anteng/eeg-retrieval/audits/v33_v36_blur/v33_results.json",
+  "token_cache_dtype": "float32"
+}

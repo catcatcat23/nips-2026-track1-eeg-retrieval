@@ -1,0 +1,152 @@
+{
+  "best_epoch": 8,
+  "selection": {
+    "candidate_images": 200,
+    "per_subject": {
+      "Gifford2022Large/1": {
+        "single_trial": {
+          "top1": 0.17726824457593687,
+          "top5": 0.4265902366863905,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.7,
+          "top5": 0.94,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/10": {
+        "single_trial": {
+          "top1": 0.22978303747534518,
+          "top5": 0.5072731755424064,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.745,
+          "top5": 0.955,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/2": {
+        "single_trial": {
+          "top1": 0.14108727810650887,
+          "top5": 0.36803500986193294,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.66,
+          "top5": 0.91,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/3": {
+        "single_trial": {
+          "top1": 0.1930473372781065,
+          "top5": 0.45864151873767256,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.7,
+          "top5": 0.94,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/4": {
+        "single_trial": {
+          "top1": 0.1560034516765286,
+          "top5": 0.4005793885601578,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.69,
+          "top5": 0.955,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/5": {
+        "single_trial": {
+          "top1": 0.12469181459566075,
+          "top5": 0.3318540433925049,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.535,
+          "top5": 0.885,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/6": {
+        "single_trial": {
+          "top1": 0.18978057199211046,
+          "top5": 0.4469921104536489,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.705,
+          "top5": 0.945,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/7": {
+        "single_trial": {
+          "top1": 0.20352564102564102,
+          "top5": 0.47885848126232744,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.575,
+          "top5": 0.915,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/8": {
+        "single_trial": {
+          "top1": 0.25443786982248523,
+          "top5": 0.5342702169625246,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.78,
+          "top5": 0.96,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/9": {
+        "single_trial": {
+          "top1": 0.09954388560157791,
+          "top5": 0.29203648915187375,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.55,
+          "top5": 0.89,
+          "count": 200
+        }
+      }
+    },
+    "single_trial": {
+      "top1": 0.17691691321499015,
+      "top5": 0.424513067061144,
+      "count": 162240
+    },
+    "subject_aggregated": {
+      "top1": 0.664,
+      "top5": 0.9295,
+      "count": 2000
+    }
+  },
+  "blur": {
+    "single_trial": {
+      "top1": 0.19792283037475344,
+      "top5": 0.4619391025641026,
+      "count": 162240
+    },
+    "subject_aggregated": {
+      "top1": 0.743,
+      "top5": 0.9565,
+      "count": 2000
+    }
+  },
+  "blur_provenance": "reused same frozen v33 EEG, projection, adapter and cache; head-only ablation",
+  "role": "public test selection, not independent test"
+}

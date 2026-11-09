@@ -1,0 +1,19 @@
+{
+  "train_images": 16540,
+  "selection_images": 200,
+  "disjoint_ids": true,
+  "inputs": "raw multiscale mean, no adapter, no EEG",
+  "feature_metadata": {
+    "schema": "upstream_per_scale_l2_dino_v1",
+    "images": 16540,
+    "source_commit": "94b3a31",
+    "order": "PIL RGB resize224; OpenCV uint8 blur; Resize518; official processor; layer0.6667 token mean; per-scale L2; mean",
+    "clean": "unchanged official cache"
+  },
+  "array_sha256": [
+    "7c9fd355af4ca93c6951b60ed9031a40bea06552e92018c1440fde4ccbbb2171",
+    "5bb8be358b049c32785ba31aad27192835b6c4a312debc8e6043a43087808cb8",
+    "6efad42da225a3f04712ca1182e2093ad08d9c871d70b152c91620f1d8b65146",
+    "58adbec2ba793247a14203882572598c5c1c0fb48340e61152fbf5fa794ec8e8"
+  ]
+}

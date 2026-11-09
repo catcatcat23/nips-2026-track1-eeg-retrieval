@@ -1,0 +1,22 @@
+{
+  "sha256": "9bc87a6c808accf413d502d9141cf60810158f5650f9679b03e5cdbbdb79ea5a",
+  "models": [
+    "pretrained",
+    "v70",
+    "v71",
+    "v72"
+  ],
+  "checkpoint": "epoch10 EMA0.9998",
+  "images": 6,
+  "repetitions": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "independent_examples_per_count": 3,
+  "source_trials_disjoint": true,
+  "features": "512-dimensional encoder mean pooling",
+  "visualization": "L2 PCA50 tSNE perplexity30 seed33",
+  "limitations": "one tSNE seed; no session holdout; descriptive only; group distances in original normalized feature space"
+}

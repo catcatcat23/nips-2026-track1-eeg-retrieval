@@ -1,0 +1,14 @@
+{
+  "models": {
+    "v70": "reve_v70_clean_ema_control",
+    "v71": "reve_v71_clean_ema_control",
+    "v72": "reve_v72_cross_subject_mix"
+  },
+  "checkpoint": "stage1/ema0.9998_epoch_010.pt",
+  "split": "test",
+  "left": "image30 all valid individual trials",
+  "right": "all test images; mean individual raw512 encoder features within subject/image; no L2; no EEG averaging",
+  "projection": "separate PCA50 then TSNE perplexity30 seed5 2000iterations per panel",
+  "limitations": "Different image sets between columns; no direct attribution of visual differences to averaging; descriptive single seed. Counts stored in NPZ.",
+  "precision": "FP32, no autocast, TF32 disabled"
+}

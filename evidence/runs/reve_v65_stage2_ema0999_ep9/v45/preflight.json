@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "initial_loss": 2.079441547393799,
+  "final_loss": 0.5385797023773193,
+  "steps": 5,
+  "tiny_top1": 1.0
+}

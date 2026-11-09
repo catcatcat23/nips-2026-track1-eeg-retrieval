@@ -1,0 +1,6 @@
+{
+  "state": "stopped",
+  "epoch": 11,
+  "best_epoch": 9,
+  "reason": "User requested keeping only v34 augmentation experiments"
+}

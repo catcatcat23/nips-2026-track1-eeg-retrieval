@@ -1,0 +1,8 @@
+{
+  "source_sha256": "33b2d7fd3e9707754c3d72269986093f1c288a8bb9e7565ded2472fcfd822ac1",
+  "epoch": 10,
+  "weights": "EMA0.9998",
+  "split": "common images 50/25/25%, 4 trials/person/image, seed20261101",
+  "probe": "train-only standardization; validation-selected logistic C; shuffled train label control",
+  "limitation": "not session-disjoint; identity readability does not establish retrieval utility"
+}

@@ -1,0 +1,242 @@
+{
+  "0": {
+    "metrics": {
+      "clean": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/1": {
+            "single_trial": {
+              "top1": 0.05713757396449704,
+              "top5": 0.18102810650887574,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.2,
+              "top5": 0.505,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.05713757396449704,
+          "top5": 0.18102810650887574,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.2,
+          "top5": 0.505,
+          "count": 200
+        }
+      },
+      "blur": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/1": {
+            "single_trial": {
+              "top1": 0.0617603550295858,
+              "top5": 0.19834812623274162,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.24,
+              "top5": 0.64,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.0617603550295858,
+          "top5": 0.19834812623274162,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.24,
+          "top5": 0.64,
+          "count": 200
+        }
+      }
+    },
+    "first_loss": null,
+    "last_loss": null
+  },
+  "50": {
+    "metrics": {
+      "clean": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/1": {
+            "single_trial": {
+              "top1": 0.05547337278106509,
+              "top5": 0.18300049309664695,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.225,
+              "top5": 0.56,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.05547337278106509,
+          "top5": 0.18300049309664695,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.225,
+          "top5": 0.56,
+          "count": 200
+        }
+      },
+      "blur": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/1": {
+            "single_trial": {
+              "top1": 0.05997287968441815,
+              "top5": 0.1926775147928994,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.32,
+              "top5": 0.66,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.05997287968441815,
+          "top5": 0.1926775147928994,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.32,
+          "top5": 0.66,
+          "count": 200
+        }
+      }
+    },
+    "first_loss": 6.942798137664795,
+    "last_loss": 0.1069825291633606
+  },
+  "200": {
+    "metrics": {
+      "clean": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/1": {
+            "single_trial": {
+              "top1": 0.0626232741617357,
+              "top5": 0.20457347140039447,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.275,
+              "top5": 0.605,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.0626232741617357,
+          "top5": 0.20457347140039447,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.275,
+          "top5": 0.605,
+          "count": 200
+        }
+      },
+      "blur": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/1": {
+            "single_trial": {
+              "top1": 0.07390285996055226,
+              "top5": 0.2234344181459566,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.47,
+              "top5": 0.785,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.07390285996055226,
+          "top5": 0.2234344181459566,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.47,
+          "top5": 0.785,
+          "count": 200
+        }
+      }
+    },
+    "first_loss": 9.652826309204102,
+    "last_loss": 4.162688732147217
+  },
+  "1000": {
+    "metrics": {
+      "clean": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/1": {
+            "single_trial": {
+              "top1": 0.0627465483234714,
+              "top5": 0.20019723865877712,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.3,
+              "top5": 0.56,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.0627465483234714,
+          "top5": 0.20019723865877712,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.3,
+          "top5": 0.56,
+          "count": 200
+        }
+      },
+      "blur": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/1": {
+            "single_trial": {
+              "top1": 0.07495069033530571,
+              "top5": 0.23187869822485208,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.495,
+              "top5": 0.8,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.07495069033530571,
+          "top5": 0.23187869822485208,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.495,
+          "top5": 0.8,
+          "count": 200
+        }
+      }
+    },
+    "first_loss": 7.094152450561523,
+    "last_loss": 7.133607864379883
+  }
+}

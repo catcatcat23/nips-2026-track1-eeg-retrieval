@@ -1,0 +1,30 @@
+{
+  "run_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v41_calibrated_distill",
+  "source_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/dropout/best.pt",
+  "checkpoint_sha256": "c7093ff8b099eaf01a7ec2d70a180af08e2f35570a2d36d3e73494f36cb6aa8e",
+  "seed": 33,
+  "batch_size": 256,
+  "epochs": 40,
+  "patience": 5,
+  "lr": 0.0001,
+  "weight_decay": 0.05,
+  "scheduler": "OneCycleLR pct_start=0.1 default div_factor=25 final_div_factor=10000",
+  "training_splits": [
+    "train",
+    "val"
+  ],
+  "selection": "public test single_trial top5; not independent evaluation",
+  "arms": {
+    "B": "same v40 model/loss; weight calibrated to 20 percent clean gradient norm at initialization"
+  },
+  "frozen": "v33 REVE/projection and image adapter eval frozen; original B head trained only",
+  "output": "raw output; official average predictions then normalize",
+  "precision": "float32 TF32 disabled",
+  "initial_reference": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/recovery_v15_frozen_v13/B/initial_head.pt",
+  "source_sha": "e24997b9be46a5103ef63240af313743700b379d",
+  "cache_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v38_frozen_v33_recovery/cache",
+  "distill_temperature": 0.07,
+  "distill_weight": 173.78703424505585,
+  "calibration": "8 train-only batches at original initialization; weight fixed to median distill/clean gradient norm ratio 0.2; no optimization during calibration"
+}

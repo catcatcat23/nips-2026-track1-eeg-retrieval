@@ -1,0 +1,9 @@
+{
+  "B_ID": {
+    "initial_loss": 2.1066832542419434,
+    "final_loss": 0.0544053316116333,
+    "steps": 4,
+    "top1": 1.0,
+    "train_mode_gradients_finite": true
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "parameters": 6901248,
+  "initial_loss": 2.079441547393799,
+  "final_loss": 0.46467310190200806,
+  "steps": 5,
+  "tiny_top1": 1.0,
+  "gradient_l1": {
+    "encoder_0": 28.204461380839348,
+    "encoder_1": 7.741235635243356,
+    "encoder_2": 1.7802183602470905,
+    "decoder_0": 1.6080718289595097,
+    "decoder_1": 8.35960148833692,
+    "decoder_2": 59.200478442013264,
+    "bottleneck": 0.6923887489829212,
+    "output": 184.0121693611145
+  },
+  "batch_invariance": true,
+  "updates_discarded": true
+}

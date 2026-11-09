@@ -1,0 +1,2507 @@
+{
+  "policy": "Only redundant epochs of completed negative/identity studies; keep published comparison epochs 7/8/9/10/14/15, selected epochs, final epoch and all last.pt. No baseline, LOSO, source caches or submission artifacts removed. Exact downstream path references protected.",
+  "delete": [
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.9998_epoch_011.pt",
+      "bytes": 389735411,
+      "mtime_ns": 1793654189543035830,
+      "run": "reve_v78_v64_identity",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/epoch_001.pt",
+      "bytes": 1165235595,
+      "mtime_ns": 1793634636835638866,
+      "run": "reve_v78_v64_identity",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.999_epoch_003.pt",
+      "bytes": 389735215,
+      "mtime_ns": 1793638544479181096,
+      "run": "reve_v78_v64_identity",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.9998_epoch_005.pt",
+      "bytes": 389735411,
+      "mtime_ns": 1793642458642432619,
+      "run": "reve_v78_v64_identity",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.999_epoch_006.pt",
+      "bytes": 389735215,
+      "mtime_ns": 1793644411203351097,
+      "run": "reve_v78_v64_identity",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.9998_epoch_013.pt",
+      "bytes": 389735411,
+      "mtime_ns": 1793658080595191584,
+      "run": "reve_v78_v64_identity",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/epoch_013.pt",
+      "bytes": 1165235595,
+      "mtime_ns": 1793658079935181232,
+      "run": "reve_v78_v64_identity",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.9998_epoch_006.pt",
+      "bytes": 389735411,
+      "mtime_ns": 1793644411527369269,
+      "run": "reve_v78_v64_identity",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.9998_epoch_002.pt",
+      "bytes": 389735411,
+      "mtime_ns": 1793636585582053632,
+      "run": "reve_v78_v64_identity",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.999_epoch_012.pt",
+      "bytes": 389735215,
+      "mtime_ns": 1793656133681403655,
+      "run": "reve_v78_v64_identity",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/epoch_011.pt",
+      "bytes": 1165235595,
+      "mtime_ns": 1793654188903036945,
+      "run": "reve_v78_v64_identity",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.9998_epoch_004.pt",
+      "bytes": 389735411,
+      "mtime_ns": 1793640504239528616,
+      "run": "reve_v78_v64_identity",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.999_epoch_004.pt",
+      "bytes": 389735215,
+      "mtime_ns": 1793640503907539840,
+      "run": "reve_v78_v64_identity",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/epoch_002.pt",
+      "bytes": 1165235595,
+      "mtime_ns": 1793636584946032489,
+      "run": "reve_v78_v64_identity",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.999_epoch_011.pt",
+      "bytes": 389735215,
+      "mtime_ns": 1793654189223036387,
+      "run": "reve_v78_v64_identity",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.9998_epoch_012.pt",
+      "bytes": 389735411,
+      "mtime_ns": 1793656134009404165,
+      "run": "reve_v78_v64_identity",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.9998_epoch_001.pt",
+      "bytes": 389735411,
+      "mtime_ns": 1793634637475624839,
+      "run": "reve_v78_v64_identity",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.999_epoch_013.pt",
+      "bytes": 389735215,
+      "mtime_ns": 1793658080263186377,
+      "run": "reve_v78_v64_identity",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.9998_epoch_003.pt",
+      "bytes": 389735411,
+      "mtime_ns": 1793638544803179540,
+      "run": "reve_v78_v64_identity",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.999_epoch_005.pt",
+      "bytes": 389735215,
+      "mtime_ns": 1793642458298426389,
+      "run": "reve_v78_v64_identity",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.999_epoch_002.pt",
+      "bytes": 389735215,
+      "mtime_ns": 1793636585262042995,
+      "run": "reve_v78_v64_identity",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/epoch_006.pt",
+      "bytes": 1165235595,
+      "mtime_ns": 1793644410879332914,
+      "run": "reve_v78_v64_identity",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/epoch_004.pt",
+      "bytes": 1165235595,
+      "mtime_ns": 1793640503587550671,
+      "run": "reve_v78_v64_identity",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/epoch_003.pt",
+      "bytes": 1165235595,
+      "mtime_ns": 1793638544155182652,
+      "run": "reve_v78_v64_identity",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/epoch_012.pt",
+      "bytes": 1165235595,
+      "mtime_ns": 1793656133349403139,
+      "run": "reve_v78_v64_identity",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/epoch_005.pt",
+      "bytes": 1165235595,
+      "mtime_ns": 1793642457958420231,
+      "run": "reve_v78_v64_identity",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.999_epoch_001.pt",
+      "bytes": 389735215,
+      "mtime_ns": 1793634637155631848,
+      "run": "reve_v78_v64_identity",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.9998_epoch_011.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1794181608495017299,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/epoch_001.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1794149058802337182,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.999_epoch_003.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1794155563737521893,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.9998_epoch_005.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1794162082269008374,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.999_epoch_006.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1794165333724087362,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.9998_epoch_013.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1794188096228394419,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/epoch_013.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1794188095580385922,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.9998_epoch_006.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1794165334048087828,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.9998_epoch_002.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1794152298072428117,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.999_epoch_012.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1794184853211350870,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/epoch_011.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1794181607843034726,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.9998_epoch_004.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1794158822881942634,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.999_epoch_004.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1794158822553941407,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/epoch_002.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1794152297396423687,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.999_epoch_011.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1794181608167026062,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.9998_epoch_012.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1794184853527352554,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.9998_epoch_001.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1794149059478340906,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.999_epoch_013.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1794188095904390170,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.9998_epoch_003.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1794155564065517922,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.999_epoch_005.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1794162081933009303,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.999_epoch_002.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1794152297740425941,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/epoch_006.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1794165333404086903,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/epoch_004.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1794158822225940179,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/epoch_003.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1794155563401525962,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/epoch_012.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1794184852891349163,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/epoch_005.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1794162081601010221,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.999_epoch_001.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1794149059142339056,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.9998_epoch_011.pt",
+      "bytes": 389072439,
+      "mtime_ns": 1793711716714792199,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/epoch_001.pt",
+      "bytes": 1163245515,
+      "mtime_ns": 1793692148610723556,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.999_epoch_003.pt",
+      "bytes": 389072249,
+      "mtime_ns": 1793696067707243324,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.9998_epoch_005.pt",
+      "bytes": 389072439,
+      "mtime_ns": 1793699988872389872,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.999_epoch_006.pt",
+      "bytes": 389072249,
+      "mtime_ns": 1793701938647692422,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.9998_epoch_013.pt",
+      "bytes": 389072439,
+      "mtime_ns": 1793715611465654231,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/epoch_013.pt",
+      "bytes": 1163245515,
+      "mtime_ns": 1793715610821653943,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.9998_epoch_006.pt",
+      "bytes": 389072439,
+      "mtime_ns": 1793701938979678388,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.9998_epoch_002.pt",
+      "bytes": 389072439,
+      "mtime_ns": 1793694105875670799,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.999_epoch_012.pt",
+      "bytes": 389072249,
+      "mtime_ns": 1793713661264919963,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/epoch_011.pt",
+      "bytes": 1163245515,
+      "mtime_ns": 1793711716058792013,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.9998_epoch_004.pt",
+      "bytes": 389072439,
+      "mtime_ns": 1793698032199509929,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.999_epoch_004.pt",
+      "bytes": 389072249,
+      "mtime_ns": 1793698031871498672,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/epoch_002.pt",
+      "bytes": 1163245515,
+      "mtime_ns": 1793694105215661508,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.999_epoch_011.pt",
+      "bytes": 389072249,
+      "mtime_ns": 1793711716386792106,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.9998_epoch_012.pt",
+      "bytes": 389072439,
+      "mtime_ns": 1793713661592925649,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.9998_epoch_001.pt",
+      "bytes": 389072439,
+      "mtime_ns": 1793692149262740248,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.999_epoch_013.pt",
+      "bytes": 389072249,
+      "mtime_ns": 1793715611137654083,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.9998_epoch_003.pt",
+      "bytes": 389072439,
+      "mtime_ns": 1793696068031231745,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.999_epoch_005.pt",
+      "bytes": 389072249,
+      "mtime_ns": 1793699988548379822,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.999_epoch_002.pt",
+      "bytes": 389072249,
+      "mtime_ns": 1793694105547666182,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/epoch_006.pt",
+      "bytes": 1163245515,
+      "mtime_ns": 1793701938311706626,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/epoch_004.pt",
+      "bytes": 1163245515,
+      "mtime_ns": 1793698031535487129,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/epoch_003.pt",
+      "bytes": 1163245515,
+      "mtime_ns": 1793696067387254761,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/epoch_012.pt",
+      "bytes": 1163245515,
+      "mtime_ns": 1793713660940914346,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/epoch_005.pt",
+      "bytes": 1163245515,
+      "mtime_ns": 1793699988224369770,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.999_epoch_001.pt",
+      "bytes": 389072249,
+      "mtime_ns": 1793692148938731956,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.9998_epoch_011.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1793755915764289481,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/epoch_001.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1793722887433600942,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.999_epoch_003.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1793729496476720976,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.9998_epoch_005.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1793736104060574318,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.999_epoch_006.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1793739400557623485,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.9998_epoch_013.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1793762510526763471,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/epoch_013.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1793762509734754050,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.9998_epoch_006.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1793739400881626897,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.9998_epoch_002.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1793726185881516822,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.999_epoch_012.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1793759204475287343,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/epoch_011.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1793755915088285925,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.9998_epoch_004.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1793732796198684435,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.999_epoch_004.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1793732795878675300,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/epoch_002.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1793726185205516952,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.999_epoch_011.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1793755915428287714,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.9998_epoch_012.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1793759204803290438,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.9998_epoch_001.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1793722888113602898,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.999_epoch_013.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1793762510130758761,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.9998_epoch_003.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1793729496808722746,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.999_epoch_005.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1793736103724575320,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.999_epoch_002.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1793726185553516885,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/epoch_006.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1793739400221619947,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/epoch_004.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1793732795550665928,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/epoch_003.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1793729496140719185,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/epoch_012.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1793759204139284171,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/epoch_005.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1793736103392576311,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.999_epoch_001.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1793722887777601932,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.9998_epoch_011.pt",
+      "bytes": 389072375,
+      "mtime_ns": 1793803066475962597,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/epoch_001.pt",
+      "bytes": 1163245451,
+      "mtime_ns": 1793783444091688161,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.999_epoch_003.pt",
+      "bytes": 389072185,
+      "mtime_ns": 1793787378385741094,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.9998_epoch_005.pt",
+      "bytes": 389072375,
+      "mtime_ns": 1793791313119703688,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.999_epoch_006.pt",
+      "bytes": 389072185,
+      "mtime_ns": 1793793270371673011,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.9998_epoch_013.pt",
+      "bytes": 389072375,
+      "mtime_ns": 1793806995796801191,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/epoch_013.pt",
+      "bytes": 1163245451,
+      "mtime_ns": 1793806995028798919,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.9998_epoch_006.pt",
+      "bytes": 389072375,
+      "mtime_ns": 1793793270747641180,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.9998_epoch_002.pt",
+      "bytes": 389072375,
+      "mtime_ns": 1793785407004160910,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.999_epoch_012.pt",
+      "bytes": 389072185,
+      "mtime_ns": 1793805043547517775,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/epoch_011.pt",
+      "bytes": 1163245451,
+      "mtime_ns": 1793803065807960142,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.9998_epoch_004.pt",
+      "bytes": 389072375,
+      "mtime_ns": 1793789345245502339,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.999_epoch_004.pt",
+      "bytes": 389072185,
+      "mtime_ns": 1793789344921498967,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/epoch_002.pt",
+      "bytes": 1163245451,
+      "mtime_ns": 1793785406352154772,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.999_epoch_011.pt",
+      "bytes": 389072185,
+      "mtime_ns": 1793803066143961377,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.9998_epoch_012.pt",
+      "bytes": 389072375,
+      "mtime_ns": 1793805043871521523,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.9998_epoch_001.pt",
+      "bytes": 389072375,
+      "mtime_ns": 1793783444839693556,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.999_epoch_013.pt",
+      "bytes": 389072185,
+      "mtime_ns": 1793806995416800067,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.9998_epoch_003.pt",
+      "bytes": 389072375,
+      "mtime_ns": 1793787378713741761,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.999_epoch_005.pt",
+      "bytes": 389072185,
+      "mtime_ns": 1793791312751694961,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.999_epoch_002.pt",
+      "bytes": 389072185,
+      "mtime_ns": 1793785406676157823,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/epoch_006.pt",
+      "bytes": 1163245451,
+      "mtime_ns": 1793793269987705524,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/epoch_004.pt",
+      "bytes": 1163245451,
+      "mtime_ns": 1793789344601495637,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/epoch_003.pt",
+      "bytes": 1163245451,
+      "mtime_ns": 1793787378065740444,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/epoch_012.pt",
+      "bytes": 1163245451,
+      "mtime_ns": 1793805043215513935,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/epoch_005.pt",
+      "bytes": 1163245451,
+      "mtime_ns": 1793791312387686330,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.999_epoch_001.pt",
+      "bytes": 389072185,
+      "mtime_ns": 1793783444467690873,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.9998_epoch_011.pt",
+      "bytes": 389072887,
+      "mtime_ns": 1793843668252656074,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/epoch_001.pt",
+      "bytes": 1163245771,
+      "mtime_ns": 1793781964439429028,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.999_epoch_003.pt",
+      "bytes": 389072697,
+      "mtime_ns": 1793817472068926563,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.9998_epoch_005.pt",
+      "bytes": 389072887,
+      "mtime_ns": 1793824037092295217,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.999_epoch_006.pt",
+      "bytes": 389072697,
+      "mtime_ns": 1793827303725339070,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.9998_epoch_013.pt",
+      "bytes": 389072887,
+      "mtime_ns": 1793850180540210936,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/epoch_013.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793850179904211980,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.9998_epoch_006.pt",
+      "bytes": 389072887,
+      "mtime_ns": 1793827304069338161,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.9998_epoch_002.pt",
+      "bytes": 389072887,
+      "mtime_ns": 1793814189597923733,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.999_epoch_012.pt",
+      "bytes": 389072697,
+      "mtime_ns": 1793846925278485655,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/epoch_011.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793843667616655568,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.9998_epoch_004.pt",
+      "bytes": 389072887,
+      "mtime_ns": 1793820764646960399,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.999_epoch_004.pt",
+      "bytes": 389072697,
+      "mtime_ns": 1793820764326958792,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/epoch_002.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793814188957919365,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.999_epoch_011.pt",
+      "bytes": 389072697,
+      "mtime_ns": 1793843667936655822,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.9998_epoch_012.pt",
+      "bytes": 389072887,
+      "mtime_ns": 1793846925598486708,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.9998_epoch_001.pt",
+      "bytes": 389072695,
+      "mtime_ns": 1793781965127443035,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.999_epoch_013.pt",
+      "bytes": 389072697,
+      "mtime_ns": 1793850180228211447,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.9998_epoch_003.pt",
+      "bytes": 389072887,
+      "mtime_ns": 1793817472392928456,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.999_epoch_005.pt",
+      "bytes": 389072697,
+      "mtime_ns": 1793824036764293464,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.999_epoch_002.pt",
+      "bytes": 389072697,
+      "mtime_ns": 1793814189281921576,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/epoch_006.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793827303397339938,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/epoch_004.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793820763998957145,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/epoch_003.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793817471736924623,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/epoch_012.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793846924958484601,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/epoch_005.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793824036436291710,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.999_epoch_001.pt",
+      "bytes": 389072505,
+      "mtime_ns": 1793781964779435952,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.9998_epoch_011.pt",
+      "bytes": 389072823,
+      "mtime_ns": 1793950681238088595,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/epoch_001.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793917933498063621,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.999_epoch_003.pt",
+      "bytes": 389072633,
+      "mtime_ns": 1793924464200200827,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.9998_epoch_005.pt",
+      "bytes": 389072823,
+      "mtime_ns": 1793931005570255530,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.999_epoch_006.pt",
+      "bytes": 389072633,
+      "mtime_ns": 1793934279436926927,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.9998_epoch_013.pt",
+      "bytes": 389072823,
+      "mtime_ns": 1793957235959763058,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/epoch_013.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793957235279758771,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.9998_epoch_006.pt",
+      "bytes": 389072823,
+      "mtime_ns": 1793934279772928688,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.9998_epoch_002.pt",
+      "bytes": 389072823,
+      "mtime_ns": 1793921195246119678,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.999_epoch_012.pt",
+      "bytes": 389072633,
+      "mtime_ns": 1793953957289538890,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/epoch_011.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793950680574084823,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.9998_epoch_004.pt",
+      "bytes": 389072823,
+      "mtime_ns": 1793927737187807123,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.999_epoch_004.pt",
+      "bytes": 389072633,
+      "mtime_ns": 1793927736851805422,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/epoch_002.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793921194550106608,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.999_epoch_011.pt",
+      "bytes": 389072633,
+      "mtime_ns": 1793950680906086710,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.9998_epoch_012.pt",
+      "bytes": 389072823,
+      "mtime_ns": 1793953957617530389,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.9998_epoch_001.pt",
+      "bytes": 389072823,
+      "mtime_ns": 1793917934198066562,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.999_epoch_013.pt",
+      "bytes": 389072633,
+      "mtime_ns": 1793957235619760915,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.9998_epoch_003.pt",
+      "bytes": 389072823,
+      "mtime_ns": 1793924464524205597,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.999_epoch_005.pt",
+      "bytes": 389072633,
+      "mtime_ns": 1793931005242253874,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.999_epoch_002.pt",
+      "bytes": 389072633,
+      "mtime_ns": 1793921194902113222,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/epoch_006.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793934279096925147,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/epoch_004.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793927736515803719,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/epoch_003.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793924463868195940,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/epoch_012.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793953956957547498,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/epoch_005.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793931004910252199,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.999_epoch_001.pt",
+      "bytes": 389072633,
+      "mtime_ns": 1793917933850065100,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.9998_epoch_011.pt",
+      "bytes": 389072951,
+      "mtime_ns": 1793892753886763104,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/epoch_001.pt",
+      "bytes": 1163246027,
+      "mtime_ns": 1793859981339066591,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.999_epoch_003.pt",
+      "bytes": 389072761,
+      "mtime_ns": 1793866522838169343,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.9998_epoch_005.pt",
+      "bytes": 389072951,
+      "mtime_ns": 1793873130324392685,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.999_epoch_006.pt",
+      "bytes": 389072761,
+      "mtime_ns": 1793876406138867709,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.9998_epoch_013.pt",
+      "bytes": 389072951,
+      "mtime_ns": 1793899477142663464,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/epoch_013.pt",
+      "bytes": 1163246027,
+      "mtime_ns": 1793899476498668270,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.9998_epoch_006.pt",
+      "bytes": 389072951,
+      "mtime_ns": 1793876406478859489,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.9998_epoch_002.pt",
+      "bytes": 389072951,
+      "mtime_ns": 1793863246482943621,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.999_epoch_012.pt",
+      "bytes": 389072761,
+      "mtime_ns": 1793896014889272635,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/epoch_011.pt",
+      "bytes": 1163246027,
+      "mtime_ns": 1793892753238746579,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.9998_epoch_004.pt",
+      "bytes": 389072951,
+      "mtime_ns": 1793869800170692002,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.999_epoch_004.pt",
+      "bytes": 389072761,
+      "mtime_ns": 1793869799838699066,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/epoch_002.pt",
+      "bytes": 1163246027,
+      "mtime_ns": 1793863245818933301,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.999_epoch_011.pt",
+      "bytes": 389072761,
+      "mtime_ns": 1793892753562754841,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 11
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.9998_epoch_012.pt",
+      "bytes": 389072951,
+      "mtime_ns": 1793896015213274363,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.9998_epoch_001.pt",
+      "bytes": 389072951,
+      "mtime_ns": 1793859981999077312,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 1
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.999_epoch_013.pt",
+      "bytes": 389072761,
+      "mtime_ns": 1793899476818665881,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 13
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.9998_epoch_003.pt",
+      "bytes": 389072951,
+      "mtime_ns": 1793866523158171153,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.999_epoch_005.pt",
+      "bytes": 389072761,
+      "mtime_ns": 1793873129988389454,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.999_epoch_002.pt",
+      "bytes": 389072761,
+      "mtime_ns": 1793863246146938399,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 2
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/epoch_006.pt",
+      "bytes": 1163246027,
+      "mtime_ns": 1793876405790876132,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 6
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/epoch_004.pt",
+      "bytes": 1163246027,
+      "mtime_ns": 1793869799506706138,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 4
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/epoch_003.pt",
+      "bytes": 1163246027,
+      "mtime_ns": 1793866522514167511,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 3
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/epoch_012.pt",
+      "bytes": 1163246027,
+      "mtime_ns": 1793896014561270887,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 12
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/epoch_005.pt",
+      "bytes": 1163246027,
+      "mtime_ns": 1793873129656386259,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 5
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.999_epoch_001.pt",
+      "bytes": 389072761,
+      "mtime_ns": 1793859981659071789,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 1
+    }
+  ],
+  "keep": [
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.999_epoch_007.pt",
+      "bytes": 389735215,
+      "mtime_ns": 1793646361985219543,
+      "run": "reve_v78_v64_identity",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.999_epoch_008.pt",
+      "bytes": 389735215,
+      "mtime_ns": 1793648338061559970,
+      "run": "reve_v78_v64_identity",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/epoch_009.pt",
+      "bytes": 1165235595,
+      "mtime_ns": 1793650294669131063,
+      "run": "reve_v78_v64_identity",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.999_epoch_010.pt",
+      "bytes": 389735215,
+      "mtime_ns": 1793652239801826233,
+      "run": "reve_v78_v64_identity",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/epoch_010.pt",
+      "bytes": 1165235595,
+      "mtime_ns": 1793652239469823447,
+      "run": "reve_v78_v64_identity",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.9998_epoch_014.pt",
+      "bytes": 389735411,
+      "mtime_ns": 1793660027041296592,
+      "run": "reve_v78_v64_identity",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.9998_epoch_010.pt",
+      "bytes": 389735411,
+      "mtime_ns": 1793652240125828952,
+      "run": "reve_v78_v64_identity",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.9998_epoch_007.pt",
+      "bytes": 389735411,
+      "mtime_ns": 1793646362325199639,
+      "run": "reve_v78_v64_identity",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/epoch_007.pt",
+      "bytes": 1165235595,
+      "mtime_ns": 1793646361645239486,
+      "run": "reve_v78_v64_identity",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.999_epoch_009.pt",
+      "bytes": 389735215,
+      "mtime_ns": 1793650294993135461,
+      "run": "reve_v78_v64_identity",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.999_epoch_015.pt",
+      "bytes": 389735215,
+      "mtime_ns": 1793661963076270519,
+      "run": "reve_v78_v64_identity",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.9998_epoch_009.pt",
+      "bytes": 389735411,
+      "mtime_ns": 1793650295317139860,
+      "run": "reve_v78_v64_identity",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.999_epoch_014.pt",
+      "bytes": 389735215,
+      "mtime_ns": 1793660026713294246,
+      "run": "reve_v78_v64_identity",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/epoch_014.pt",
+      "bytes": 1165235595,
+      "mtime_ns": 1793660026385291901,
+      "run": "reve_v78_v64_identity",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.9998_epoch_015.pt",
+      "bytes": 389735411,
+      "mtime_ns": 1793661963388268559,
+      "run": "reve_v78_v64_identity",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/ema0.9998_epoch_008.pt",
+      "bytes": 389735411,
+      "mtime_ns": 1793648338385560794,
+      "run": "reve_v78_v64_identity",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/epoch_015.pt",
+      "bytes": 1165235595,
+      "mtime_ns": 1793661962740272631,
+      "run": "reve_v78_v64_identity",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/epoch_008.pt",
+      "bytes": 1165235595,
+      "mtime_ns": 1793648337737559148,
+      "run": "reve_v78_v64_identity",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.999_epoch_007.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1794168589325198150,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.999_epoch_008.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1794171849623503264,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/epoch_009.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1794175113739266717,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.999_epoch_010.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1794178360827491381,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/epoch_010.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1794178360491489850,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.9998_epoch_014.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1794191335931288332,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.9998_epoch_010.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1794178361179492984,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.9998_epoch_007.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1794168589661199964,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/epoch_007.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1794168588985196313,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.999_epoch_009.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1794175114079269440,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.9998_epoch_009.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1794175114419272162,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.999_epoch_014.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1794191335427292500,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/epoch_014.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1794191334915296735,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/ema0.9998_epoch_008.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1794171849999504268,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/epoch_008.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1794171849243502248,
+      "run": "reve_v92_image_contrastive",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.999_epoch_007.pt",
+      "bytes": 389072249,
+      "mtime_ns": 1793703900968648962,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.999_epoch_008.pt",
+      "bytes": 389072249,
+      "mtime_ns": 1793705851928922788,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/epoch_009.pt",
+      "bytes": 1163245515,
+      "mtime_ns": 1793707800067111149,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.999_epoch_010.pt",
+      "bytes": 389072249,
+      "mtime_ns": 1793709757020581421,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/epoch_010.pt",
+      "bytes": 1163245515,
+      "mtime_ns": 1793709756696576961,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.9998_epoch_014.pt",
+      "bytes": 389072439,
+      "mtime_ns": 1793717555502894626,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.9998_epoch_010.pt",
+      "bytes": 389072439,
+      "mtime_ns": 1793709757356586045,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.9998_epoch_007.pt",
+      "bytes": 389072439,
+      "mtime_ns": 1793703901296651237,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/epoch_007.pt",
+      "bytes": 1163245515,
+      "mtime_ns": 1793703900640646686,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.999_epoch_009.pt",
+      "bytes": 389072249,
+      "mtime_ns": 1793707800391125666,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.999_epoch_015.pt",
+      "bytes": 389072249,
+      "mtime_ns": 1793719516598009270,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.9998_epoch_009.pt",
+      "bytes": 389072439,
+      "mtime_ns": 1793707800727140721,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.999_epoch_014.pt",
+      "bytes": 389072249,
+      "mtime_ns": 1793717555162891796,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/epoch_014.pt",
+      "bytes": 1163245515,
+      "mtime_ns": 1793717554826889000,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.9998_epoch_015.pt",
+      "bytes": 389072439,
+      "mtime_ns": 1793719516950010554,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/ema0.9998_epoch_008.pt",
+      "bytes": 389072439,
+      "mtime_ns": 1793705852256929970,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/epoch_015.pt",
+      "bytes": 1163245515,
+      "mtime_ns": 1793719516254008014,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/epoch_008.pt",
+      "bytes": 1163245515,
+      "mtime_ns": 1793705851596915511,
+      "run": "reve_v80_v64_identity_direct",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.999_epoch_007.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1793742703464285683,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.999_epoch_008.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1793746012496212627,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/epoch_009.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1793749309475240622,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.999_epoch_010.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1793752613930790096,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/epoch_010.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1793752613534788878,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.9998_epoch_014.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1793765809725186488,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.9998_epoch_010.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1793752614318791289,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.9998_epoch_007.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1793742703804293329,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/epoch_007.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1793742703128278128,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.999_epoch_009.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1793749309807238150,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.999_epoch_015.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1793769107551326128,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.9998_epoch_009.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1793749310131235740,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.999_epoch_014.pt",
+      "bytes": 389072569,
+      "mtime_ns": 1793765809389187594,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/epoch_014.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1793765809053188700,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.9998_epoch_015.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1793769107891332678,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/ema0.9998_epoch_008.pt",
+      "bytes": 389072759,
+      "mtime_ns": 1793746012836212908,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/epoch_015.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1793769107203319425,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/epoch_008.pt",
+      "bytes": 1163245835,
+      "mtime_ns": 1793746012160212350,
+      "run": "reve_v81_grouped_identity_dualbatch",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.999_epoch_007.pt",
+      "bytes": 389072185,
+      "mtime_ns": 1793795232434066202,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.999_epoch_008.pt",
+      "bytes": 389072185,
+      "mtime_ns": 1793797193898426403,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/epoch_009.pt",
+      "bytes": 1163245451,
+      "mtime_ns": 1793799159842473186,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.999_epoch_010.pt",
+      "bytes": 389072185,
+      "mtime_ns": 1793801114448814210,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/epoch_010.pt",
+      "bytes": 1163245451,
+      "mtime_ns": 1793801114112813422,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.9998_epoch_014.pt",
+      "bytes": 389072375,
+      "mtime_ns": 1793808949562114927,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.9998_epoch_010.pt",
+      "bytes": 389072375,
+      "mtime_ns": 1793801114776814978,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.9998_epoch_007.pt",
+      "bytes": 389072375,
+      "mtime_ns": 1793795232758060034,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/epoch_007.pt",
+      "bytes": 1163245451,
+      "mtime_ns": 1793795232114072295,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.999_epoch_009.pt",
+      "bytes": 389072185,
+      "mtime_ns": 1793799160174475840,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.999_epoch_015.pt",
+      "bytes": 389072185,
+      "mtime_ns": 1793810896640723490,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.9998_epoch_009.pt",
+      "bytes": 389072375,
+      "mtime_ns": 1793799160502478460,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.999_epoch_014.pt",
+      "bytes": 389072185,
+      "mtime_ns": 1793808949214113072,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/epoch_014.pt",
+      "bytes": 1163245451,
+      "mtime_ns": 1793808948758110640,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.9998_epoch_015.pt",
+      "bytes": 389072375,
+      "mtime_ns": 1793810896964725309,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/ema0.9998_epoch_008.pt",
+      "bytes": 389072375,
+      "mtime_ns": 1793797194226426761,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/epoch_015.pt",
+      "bytes": 1163245451,
+      "mtime_ns": 1793810896312721649,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/epoch_008.pt",
+      "bytes": 1163245451,
+      "mtime_ns": 1793797193574426045,
+      "run": "reve_v84_global_identity_weight1",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.999_epoch_007.pt",
+      "bytes": 389072697,
+      "mtime_ns": 1793830580420071857,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.999_epoch_008.pt",
+      "bytes": 389072697,
+      "mtime_ns": 1793833858413206892,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/epoch_009.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793837131146492506,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.999_epoch_010.pt",
+      "bytes": 389072697,
+      "mtime_ns": 1793840399552831901,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/epoch_010.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793840399224829320,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.9998_epoch_014.pt",
+      "bytes": 389072887,
+      "mtime_ns": 1793853440839064345,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.9998_epoch_010.pt",
+      "bytes": 389072887,
+      "mtime_ns": 1793840399880834482,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.9998_epoch_007.pt",
+      "bytes": 389072887,
+      "mtime_ns": 1793830580744072802,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/epoch_007.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793830580092070903,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.999_epoch_009.pt",
+      "bytes": 389072697,
+      "mtime_ns": 1793837131466501067,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.999_epoch_015.pt",
+      "bytes": 389072697,
+      "mtime_ns": 1793856701505407513,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.9998_epoch_009.pt",
+      "bytes": 389072887,
+      "mtime_ns": 1793837131798509950,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.999_epoch_014.pt",
+      "bytes": 389072697,
+      "mtime_ns": 1793853440511039345,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/epoch_014.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793853440187014650,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.9998_epoch_015.pt",
+      "bytes": 389072887,
+      "mtime_ns": 1793856701837383907,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/ema0.9998_epoch_008.pt",
+      "bytes": 389072887,
+      "mtime_ns": 1793833858733208988,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/epoch_015.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793856701173431116,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/epoch_008.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793833858093204797,
+      "run": "reve_v82_grouped_identity_weight1",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.999_epoch_007.pt",
+      "bytes": 389072633,
+      "mtime_ns": 1793937563054845682,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.999_epoch_008.pt",
+      "bytes": 389072633,
+      "mtime_ns": 1793940851759931269,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/epoch_009.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793944121891002535,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.999_epoch_010.pt",
+      "bytes": 389072633,
+      "mtime_ns": 1793947409391713314,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/epoch_010.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793947409039710597,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.9998_epoch_014.pt",
+      "bytes": 389072823,
+      "mtime_ns": 1793960502353318570,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.9998_epoch_010.pt",
+      "bytes": 389072823,
+      "mtime_ns": 1793947409735715970,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.9998_epoch_007.pt",
+      "bytes": 389072823,
+      "mtime_ns": 1793937563402851654,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/epoch_007.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793937562706839699,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.999_epoch_009.pt",
+      "bytes": 389072633,
+      "mtime_ns": 1793944122242995303,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.999_epoch_015.pt",
+      "bytes": 389072633,
+      "mtime_ns": 1793963769070573280,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.9998_epoch_009.pt",
+      "bytes": 389072823,
+      "mtime_ns": 1793944122582988321,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.999_epoch_014.pt",
+      "bytes": 389072633,
+      "mtime_ns": 1793960502017312113,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/epoch_014.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793960501673305499,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.9998_epoch_015.pt",
+      "bytes": 389072823,
+      "mtime_ns": 1793963769402572783,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/ema0.9998_epoch_008.pt",
+      "bytes": 389072823,
+      "mtime_ns": 1793940852103937396,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/epoch_015.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793963768734573784,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/epoch_008.pt",
+      "bytes": 1163245963,
+      "mtime_ns": 1793940851403924927,
+      "run": "reve_v88_things_identity_picture",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.999_epoch_007.pt",
+      "bytes": 389072761,
+      "mtime_ns": 1793879674598067274,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.999_epoch_008.pt",
+      "bytes": 389072761,
+      "mtime_ns": 1793882949285911295,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/epoch_009.pt",
+      "bytes": 1163246027,
+      "mtime_ns": 1793886218229587916,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.999_epoch_010.pt",
+      "bytes": 389072761,
+      "mtime_ns": 1793889491065476138,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/epoch_010.pt",
+      "bytes": 1163246027,
+      "mtime_ns": 1793889490729477371,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.9998_epoch_014.pt",
+      "bytes": 389072951,
+      "mtime_ns": 1793902737135221201,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.9998_epoch_010.pt",
+      "bytes": 389072951,
+      "mtime_ns": 1793889491401474908,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 10
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.9998_epoch_007.pt",
+      "bytes": 389072951,
+      "mtime_ns": 1793879674918068268,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/epoch_007.pt",
+      "bytes": 1163246027,
+      "mtime_ns": 1793879674278066279,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 7
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.999_epoch_009.pt",
+      "bytes": 389072761,
+      "mtime_ns": 1793886218557600048,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.999_epoch_015.pt",
+      "bytes": 389072761,
+      "mtime_ns": 1793905994976412339,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.9998_epoch_009.pt",
+      "bytes": 389072951,
+      "mtime_ns": 1793886218881612032,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 9
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.999_epoch_014.pt",
+      "bytes": 389072761,
+      "mtime_ns": 1793902736783217006,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/epoch_014.pt",
+      "bytes": 1163246027,
+      "mtime_ns": 1793902736379212189,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 14
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.9998_epoch_015.pt",
+      "bytes": 389072951,
+      "mtime_ns": 1793905995360414346,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/ema0.9998_epoch_008.pt",
+      "bytes": 389072951,
+      "mtime_ns": 1793882949609914459,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 8
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/epoch_015.pt",
+      "bytes": 1163246027,
+      "mtime_ns": 1793905994536410039,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 15
+    },
+    {
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/epoch_008.pt",
+      "bytes": 1163246027,
+      "mtime_ns": 1793882948957908091,
+      "run": "reve_v83_concept_identity_weight1",
+      "epoch": 8
+    }
+  ],
+  "bytes": 139809990618
+}

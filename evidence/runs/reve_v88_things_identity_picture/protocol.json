@@ -1,0 +1,13 @@
+{
+  "parent": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1",
+  "dataset": "THINGS-EEG2",
+  "retrieval_batch": 256,
+  "auxiliary_batch": "same v82 sampler:32 images x4 subjects x2 trials",
+  "identity": "same image: same subject positive, other subject negative; pooled512, weight1",
+  "picture": "same subject: same image positive, other image negative; blur1536, weight0.1; exclude anchors without negatives",
+  "encoder_forwards": "unchanged: one retrieval pass, one auxiliary pass",
+  "selection": "unchanged public-test blur single Top5; all epochs retained; same-epoch raw/EMA comparison",
+  "weights": "picture0.1 fixed before training, gradient scales logged; not automatically tuned",
+  "test": "no augmentation; single and subject-aggregated clean/blur retrieval",
+  "queued": "GPU3 after v86"
+}

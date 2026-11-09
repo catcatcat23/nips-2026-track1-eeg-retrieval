@@ -24,11 +24,19 @@ def main():
     p=argparse.ArgumentParser()
     p.add_argument('step',choices=['check','prepare','preflight','train','evaluate','alljoined'])
     p.add_argument('--assets',type=Path,default=HOME/'configs/assets.local.json')
-    p.add_argument('--output',type=Path,default=HOME/'runs/things_v64')
+    p.add_argument('--output',type=Path,help='Explicit data-disk directory; required except for check')
     p.add_argument('--checkpoint',type=Path,help='evaluate: checkpoint to score (default: submitted EMA0.999 epoch 9)')
     p.add_argument('--reuse-local',action='store_true',help='prepare: link the existing Local OT image cache instead of re-extracting')
     p.add_argument('--preflight',action='store_true',help='alljoined: preflight only')
-    a=p.parse_args();assets=json.loads(a.assets.read_text())
+    a=p.parse_args()
+    if a.step != 'check':
+        if a.output is None:
+            p.error('--output must point to a data-disk directory')
+        resolved = a.output.expanduser().resolve()
+        if any(resolved.is_relative_to(Path(x)) for x in ('/home', '/tmp')):
+            p.error('--output resolves to system storage; use a data disk')
+        a.output = resolved
+    assets=json.loads(a.assets.read_text())
     os.environ.setdefault('HF_HOME',assets['hf_home']);os.environ.setdefault('HF_HUB_OFFLINE','1')
     os.environ.setdefault('LOCAL_OT_UPSTREAM_SCRIPT',assets['local_ot_upstream_script'])
     data=Path(assets['things_data_root'])

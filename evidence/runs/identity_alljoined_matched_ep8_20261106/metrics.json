@@ -1,0 +1,306 @@
+[
+  {
+    "model": "v67",
+    "image": 30,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 1623,
+    "ARI": 0.16590164399464882,
+    "NMI": 0.3299373608365614
+  },
+  {
+    "model": "v67",
+    "image": 30,
+    "layer": "pooled",
+    "space": "original",
+    "n": 1623,
+    "ARI": 0.16182592795880038,
+    "NMI": 0.39116304749020325,
+    "subject_silhouette": -0.06455398350954056
+  },
+  {
+    "model": "v85",
+    "image": 30,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 1623,
+    "ARI": 0.9756089496795599,
+    "NMI": 0.9799258981041983
+  },
+  {
+    "model": "v85",
+    "image": 30,
+    "layer": "pooled",
+    "space": "original",
+    "n": 1623,
+    "ARI": 0.9781230815284031,
+    "NMI": 0.9824132167527496,
+    "subject_silhouette": 0.5260782241821289
+  },
+  {
+    "model": "v86",
+    "image": 30,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 1623,
+    "ARI": 0.9741428226182399,
+    "NMI": 0.9786857140435854
+  },
+  {
+    "model": "v86",
+    "image": 30,
+    "layer": "pooled",
+    "space": "original",
+    "n": 1623,
+    "ARI": 0.9741514730588082,
+    "NMI": 0.9786869493083596,
+    "subject_silhouette": 0.35441237688064575
+  },
+  {
+    "model": "v87",
+    "image": 30,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 1623,
+    "ARI": 0.9804900205098205,
+    "NMI": 0.9836425254121923
+  },
+  {
+    "model": "v87",
+    "image": 30,
+    "layer": "pooled",
+    "space": "original",
+    "n": 1623,
+    "ARI": 0.980474134324999,
+    "NMI": 0.9836399913700665,
+    "subject_silhouette": 0.4546496868133545
+  },
+  {
+    "model": "v67",
+    "image": 30,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 1623,
+    "ARI": 0.09196385733958884,
+    "NMI": 0.24024533188612643
+  },
+  {
+    "model": "v67",
+    "image": 30,
+    "layer": "blur",
+    "space": "original",
+    "n": 1623,
+    "ARI": 0.06447795538082761,
+    "NMI": 0.21706289242681287,
+    "subject_silhouette": -0.0731726661324501
+  },
+  {
+    "model": "v85",
+    "image": 30,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 1623,
+    "ARI": 0.4707256761923225,
+    "NMI": 0.6432511281142306
+  },
+  {
+    "model": "v85",
+    "image": 30,
+    "layer": "blur",
+    "space": "original",
+    "n": 1623,
+    "ARI": 0.1490414264785963,
+    "NMI": 0.36088717229209333,
+    "subject_silhouette": -0.0348738469183445
+  },
+  {
+    "model": "v86",
+    "image": 30,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 1623,
+    "ARI": 0.419091077269625,
+    "NMI": 0.5975040456368759
+  },
+  {
+    "model": "v86",
+    "image": 30,
+    "layer": "blur",
+    "space": "original",
+    "n": 1623,
+    "ARI": 0.15028173799325664,
+    "NMI": 0.37846549969331555,
+    "subject_silhouette": -0.04395493119955063
+  },
+  {
+    "model": "v87",
+    "image": 30,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 1623,
+    "ARI": 0.4226770259781952,
+    "NMI": 0.5914532004213172
+  },
+  {
+    "model": "v87",
+    "image": 30,
+    "layer": "blur",
+    "space": "original",
+    "n": 1623,
+    "ARI": 0.14188221793072758,
+    "NMI": 0.3407366236741001,
+    "subject_silhouette": -0.03749803081154823
+  },
+  {
+    "model": "v67",
+    "image": 73,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 1626,
+    "ARI": 0.13847062556986733,
+    "NMI": 0.3015657758808607
+  },
+  {
+    "model": "v67",
+    "image": 73,
+    "layer": "pooled",
+    "space": "original",
+    "n": 1626,
+    "ARI": 0.14350432000054766,
+    "NMI": 0.3977926862594168,
+    "subject_silhouette": -0.0630762130022049
+  },
+  {
+    "model": "v85",
+    "image": 73,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 1626,
+    "ARI": 0.9935068252058188,
+    "NMI": 0.9944614338489143
+  },
+  {
+    "model": "v85",
+    "image": 73,
+    "layer": "pooled",
+    "space": "original",
+    "n": 1626,
+    "ARI": 0.9935068252058188,
+    "NMI": 0.9944614338489143,
+    "subject_silhouette": 0.5313464999198914
+  },
+  {
+    "model": "v86",
+    "image": 73,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 1626,
+    "ARI": 0.9668151337532938,
+    "NMI": 0.9745951159532396
+  },
+  {
+    "model": "v86",
+    "image": 73,
+    "layer": "pooled",
+    "space": "original",
+    "n": 1626,
+    "ARI": 0.9667683708824768,
+    "NMI": 0.9737540810312063,
+    "subject_silhouette": 0.3608677089214325
+  },
+  {
+    "model": "v87",
+    "image": 73,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 1626,
+    "ARI": 0.9792983609296675,
+    "NMI": 0.982852173562672
+  },
+  {
+    "model": "v87",
+    "image": 73,
+    "layer": "pooled",
+    "space": "original",
+    "n": 1626,
+    "ARI": 0.9806030075482868,
+    "NMI": 0.9839610162889079,
+    "subject_silhouette": 0.4521178901195526
+  },
+  {
+    "model": "v67",
+    "image": 73,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 1626,
+    "ARI": 0.07701269268673644,
+    "NMI": 0.22128709196747545
+  },
+  {
+    "model": "v67",
+    "image": 73,
+    "layer": "blur",
+    "space": "original",
+    "n": 1626,
+    "ARI": 0.06038928179362096,
+    "NMI": 0.20927593238993028,
+    "subject_silhouette": -0.07803455740213394
+  },
+  {
+    "model": "v85",
+    "image": 73,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 1626,
+    "ARI": 0.4737159559934008,
+    "NMI": 0.6462678412105032
+  },
+  {
+    "model": "v85",
+    "image": 73,
+    "layer": "blur",
+    "space": "original",
+    "n": 1626,
+    "ARI": 0.12688348519835563,
+    "NMI": 0.3285333722025079,
+    "subject_silhouette": -0.03778497502207756
+  },
+  {
+    "model": "v86",
+    "image": 73,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 1626,
+    "ARI": 0.48621082935325927,
+    "NMI": 0.6430143487044809
+  },
+  {
+    "model": "v86",
+    "image": 73,
+    "layer": "blur",
+    "space": "original",
+    "n": 1626,
+    "ARI": 0.11629089617333963,
+    "NMI": 0.33113624954121884,
+    "subject_silhouette": -0.050991468131542206
+  },
+  {
+    "model": "v87",
+    "image": 73,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 1626,
+    "ARI": 0.4244287407396375,
+    "NMI": 0.6141177605484384
+  },
+  {
+    "model": "v87",
+    "image": 73,
+    "layer": "blur",
+    "space": "original",
+    "n": 1626,
+    "ARI": 0.11390067926965469,
+    "NMI": 0.2988998823818308,
+    "subject_silhouette": -0.04195382073521614
+  }
+]

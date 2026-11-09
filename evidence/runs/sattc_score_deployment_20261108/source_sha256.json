@@ -1,0 +1,11 @@
+{
+  "compare_deployment.py": "0dd60db8666bd21cc561cadf85bba6b58580f61b6a713fd7f2ff9acd47a8e060",
+  "sattc_deployment.py": "0f8ca4fd065011b33fd07425d8bd06a2472cf32d642683c1d31223705bad5631",
+  "score_deployment.py": "6c908de46114a499cd066abd148833224be5c70cddc41ba7d5428c2bce591687",
+  "audit_deployment_inputs.py": "17e0a9e0482fd34d4209825242f8b76fd340eef6e0a9bfcc904f384ac8078db7",
+  "common_target_readout.py": "a048b45deb579d9d85f301af62fc7dec2fac9f33a8cbffefe915c7a2ead61dc2",
+  "pooled_residual_calibration.py": "b697228581672b20d055c9f90f3b8eff26fc62df72f94cef71ede6bf6ff575c3",
+  "SCORE_DEPLOYMENT.md": "3d4373fb13d80380fac2365073b5270d1929e4bc522205097f8ab5a2e3b884a6",
+  "DEPLOYMENT_COMPARISON.md": "eb0da8a70675b062cee4290b29334bc080a0e118bfa2aba275b8f0dadae2bd7e",
+  "sattc_deployment.md": "663d13c4d89aa6aac0683a9474d3558808fa790818071e2a43fcce00f4682b8b"
+}

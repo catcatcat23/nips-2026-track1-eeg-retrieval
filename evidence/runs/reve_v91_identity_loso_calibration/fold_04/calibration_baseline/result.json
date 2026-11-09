@@ -1,0 +1,242 @@
+{
+  "0": {
+    "metrics": {
+      "clean": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/4": {
+            "single_trial": {
+              "top1": 0.04918639053254438,
+              "top5": 0.16148915187376725,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.135,
+              "top5": 0.385,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.04918639053254438,
+          "top5": 0.16148915187376725,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.135,
+          "top5": 0.385,
+          "count": 200
+        }
+      },
+      "blur": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/4": {
+            "single_trial": {
+              "top1": 0.04875493096646943,
+              "top5": 0.16672830374753453,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.18,
+              "top5": 0.485,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.04875493096646943,
+          "top5": 0.16672830374753453,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.18,
+          "top5": 0.485,
+          "count": 200
+        }
+      }
+    },
+    "first_loss": null,
+    "last_loss": null
+  },
+  "50": {
+    "metrics": {
+      "clean": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/4": {
+            "single_trial": {
+              "top1": 0.051898422090729784,
+              "top5": 0.16629684418145957,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.205,
+              "top5": 0.49,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.051898422090729784,
+          "top5": 0.16629684418145957,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.205,
+          "top5": 0.49,
+          "count": 200
+        }
+      },
+      "blur": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/4": {
+            "single_trial": {
+              "top1": 0.05103550295857988,
+              "top5": 0.16740631163708086,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.235,
+              "top5": 0.535,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.05103550295857988,
+          "top5": 0.16740631163708086,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.235,
+          "top5": 0.535,
+          "count": 200
+        }
+      }
+    },
+    "first_loss": 9.836389541625977,
+    "last_loss": 0.124971903860569
+  },
+  "200": {
+    "metrics": {
+      "clean": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/4": {
+            "single_trial": {
+              "top1": 0.05436390532544379,
+              "top5": 0.1755424063116371,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.25,
+              "top5": 0.52,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.05436390532544379,
+          "top5": 0.1755424063116371,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.25,
+          "top5": 0.52,
+          "count": 200
+        }
+      },
+      "blur": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/4": {
+            "single_trial": {
+              "top1": 0.057692307692307696,
+              "top5": 0.19052021696252466,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.4,
+              "top5": 0.67,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.057692307692307696,
+          "top5": 0.19052021696252466,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.4,
+          "top5": 0.67,
+          "count": 200
+        }
+      }
+    },
+    "first_loss": 8.831640243530273,
+    "last_loss": 4.403288841247559
+  },
+  "1000": {
+    "metrics": {
+      "clean": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/4": {
+            "single_trial": {
+              "top1": 0.05461045364891519,
+              "top5": 0.1818293885601578,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.25,
+              "top5": 0.5,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.05461045364891519,
+          "top5": 0.1818293885601578,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.25,
+          "top5": 0.5,
+          "count": 200
+        }
+      },
+      "blur": {
+        "candidate_images": 200,
+        "per_subject": {
+          "Gifford2022Large/4": {
+            "single_trial": {
+              "top1": 0.05929487179487179,
+              "top5": 0.19606755424063116,
+              "count": 16224
+            },
+            "subject_aggregated": {
+              "top1": 0.385,
+              "top5": 0.7,
+              "count": 200
+            }
+          }
+        },
+        "single_trial": {
+          "top1": 0.05929487179487179,
+          "top5": 0.19606755424063116,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.385,
+          "top5": 0.7,
+          "count": 200
+        }
+      }
+    },
+    "first_loss": 8.95179557800293,
+    "last_loss": 7.079258441925049
+  }
+}

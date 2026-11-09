@@ -1,0 +1,11 @@
+{
+  "data_path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/upstream_dinov2_mean_sub01_seed21/data",
+  "subject": 1,
+  "seed": 21,
+  "epochs": 200,
+  "batch_size": 1024,
+  "lr": 0.001,
+  "device": "cuda:0",
+  "output_dir": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/upstream_dinov2_noadapter_sub01_seed21/results",
+  "ablation": "image adapter replaced by Identity; EEG initialization preserved"
+}

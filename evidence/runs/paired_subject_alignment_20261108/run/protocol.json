@@ -1,0 +1,41 @@
+{
+  "folds": [
+    1,
+    2
+  ],
+  "arms": [
+    "baseline",
+    "identity"
+  ],
+  "budgets": [
+    50,
+    200
+  ],
+  "seeds": [
+    33,
+    34,
+    35,
+    36,
+    37
+  ],
+  "methods": [
+    "paired_center",
+    "paired_orthogonal",
+    "shuffled_orthogonal"
+  ],
+  "reference": "each source subject four encoded trials averaged, then nine source subjects averaged for same image",
+  "label_use": "same-image correspondences from target labeled support only",
+  "rho": 0.1,
+  "regularization": "lambda = rho * spectral_norm(Xcenter.T @ Ycenter / n)",
+  "shuffle_regularization": "reuse correctly-paired lambda for each fold/arm/budget/seed; only row correspondence changes",
+  "original_heads": "frozen; native image adapter retained; no per-trial output normalization",
+  "selection": "fixed checkpoints and rho; no target test or extra development selection",
+  "evaluation": "200-image native blur gallery; all valid raw trial predictions averaged within image",
+  "source_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/identity_reference_loso_pilot",
+  "paper": "https://arxiv.org/html/2608.19134v1 equations6-8; solver only, not full SCORE",
+  "source_reference_budget": "36 source trials per calibration image, fixed equally for both models",
+  "numpy": "2.5.4",
+  "torch": "2.14.1+cu126",
+  "device": "cpu",
+  "threads": 4
+}

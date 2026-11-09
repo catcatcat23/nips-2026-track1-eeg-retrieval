@@ -1,0 +1,9 @@
+{
+  "source_sha": "72edf9492b9f19732d3bd8eb55c7a771aa59207c",
+  "snapshot": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/multiblur_v1/source-72edf9492b9f",
+  "archive_sha256": "497b32a7b7f9729e2f8aed1dbf49aa8cbf159803507f6cd36e6ccd40329d4020",
+  "gpus": "0,1",
+  "launch": "local torchrun; no Slurm",
+  "reference_sha": "0300630d9ec645e9fbec50d86206f89ac1535f7f",
+  "official_sha": "7aaccf34b11540e00cca2425c6b9094cae396bf6"
+}

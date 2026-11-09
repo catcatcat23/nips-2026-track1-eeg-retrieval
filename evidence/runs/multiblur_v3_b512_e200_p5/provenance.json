@@ -1,0 +1,10 @@
+{
+  "source_sha": "f85f4b30c779685f10f97265d150b198653d6a5b",
+  "snapshot": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/multiblur_v3_b512_e200_p5/source-f85f4b30c779",
+  "archive_sha256": "00664d063a54f9c67ad8a89ef4667542297b7d7abcc050f95f62110190d90a00",
+  "global_batch": 1024,
+  "epochs": 200,
+  "patience": 5,
+  "initialization": "fresh seed21",
+  "replaces": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/multiblur_v2_b512_e200"
+}

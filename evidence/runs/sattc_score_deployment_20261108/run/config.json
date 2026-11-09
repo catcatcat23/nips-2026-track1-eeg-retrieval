@@ -1,0 +1,71 @@
+{
+  "purpose": "fixed-checkpoint native blur retrieval; deployment-method transfer",
+  "folds": [
+    1,
+    2
+  ],
+  "arms": [
+    "baseline",
+    "identity"
+  ],
+  "trainable_parameters": 0,
+  "labels_used_for_calibration": false,
+  "target_data": "all unlabelled target single-trial test predictions; transductive",
+  "gallery": "same200 candidate images; each arm retains its native frozen image_adapter",
+  "input_normalization": "Q raw blur_head output; G native image_adapter output L2 normalized",
+  "aggregation": "mean final calibrated scores over all valid repetitions; labels in evaluator only",
+  "selection": "no test-based parameter or checkpoint selection; report every stage",
+  "device": "cpu",
+  "threads": 4,
+  "source_dir": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/sattc_score_deployment_20261108/sources/SATTC-CVPR2026-617cba60db52",
+  "environment": {
+    "python": "3.12.15",
+    "torch": "2.14.1+cu126",
+    "numpy": "2.5.4"
+  },
+  "checkpoint_role": "existing fixed development checkpoints; not selected anew",
+  "score_parameters": {
+    "neighbors": 10,
+    "rho": 0.1,
+    "min_landmarks": 12,
+    "max_landmarks": 160,
+    "epsilon": 1e-06,
+    "margin_floor": 1e-06
+  },
+  "sattc_parameters": {
+    "use_saw": true,
+    "saw_shrink": 0.6,
+    "saw_diag": false,
+    "global_auto_whiten": true,
+    "global_whiten_auto_shrink": 0.5,
+    "global_whiten_auto_diag": false,
+    "logits_auto_center": true,
+    "logits_auto_scale": true,
+    "use_csls": true,
+    "use_ada_csls": true,
+    "csls_k": 12,
+    "csls_kmin": 5,
+    "csls_kmax": 20,
+    "csls_alpha": 1.0,
+    "csls_m": 10,
+    "csls_k_side": 12,
+    "csls_col_alpha": 1.2,
+    "csls_col_m": 20,
+    "csls_col_kmin": 8,
+    "csls_col_kmax": 24,
+    "pre_csls_row_safe_k": 35,
+    "pre_csls_col_safe_k": 35,
+    "pre_csls_row_topL": 5,
+    "pre_csls_case2_tau_ratio": 0.5,
+    "pre_csls_case2_col_penalty": 0.5,
+    "pre_csls_case5_hub_high_quantile": 0.85,
+    "pre_csls_case5_hub_mid_quantile": 0.7,
+    "pre_csls_bg_penalty": 0.3,
+    "pre_csls_case6_penalty_high": 0.5,
+    "pre_csls_case6_penalty_mid": 0.25,
+    "enable_poe": true,
+    "poe_beta": 1.9,
+    "poe_lambda_pen": null,
+    "poe_lambda_bonus": null
+  }
+}

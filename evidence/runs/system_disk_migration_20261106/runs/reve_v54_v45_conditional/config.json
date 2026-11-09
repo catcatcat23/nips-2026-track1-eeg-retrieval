@@ -1,0 +1,33 @@
+{
+  "source_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v53_local_ot_epoch9/stage1_global.pt",
+  "checkpoint_sha256": "91336450ef37b36dfb8c4cc55879f939ff86a8b050aec85921f539dde3a61132",
+  "cache_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v53_local_ot_epoch9/stage2/cache",
+  "initial_reference": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v39_ridge_recovery/B/initial_head.pt",
+  "seed": 33,
+  "batch_size": 256,
+  "epochs": 40,
+  "patience": 5,
+  "lr": 0.0001,
+  "weight_decay": 0.05,
+  "scheduler": "OneCycle pct_start=.1 div_factor25 final_div_factor10000",
+  "selection": "clean subject_aggregated Top5; top3 checkpoints; public test development",
+  "source_epoch": 9,
+  "training_splits": [
+    "train",
+    "val"
+  ],
+  "loss": "original one-way ClipLoss norm_kind=y temperature=False; no distillation",
+  "condition": "e=512 REVE last tokens mean; FiLM width512, delta output zero-init scaled .1; frozen trained v45 eval",
+  "baseline": "exact v45 initialization and NoRidge architecture, v53 epoch9 h",
+  "blur_reference": {
+    "single_trial": {
+      "top1": 0.18999013806706114,
+      "top5": 0.44591346153846156
+    },
+    "subject_aggregated": {
+      "top1": 0.7895,
+      "top5": 0.9645
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "steps": 3,
+  "note": "Smoke updates discarded. Main run initializes original pretrained REVE and fresh heads again.",
+  "final_loss": 12.308566093444824,
+  "training_samples": 668400,
+  "batch_size": 256
+}

@@ -1,0 +1,15 @@
+{
+  "time_beijing": "2026-11-09T21:32:18.931428+08:00",
+  "reason": "Report reader expected sha256 but selected_source.json writes checkpoint_sha256. Training inputs and recorded checkpoint hashes match.",
+  "changes": "Correct source hash field with legacy compatibility; reject missing or conflicting hashes.",
+  "training_restarted": false,
+  "source_snapshot_modified": false,
+  "previous_report": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/report_fix_20261109T213218/previous_calibration_report",
+  "current_report": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/calibration_report",
+  "evaluation_statuses": {
+    "complete": 40
+  },
+  "issues": [],
+  "regression_tests_passed": 4,
+  "summarizer_sha256": "f3436873fe81d23bbb2b098d11f59e8ac9958f7b012f875cb4aed53e00b8199f"
+}

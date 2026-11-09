@@ -1,0 +1,41 @@
+{
+  "run_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v50_unet_recovery",
+  "source_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/dropout/best.pt",
+  "checkpoint_sha256": "c7093ff8b099eaf01a7ec2d70a180af08e2f35570a2d36d3e73494f36cb6aa8e",
+  "seed": 33,
+  "batch_size": 256,
+  "epochs": 40,
+  "patience": 5,
+  "lr": 0.0001,
+  "weight_decay": 0.05,
+  "scheduler": "OneCycleLR pct_start=0.1 default div_factor=25 final_div_factor=10000",
+  "training_splits": [
+    "train",
+    "val"
+  ],
+  "selection": "public test single_trial Top5, includes zero-output epoch0; not independent test",
+  "arms": {
+    "B": "deterministic vector U-Net, additive encoder-decoder skips, residual bottleneck, zero-init output scaled .1"
+  },
+  "frozen": "v33 epoch7 REVE, projection and image adapter unchanged; only U-Net head trains",
+  "output": "raw output; official average predictions then normalize",
+  "precision": "float32 TF32 disabled",
+  "source_sha": "5cefc0283c657101a676f6fb6a30bdf8a20e87c4",
+  "cache_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v38_frozen_v33_recovery/cache",
+  "cosine_weight": 0.0,
+  "parent_dependency_sha": "f361302dfd765ffa2b9be7386e91c477561202ca",
+  "blur_reference": "/home/Anteng/eeg-retrieval/audits/v33_v36_blur/v33_results.json",
+  "ridge_enabled": false,
+  "variant": "deterministic_vector_unet",
+  "control": "v45: same frozen v33 cache, clean loss, splits, seed, optimizer, schedule and selection; architecture and parameter count changed",
+  "dropout": 0.1,
+  "initialization": "fresh seed33; no trained recovery weights; zero output matches v45 initially; internal weights differ",
+  "widths": [
+    1536,
+    1024,
+    512,
+    256
+  ],
+  "purpose": "test whether U-shaped dimensional compression and decoder skip connections improve fixed clean-space retrieval"
+}

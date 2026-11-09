@@ -1,0 +1,33 @@
+{
+  "excluded_subjects": [
+    "Gifford2022Large/1",
+    "Gifford2022Large/2"
+  ],
+  "source_subjects": [
+    "Gifford2022Large/3",
+    "Gifford2022Large/4",
+    "Gifford2022Large/5",
+    "Gifford2022Large/6",
+    "Gifford2022Large/7",
+    "Gifford2022Large/8",
+    "Gifford2022Large/9",
+    "Gifford2022Large/10"
+  ],
+  "train_count": 481253,
+  "validation_count": 53467,
+  "train_images": 14886,
+  "validation_images": 1654,
+  "target_eeg_read": false,
+  "target_test_evaluated": false,
+  "predictability": "source-only entries from independently fitted per-subject train-image regressions",
+  "initialization": "original pretrained REVE; fresh random retrieval/OT heads",
+  "initialization_kind": "original_pretrained_reve_fresh_heads",
+  "foundation_note": "Exclusion concerns downstream training; REVE foundation pretraining is not audited",
+  "selection": "source image-disjoint validation blur single-trial Top5; best Raw/EMA",
+  "validation_ids_sha256": "089a3dc0f1ae2d799a1e1513dac2e86e5eea31c0557a33e202a6b049d5d89ef7",
+  "config_sha256": "c0f5c387e4c045473f2112c4baccbb244400985e9d701467402fa1b2755cf61b",
+  "source_hashes_sha256": "f76656315b097b5d470a4b043eeecad67be70ad0cfbc14ca412d0e127b9c35c4",
+  "train_order_sha256": "99fde3e873e238529a1958cf47f6753cdeefa2cafb243b2da88bac5068e1ac26",
+  "validation_order_sha256": "5612ad823caf3a18b4a47e7ba71fe0f319e6c6229a2d55052247a16295557b8a",
+  "manifest_sha256": "79f750d9593d0dbfc9fc1a0cfa0477651153b1ba8df205454d96bf349e940c9d"
+}

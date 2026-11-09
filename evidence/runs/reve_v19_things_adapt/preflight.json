@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "steps": 3,
+  "source_epoch": 0,
+  "note": "Smoke updates discarded. Full training reloads completed stage1 best with a fresh optimizer.",
+  "final_loss": 5.821682929992676,
+  "training_samples": 668400,
+  "batch_size": 256
+}

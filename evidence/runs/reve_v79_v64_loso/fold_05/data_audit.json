@@ -1,0 +1,20 @@
+{
+  "heldout": "Gifford2022Large/5",
+  "train_subjects": [
+    "Gifford2022Large/1",
+    "Gifford2022Large/10",
+    "Gifford2022Large/2",
+    "Gifford2022Large/3",
+    "Gifford2022Large/4",
+    "Gifford2022Large/6",
+    "Gifford2022Large/7",
+    "Gifford2022Large/8",
+    "Gifford2022Large/9"
+  ],
+  "train_count": 541392,
+  "validation_count": 60168,
+  "test_count": 16224,
+  "validation": "seen subjects, fixed image-disjoint 10% training-image holdout",
+  "test": "held-out subject, original 200 test images; evaluated only after selection",
+  "predictability": "subject-specific train-only weights; held-out weights never used"
+}

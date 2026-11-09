@@ -1,0 +1,527 @@
+{
+  "epoch": 8,
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v35_alljoined2025_b/best.pt",
+  "checkpoint_sha256": "00e97b05c7d93a3be9986c4b31b4ca14ebf3731ebfeeea550432f4ed50be558f",
+  "candidate_images": 200,
+  "trials": 324294,
+  "subjects": 20,
+  "aggregation": "all valid trials within subject and image; mean raw predictions then normalize",
+  "role": "original test images absent from v35 optimizer and validation selection; diagnostic evaluation, no weight updates",
+  "excluded_old_session_files": [
+    "/mnt/DATA-4/anteng/eeg-retrieval/data/Xu2025Alljoined/download/nm000134/sub-08/ses-02old/eeg/sub-08_ses-02old_task-images_run-01_eeg.edf",
+    "/mnt/DATA-4/anteng/eeg-retrieval/data/Xu2025Alljoined/download/nm000134/sub-08/ses-02old/eeg/sub-08_ses-02old_task-images_run-02_eeg.edf",
+    "/mnt/DATA-4/anteng/eeg-retrieval/data/Xu2025Alljoined/download/nm000134/sub-08/ses-02old/eeg/sub-08_ses-02old_task-images_run-03_eeg.edf",
+    "/mnt/DATA-4/anteng/eeg-retrieval/data/Xu2025Alljoined/download/nm000134/sub-08/ses-02old/eeg/sub-08_ses-02old_task-images_run-04_eeg.edf"
+  ],
+  "official_session_filter": true,
+  "clean": {
+    "candidate_images": 200,
+    "per_subject": {
+      "Xu2025Alljoined/sub-01": {
+        "single_trial": {
+          "top1": 0.021572978303747534,
+          "top5": 0.0935034516765286,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.11,
+          "top5": 0.385,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-02": {
+        "single_trial": {
+          "top1": 0.045426528599605526,
+          "top5": 0.16981015779092704,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.215,
+          "top5": 0.58,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-03": {
+        "single_trial": {
+          "top1": 0.04598693132782641,
+          "top5": 0.15571446184194304,
+          "count": 16222
+        },
+        "subject_aggregated": {
+          "top1": 0.245,
+          "top5": 0.57,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-04": {
+        "single_trial": {
+          "top1": 0.02323861184737718,
+          "top5": 0.09165998890464155,
+          "count": 16223
+        },
+        "subject_aggregated": {
+          "top1": 0.13,
+          "top5": 0.445,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-05": {
+        "single_trial": {
+          "top1": 0.03168145956607495,
+          "top5": 0.11156311637080868,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.165,
+          "top5": 0.415,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-06": {
+        "single_trial": {
+          "top1": 0.043022682445759367,
+          "top5": 0.14330621301775148,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.21,
+          "top5": 0.48,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-07": {
+        "single_trial": {
+          "top1": 0.021696252465483234,
+          "top5": 0.08438116370808678,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.14,
+          "top5": 0.395,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-08": {
+        "single_trial": {
+          "top1": 0.024239807561833096,
+          "top5": 0.09258002837229384,
+          "count": 16213
+        },
+        "subject_aggregated": {
+          "top1": 0.16,
+          "top5": 0.405,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-09": {
+        "single_trial": {
+          "top1": 0.00945038547624969,
+          "top5": 0.0425267346431236,
+          "count": 16084
+        },
+        "subject_aggregated": {
+          "top1": 0.025,
+          "top5": 0.12,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-10": {
+        "single_trial": {
+          "top1": 0.029154339250493096,
+          "top5": 0.11396696252465484,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.165,
+          "top5": 0.46,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-11": {
+        "single_trial": {
+          "top1": 0.016950197238658777,
+          "top5": 0.06866370808678501,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.1,
+          "top5": 0.305,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-12": {
+        "single_trial": {
+          "top1": 0.03081854043392505,
+          "top5": 0.11070019723865877,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.215,
+          "top5": 0.445,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-13": {
+        "single_trial": {
+          "top1": 0.02446992110453649,
+          "top5": 0.09498274161735701,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.18,
+          "top5": 0.445,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-14": {
+        "single_trial": {
+          "top1": 0.04135848126232742,
+          "top5": 0.15273668639053253,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.215,
+          "top5": 0.49,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-15": {
+        "single_trial": {
+          "top1": 0.015470907297830374,
+          "top5": 0.07267011834319527,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.11,
+          "top5": 0.28,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-16": {
+        "single_trial": {
+          "top1": 0.020710059171597635,
+          "top5": 0.08055966469428008,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.075,
+          "top5": 0.305,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-17": {
+        "single_trial": {
+          "top1": 0.017628205128205128,
+          "top5": 0.06804733727810651,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.07,
+          "top5": 0.235,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-18": {
+        "single_trial": {
+          "top1": 0.04098865877712032,
+          "top5": 0.14540187376725838,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.23,
+          "top5": 0.55,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-19": {
+        "single_trial": {
+          "top1": 0.010120957788200444,
+          "top5": 0.04535917057516663,
+          "count": 16204
+        },
+        "subject_aggregated": {
+          "top1": 0.015,
+          "top5": 0.17,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-20": {
+        "single_trial": {
+          "top1": 0.03349370836417469,
+          "top5": 0.11300271403898347,
+          "count": 16212
+        },
+        "subject_aggregated": {
+          "top1": 0.145,
+          "top5": 0.425,
+          "count": 200
+        }
+      }
+    },
+    "single_trial": {
+      "top1": 0.027382560269385188,
+      "top5": 0.1025859251173318,
+      "count": 324294
+    },
+    "subject_aggregated": {
+      "top1": 0.146,
+      "top5": 0.39525,
+      "count": 4000
+    }
+  },
+  "blur": {
+    "candidate_images": 200,
+    "per_subject": {
+      "Xu2025Alljoined/sub-01": {
+        "single_trial": {
+          "top1": 0.02329881656804734,
+          "top5": 0.0933801775147929,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.13,
+          "top5": 0.36,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-02": {
+        "single_trial": {
+          "top1": 0.04820019723865878,
+          "top5": 0.17461785009861933,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.3,
+          "top5": 0.67,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-03": {
+        "single_trial": {
+          "top1": 0.04524719516705708,
+          "top5": 0.159598076685982,
+          "count": 16222
+        },
+        "subject_aggregated": {
+          "top1": 0.36,
+          "top5": 0.715,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-04": {
+        "single_trial": {
+          "top1": 0.022807125685754794,
+          "top5": 0.0919681933058004,
+          "count": 16223
+        },
+        "subject_aggregated": {
+          "top1": 0.195,
+          "top5": 0.43,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-05": {
+        "single_trial": {
+          "top1": 0.034270216962524656,
+          "top5": 0.11717209072978303,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.14,
+          "top5": 0.475,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-06": {
+        "single_trial": {
+          "top1": 0.03809171597633136,
+          "top5": 0.14700443786982248,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.265,
+          "top5": 0.615,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-07": {
+        "single_trial": {
+          "top1": 0.020710059171597635,
+          "top5": 0.08512080867850098,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.165,
+          "top5": 0.42,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-08": {
+        "single_trial": {
+          "top1": 0.02306790846851292,
+          "top5": 0.09381360636526244,
+          "count": 16213
+        },
+        "subject_aggregated": {
+          "top1": 0.22,
+          "top5": 0.51,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-09": {
+        "single_trial": {
+          "top1": 0.009388211887590151,
+          "top5": 0.042278040288485454,
+          "count": 16084
+        },
+        "subject_aggregated": {
+          "top1": 0.025,
+          "top5": 0.09,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-10": {
+        "single_trial": {
+          "top1": 0.03377712031558185,
+          "top5": 0.12087031558185404,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.285,
+          "top5": 0.59,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-11": {
+        "single_trial": {
+          "top1": 0.016703648915187375,
+          "top5": 0.07211538461538461,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.17,
+          "top5": 0.425,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-12": {
+        "single_trial": {
+          "top1": 0.0322361932938856,
+          "top5": 0.11717209072978303,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.285,
+          "top5": 0.59,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-13": {
+        "single_trial": {
+          "top1": 0.02385355029585799,
+          "top5": 0.09695512820512821,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.195,
+          "top5": 0.5,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-14": {
+        "single_trial": {
+          "top1": 0.04043392504930966,
+          "top5": 0.1502095660749507,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.27,
+          "top5": 0.555,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-15": {
+        "single_trial": {
+          "top1": 0.016272189349112426,
+          "top5": 0.07427268244575937,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.14,
+          "top5": 0.3,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-16": {
+        "single_trial": {
+          "top1": 0.02015532544378698,
+          "top5": 0.08173076923076923,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.21,
+          "top5": 0.46,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-17": {
+        "single_trial": {
+          "top1": 0.015347633136094675,
+          "top5": 0.07063609467455621,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.12,
+          "top5": 0.3,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-18": {
+        "single_trial": {
+          "top1": 0.04252958579881657,
+          "top5": 0.15347633136094674,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.405,
+          "top5": 0.75,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-19": {
+        "single_trial": {
+          "top1": 0.010429523574426067,
+          "top5": 0.04795112317946186,
+          "count": 16204
+        },
+        "subject_aggregated": {
+          "top1": 0.03,
+          "top5": 0.16,
+          "count": 200
+        }
+      },
+      "Xu2025Alljoined/sub-20": {
+        "single_trial": {
+          "top1": 0.03546755489760671,
+          "top5": 0.1234887737478411,
+          "count": 16212
+        },
+        "subject_aggregated": {
+          "top1": 0.26,
+          "top5": 0.63,
+          "count": 200
+        }
+      }
+    },
+    "single_trial": {
+      "top1": 0.027623082758237896,
+      "top5": 0.10572196833737288,
+      "count": 324294
+    },
+    "subject_aggregated": {
+      "top1": 0.2085,
+      "top5": 0.47725,
+      "count": 4000
+    }
+  }
+}

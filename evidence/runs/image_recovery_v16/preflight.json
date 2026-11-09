@@ -1,0 +1,6 @@
+{
+  "initial_loss": 2.1983466148376465,
+  "tiny_top1": 1.0,
+  "steps": 5,
+  "batch256_gradients": "finite"
+}

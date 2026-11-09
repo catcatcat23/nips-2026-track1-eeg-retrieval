@@ -1,0 +1,12 @@
+{
+  "pid": 2759142,
+  "command": [
+    "bash",
+    "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/launch.sh",
+    "0"
+  ],
+  "started_unix": 1794145796.926992,
+  "source_manifest_sha256": "c2055c854203b040bf84e7adb54959c3125558c291d8e4aa981afc4369e57f42",
+  "launch_sha256": "63940aba195675b5862e4a5df876ea6529514fe61bc9cd8b33d4a166f066cb6e",
+  "config_sha256": "c4fcf31a82e97fd32b4bbb68b0986f32e1fc75eb87f12aee9afead8e12207df3"
+}

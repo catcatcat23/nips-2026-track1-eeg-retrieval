@@ -1,0 +1,13 @@
+{
+  "purpose": "Only change vs reve_v57_stage2_epoch18: frozen stage1 checkpoint epoch18 -> epoch9 (same 53 source files by SHA256, seed, v45 init, optimizer, schedule, clean-agg-Top5 selection)",
+  "stage1_checkpoint": "reve_v57_mixed_channel/stage1/epoch_009.pt sha256 e9c4f990fc3e5250395b5cdc2ac97a3272bc9c52eb60a76378b4744b0e45211a",
+  "source_global_sha256": "5a89dcc6573d90a0b74bbf8d55aa089452476a3027bc7d1af6510909dee1eb2e",
+  "exit_code": 0,
+  "early_stop_epoch": 15,
+  "selected_epoch": 10,
+  "selected_clean": {"single_top1": 17.34, "single_top5": 41.42, "agg_top1": 67.85, "agg_top5": 93.40},
+  "blur_unchanged_from_stage1_epoch9": {"single_top1": 19.45, "single_top5": 45.17, "agg_top1": 77.90, "agg_top5": 96.50},
+  "comparison_v57_stage2_epoch18_selected_epoch9_clean": {"single_top1": 14.98, "single_top5": 36.77, "agg_top1": 65.45, "agg_top5": 90.65},
+  "h_gap_within_group_cos_train_minus_test": {"v57ep9": 0.041, "v55ep11_v56mixed": 0.060, "v57ep18": 0.124},
+  "role": "public test used for model selection; development score, single seed"
+}

@@ -1,0 +1,177 @@
+{
+  "state": "complete",
+  "fingerprint": "4e6d66d7c1adb7951bd528d60fc268bb738772199ad0e2df02f6f33aa4efa769",
+  "pool": "seen",
+  "seed": 34,
+  "best_epoch": 0,
+  "trained_epochs": 5,
+  "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+  "checkpoint": {
+    "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+    "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+    "variant": "ema0.9998",
+    "epoch": 11,
+    "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+  },
+  "train_subjects": [
+    "Gifford2022Large/10",
+    "Gifford2022Large/3",
+    "Gifford2022Large/4",
+    "Gifford2022Large/5",
+    "Gifford2022Large/6",
+    "Gifford2022Large/7",
+    "Gifford2022Large/8",
+    "Gifford2022Large/9"
+  ],
+  "fit_images": 14886,
+  "fit_trials": 14886,
+  "dev_images": 1654,
+  "trainable_parameters": 67136,
+  "tests": {
+    "test01": {
+      "zero": {
+        "blur": {
+          "single_trial": {
+            "top1": 0.053007889546351085,
+            "top5": 0.18293885601577908,
+            "mean_rank": 41.259677021696255,
+            "count": 16224
+          },
+          "subject_aggregated": {
+            "top1": 0.205,
+            "top5": 0.585,
+            "mean_rank": 8.605,
+            "count": 200
+          }
+        },
+        "clean": {
+          "single_trial": {
+            "top1": 0.050727317554240633,
+            "top5": 0.16913214990138067,
+            "mean_rank": 45.49063116370809,
+            "count": 16224
+          },
+          "subject_aggregated": {
+            "top1": 0.165,
+            "top5": 0.435,
+            "mean_rank": 13.28,
+            "count": 200
+          }
+        },
+        "repeats_min": 80,
+        "repeats_max": 84,
+        "candidate_count": 200,
+        "correction_ratio": 0.0
+      },
+      "calibrated": {
+        "blur": {
+          "single_trial": {
+            "top1": 0.053007889546351085,
+            "top5": 0.18293885601577908,
+            "mean_rank": 41.259677021696255,
+            "count": 16224
+          },
+          "subject_aggregated": {
+            "top1": 0.205,
+            "top5": 0.585,
+            "mean_rank": 8.605,
+            "count": 200
+          }
+        },
+        "clean": {
+          "single_trial": {
+            "top1": 0.050727317554240633,
+            "top5": 0.16913214990138067,
+            "mean_rank": 45.49063116370809,
+            "count": 16224
+          },
+          "subject_aggregated": {
+            "top1": 0.165,
+            "top5": 0.435,
+            "mean_rank": 13.28,
+            "count": 200
+          }
+        },
+        "repeats_min": 80,
+        "repeats_max": 84,
+        "candidate_count": 200,
+        "correction_ratio": 0.0
+      }
+    },
+    "test02": {
+      "zero": {
+        "blur": {
+          "single_trial": {
+            "top1": 0.03883136094674556,
+            "top5": 0.14127218934911243,
+            "mean_rank": 46.62275024654832,
+            "count": 16224
+          },
+          "subject_aggregated": {
+            "top1": 0.09,
+            "top5": 0.3,
+            "mean_rank": 22.49,
+            "count": 200
+          }
+        },
+        "clean": {
+          "single_trial": {
+            "top1": 0.04203648915187377,
+            "top5": 0.14158037475345167,
+            "mean_rank": 49.13239644970414,
+            "count": 16224
+          },
+          "subject_aggregated": {
+            "top1": 0.06,
+            "top5": 0.295,
+            "mean_rank": 25.84,
+            "count": 200
+          }
+        },
+        "repeats_min": 80,
+        "repeats_max": 83,
+        "candidate_count": 200,
+        "correction_ratio": 0.0
+      },
+      "calibrated": {
+        "blur": {
+          "single_trial": {
+            "top1": 0.03883136094674556,
+            "top5": 0.14127218934911243,
+            "mean_rank": 46.62275024654832,
+            "count": 16224
+          },
+          "subject_aggregated": {
+            "top1": 0.09,
+            "top5": 0.3,
+            "mean_rank": 22.49,
+            "count": 200
+          }
+        },
+        "clean": {
+          "single_trial": {
+            "top1": 0.04203648915187377,
+            "top5": 0.14158037475345167,
+            "mean_rank": 49.13239644970414,
+            "count": 16224
+          },
+          "subject_aggregated": {
+            "top1": 0.06,
+            "top5": 0.295,
+            "mean_rank": 25.84,
+            "count": 200
+          }
+        },
+        "repeats_min": 80,
+        "repeats_max": 83,
+        "candidate_count": 200,
+        "correction_ratio": 0.0
+      }
+    }
+  },
+  "artifacts_sha256": {
+    "best.pt": "4f0c70f48facb2823e4faf81295e1d3e50a5b6a8d7a802bb845b8559efd895e9",
+    "last.pt": "d94d60c05ead8032b39408ee5b043f0cd802b11409d494cfe7949cf14b536f6d",
+    "history.json": "e26c49a08cbf4759b6f652ed71427a43e066137b3303c51479bf8ca83b21b702"
+  }
+}

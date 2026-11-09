@@ -1,0 +1,10 @@
+{
+  "state": "complete",
+  "epoch": 17,
+  "best": {
+    "epoch": 12,
+    "variant": "ema0.9998",
+    "score": 0.2739203370476925,
+    "path": "ema0.9998_epoch_012.pt"
+  }
+}

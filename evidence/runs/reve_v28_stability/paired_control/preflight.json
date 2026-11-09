@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "initialization_matches_reference": true,
+  "real_steps": [
+    {
+      "loss": 13.95772647857666,
+      "parts": {
+        "clean": 6.857866287231445,
+        "blur": 7.099860191345215,
+        "repeat_mean": 0.0
+      },
+      "gradient_l1": {
+        "encoder": 32825.12905025482,
+        "projection": 4444.302405357361,
+        "adapter": 15395.228927612305,
+        "recovery": 2705.3558827638626
+      }
+    },
+    {
+      "loss": 13.472450256347656,
+      "parts": {
+        "clean": 6.6273298263549805,
+        "blur": 6.845120429992676,
+        "repeat_mean": 0.0
+      },
+      "gradient_l1": {
+        "encoder": 28945.560376048088,
+        "projection": 3784.0343255996704,
+        "adapter": 11849.851001739502,
+        "recovery": 2585.429761528969
+      }
+    },
+    {
+      "loss": 14.210124969482422,
+      "parts": {
+        "clean": 6.435725212097168,
+        "blur": 7.774400234222412,
+        "repeat_mean": 0.0
+      },
+      "gradient_l1": {
+        "encoder": 40441.57223057747,
+        "projection": 6344.996128082275,
+        "adapter": 33677.17882537842,
+        "recovery": 2033.1835451722145
+      }
+    }
+  ],
+  "training_samples": 668400,
+  "steps_per_epoch": 2610,
+  "note": "Preflight updates discarded"
+}

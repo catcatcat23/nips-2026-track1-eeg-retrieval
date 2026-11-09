@@ -1,0 +1,43 @@
+{
+  "folds": [
+    1,
+    2
+  ],
+  "arms": [
+    "baseline",
+    "identity"
+  ],
+  "budgets": [
+    50,
+    200,
+    1000
+  ],
+  "seeds": [
+    33,
+    34,
+    35,
+    36,
+    37
+  ],
+  "steps": 200,
+  "report_steps": [
+    0,
+    10,
+    25,
+    50,
+    100,
+    200
+  ],
+  "lr": 0.0001,
+  "weight_decay": 0.01,
+  "batch_size": 50,
+  "gradient_clip": 1,
+  "optimizer": "AdamW",
+  "loss": "blur only, one-direction CE; image-side L2; temperature1",
+  "adapter": "e + Linear64to512(GELU(Linear512to64(LayerNorm(e)))); final linear zero init",
+  "frozen": "REVE cached pooled512; original blur_head; original image_adapter; no clean/local loss",
+  "support": "same nested subsets of fixed1000-image pool as common_target_readout; one fixed trial per image",
+  "selection": "fixed step200, no test-based checkpoint selection",
+  "comparison": "full native systems; native galleries differ across baseline and identity",
+  "device": "cpu"
+}

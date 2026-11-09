@@ -1,0 +1,12 @@
+{
+  "baseline": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v67_alljoined2025_v64recipe",
+  "scope": "global",
+  "original_batch": 256,
+  "auxiliary_batch": 0,
+  "auxiliary_layout": "original random retrieval batch",
+  "identity_weight": 1.0,
+  "temperature": 0.1,
+  "projection": "none; normalized pooled512",
+  "selection": "unchanged v67: public-test blur single-trial Top5 early stopping; retain all epochs for aggregate Top5 comparison",
+  "limitation": "public test used for model selection; not independent test. Grouped controls add encoder compute and change positive/negative composition."
+}

@@ -1,0 +1,3913 @@
+{
+  "updated_at": 1794174886.7277071,
+  "statuses": {
+    "base": {
+      "arm": "base",
+      "gpu": 2,
+      "worker_pid": 2776653,
+      "started_at": 1794154793.4357913,
+      "state": "complete",
+      "ended_at": 1794174835.08256
+    },
+    "identity": {
+      "arm": "identity",
+      "gpu": 3,
+      "worker_pid": 2776666,
+      "started_at": 1794154793.6021218,
+      "state": "complete",
+      "ended_at": 1794174871.0686202
+    }
+  },
+  "results": [
+    {
+      "arm": "base",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/calibration/novel01_seed33/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "db517fa866c5d4977e21b11b40815ae660c52c564845140e6982b252a7d983f4",
+        "pool": "novel01",
+        "seed": 33,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/1"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03938609467455621,
+                  "top5": 0.14065581854043394,
+                  "mean_rank": 47.79024901380671,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.13,
+                  "top5": 0.285,
+                  "mean_rank": 25.55,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04265285996055227,
+                  "top5": 0.14182692307692307,
+                  "mean_rank": 49.51057075936884,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.255,
+                  "mean_rank": 27.74,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03766025641025641,
+                  "top5": 0.13418392504930968,
+                  "mean_rank": 49.447177021696255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.27,
+                  "mean_rank": 26.65,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.036180966469428005,
+                  "top5": 0.13264299802761342,
+                  "mean_rank": 51.342948717948715,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.05,
+                  "top5": 0.245,
+                  "mean_rank": 29.9,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.3346266448497772
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "5ff2758256f334c798c0941ca76ae800a90f6a0e29e15ff1db95df09ad226312",
+          "last.pt": "74192816a8773991486c0c4d0898ed3c59b228d3b7407cfa7bd51509c0b2e3f3",
+          "history.json": "1fb65a5b6b63c3f55b0542eff128eb3c7a17c355aba00c4286123f6aab730dbd"
+        }
+      }
+    },
+    {
+      "arm": "base",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/calibration/novel01_seed34/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "3bcae902de449bfdacebfe69cd41c7829c57b1fa30eeef940d9327c15ccf8a7b",
+        "pool": "novel01",
+        "seed": 34,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/1"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03938609467455621,
+                  "top5": 0.14065581854043394,
+                  "mean_rank": 47.79024901380671,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.13,
+                  "top5": 0.285,
+                  "mean_rank": 25.55,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04265285996055227,
+                  "top5": 0.14182692307692307,
+                  "mean_rank": 49.51057075936884,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.255,
+                  "mean_rank": 27.74,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03796844181459566,
+                  "top5": 0.13553994082840237,
+                  "mean_rank": 49.194434171597635,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.265,
+                  "mean_rank": 26.525,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.03574950690335306,
+                  "top5": 0.13295118343195267,
+                  "mean_rank": 51.12006903353057,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.055,
+                  "top5": 0.225,
+                  "mean_rank": 29.895,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.3338114023208618
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "5bc6f206b75ba80b7cdc571a5819587c273969e4fd8463645f77dfba180db22b",
+          "last.pt": "ca162244d22011ac838505011cd1a45f904d2b85155da83277fbb52c6a9f89bc",
+          "history.json": "88283032e77d01041a5c7c137e4dc2165df0328257d9f1ccd36c2fe48a4329c0"
+        }
+      }
+    },
+    {
+      "arm": "base",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/calibration/novel01_seed35/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "62dcc8efb2f551f4dcb31398ae5351147f0430a90b95c7666e9571d8e544fee1",
+        "pool": "novel01",
+        "seed": 35,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/1"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03938609467455621,
+                  "top5": 0.14065581854043394,
+                  "mean_rank": 47.79024901380671,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.13,
+                  "top5": 0.285,
+                  "mean_rank": 25.55,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04265285996055227,
+                  "top5": 0.14182692307692307,
+                  "mean_rank": 49.51057075936884,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.255,
+                  "mean_rank": 27.74,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.038646449704142015,
+                  "top5": 0.13523175542406313,
+                  "mean_rank": 49.32655325443787,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.085,
+                  "top5": 0.28,
+                  "mean_rank": 26.61,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.03667406311637081,
+                  "top5": 0.13165680473372782,
+                  "mean_rank": 51.260355029585796,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.045,
+                  "top5": 0.23,
+                  "mean_rank": 29.825,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.3283706605434418
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "f0e66af31aeaf49229be572eb9f97191054a68e41bfdea9bd1c9942314b0cd36",
+          "last.pt": "500f376bf32f36290f06b59433a7b701a4192b971ed6b2567455ba7f326af2ba",
+          "history.json": "4d65e60a882ac10c21aaeb0829202efa0ddd96761c8ef82f9e09268165d09d35"
+        }
+      }
+    },
+    {
+      "arm": "base",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/calibration/novel01_seed36/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "8e7eae332287548048dcedfaf6e83cf12fc8141268a6f5081078cd550bc745d1",
+        "pool": "novel01",
+        "seed": 36,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/1"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03938609467455621,
+                  "top5": 0.14065581854043394,
+                  "mean_rank": 47.79024901380671,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.13,
+                  "top5": 0.285,
+                  "mean_rank": 25.55,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04265285996055227,
+                  "top5": 0.14182692307692307,
+                  "mean_rank": 49.51057075936884,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.255,
+                  "mean_rank": 27.74,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03833826429980276,
+                  "top5": 0.13868343195266272,
+                  "mean_rank": 48.949488412228796,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.285,
+                  "mean_rank": 25.7,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.03772189349112426,
+                  "top5": 0.13535502958579881,
+                  "mean_rank": 50.96640779092702,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.055,
+                  "top5": 0.255,
+                  "mean_rank": 29.265,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.3312843143939972
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "d5e2150d1dc54d967a51cbd6405ab9ba592b508e52e8b1f656f9255f715228e6",
+          "last.pt": "dd7b127553805e9bfcc242f9828e82e97e49e04f74a6cc09f058766086ed61a0",
+          "history.json": "a2ffd0c0205643cf30c61b2685bee77d4ad371ce35c444ab97ed8990d0e324f1"
+        }
+      }
+    },
+    {
+      "arm": "base",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/calibration/novel01_seed37/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "eddc2fbd751241682d83adb9df4eda27ccd554ce08000d3965dbabbd472cc5da",
+        "pool": "novel01",
+        "seed": 37,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/1"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03938609467455621,
+                  "top5": 0.14065581854043394,
+                  "mean_rank": 47.79024901380671,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.13,
+                  "top5": 0.285,
+                  "mean_rank": 25.55,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04265285996055227,
+                  "top5": 0.14182692307692307,
+                  "mean_rank": 49.51057075936884,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.255,
+                  "mean_rank": 27.74,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03685897435897436,
+                  "top5": 0.13307445759368836,
+                  "mean_rank": 49.606817061143985,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.085,
+                  "top5": 0.255,
+                  "mean_rank": 27.52,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.03574950690335306,
+                  "top5": 0.13190335305719922,
+                  "mean_rank": 51.453957100591715,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.23,
+                  "mean_rank": 30.705,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.33509016036987305
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "26169907faeb30ac2a9beff0430e98c0b170e0db8dfece826a3f59e934141120",
+          "last.pt": "5dcea78bfa4f8a2e2c1ca5f0db37db7d5070e5e39aedfbf54da62826670cf65c",
+          "history.json": "08d430740e34f468f3962c54b044a5614b4b717796a9d1523581e678df120ae8"
+        }
+      }
+    },
+    {
+      "arm": "base",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/calibration/novel02_seed33/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "c48f524e4d36e7584b714d5521abfc0bdca535c6455315cfdd838d04a3a69f97",
+        "pool": "novel02",
+        "seed": 33,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/2"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.058555226824457594,
+                  "top5": 0.18978057199211046,
+                  "mean_rank": 40.58015902366864,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.255,
+                  "top5": 0.655,
+                  "mean_rank": 7.25,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05350098619329389,
+                  "top5": 0.17480276134122288,
+                  "mean_rank": 44.758505917159766,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.19,
+                  "top5": 0.475,
+                  "mean_rank": 11.435,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.050727317554240633,
+                  "top5": 0.16333826429980275,
+                  "mean_rank": 46.14792899408284,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.14,
+                  "top5": 0.365,
+                  "mean_rank": 19.62,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.045118343195266274,
+                  "top5": 0.15175049309664695,
+                  "mean_rank": 48.56989644970414,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.115,
+                  "top5": 0.37,
+                  "mean_rank": 21.385,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.2589038908481598
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "4be6ad164fd4e9aa98fa3f1899c54dab83ddf1736ebc270eeee80195870a0c32",
+          "last.pt": "0af1fa50e72d3a9842b2f7ed866fcaa3d33e383e38ba0a6657ced935f1e6891e",
+          "history.json": "4c59ada5c2675b0f149d059fbdbae36504e6c3d63f8ab4b4e0f8e86e06a3b8c2"
+        }
+      }
+    },
+    {
+      "arm": "base",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/calibration/novel02_seed34/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "0428430166f3971fd3984579eeee9700fefcc844b212ededd817e8bc8c126ac5",
+        "pool": "novel02",
+        "seed": 34,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/2"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.058555226824457594,
+                  "top5": 0.18978057199211046,
+                  "mean_rank": 40.58015902366864,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.255,
+                  "top5": 0.655,
+                  "mean_rank": 7.25,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05350098619329389,
+                  "top5": 0.17480276134122288,
+                  "mean_rank": 44.758505917159766,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.19,
+                  "top5": 0.475,
+                  "mean_rank": 11.435,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.05054240631163708,
+                  "top5": 0.1637697238658777,
+                  "mean_rank": 46.07935774161736,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.135,
+                  "top5": 0.385,
+                  "mean_rank": 19.375,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04579635108481262,
+                  "top5": 0.15236686390532544,
+                  "mean_rank": 48.542036489151876,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.12,
+                  "top5": 0.365,
+                  "mean_rank": 21.22,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.2518599331378937
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "bbe1c83bd7c3a371af0f7df2b411b02f4842ade667749d0fa00ce2b449963f0f",
+          "last.pt": "320fca853f1ba7321e800a6459ad99905fe366e7f611424aec2b6ec7c5f7c6d8",
+          "history.json": "1a4dcbafa2c2621a44243a8523147b70605c4480244a1de8d89e88008567e9a0"
+        }
+      }
+    },
+    {
+      "arm": "base",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/calibration/novel02_seed35/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "bb4d0700488c4aa7811e9be54ada09846e1a418e421cd15c306c5a9684f96c1f",
+        "pool": "novel02",
+        "seed": 35,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/2"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.058555226824457594,
+                  "top5": 0.18978057199211046,
+                  "mean_rank": 40.58015902366864,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.255,
+                  "top5": 0.655,
+                  "mean_rank": 7.25,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05350098619329389,
+                  "top5": 0.17480276134122288,
+                  "mean_rank": 44.758505917159766,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.19,
+                  "top5": 0.475,
+                  "mean_rank": 11.435,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.04974112426035503,
+                  "top5": 0.16296844181459566,
+                  "mean_rank": 46.37358234714004,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.14,
+                  "top5": 0.375,
+                  "mean_rank": 19.915,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04474852071005917,
+                  "top5": 0.15125739644970415,
+                  "mean_rank": 48.72201676528599,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.12,
+                  "top5": 0.365,
+                  "mean_rank": 21.485,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.2559533715248108
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "1e93d9c665f0dc92db1d2e9b3cf159f96c751d1b16f4cba0826681b52f69b8c6",
+          "last.pt": "682b0199f21af8c123212c029f154cb08eb06c1324dbedadd93cf6a5ed56501c",
+          "history.json": "00b96949a19115b720854f40d7dc441cd7128f20298e62066c1281b03323ceb7"
+        }
+      }
+    },
+    {
+      "arm": "base",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/calibration/novel02_seed36/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "f95693ac979a6ab6e9902a238797b8ca97c72d0d6ece1209326b912f05f88559",
+        "pool": "novel02",
+        "seed": 36,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/2"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.058555226824457594,
+                  "top5": 0.18978057199211046,
+                  "mean_rank": 40.58015902366864,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.255,
+                  "top5": 0.655,
+                  "mean_rank": 7.25,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05350098619329389,
+                  "top5": 0.17480276134122288,
+                  "mean_rank": 44.758505917159766,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.19,
+                  "top5": 0.475,
+                  "mean_rank": 11.435,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.05054240631163708,
+                  "top5": 0.16457100591715976,
+                  "mean_rank": 46.07381040433925,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.14,
+                  "top5": 0.39,
+                  "mean_rank": 19.29,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04573471400394477,
+                  "top5": 0.1521819526627219,
+                  "mean_rank": 48.55621301775148,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.12,
+                  "top5": 0.365,
+                  "mean_rank": 21.26,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.25327566266059875
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "e04169007874e7121bbda6c620653e5db524abe75aba5afc95d1b936d205bc07",
+          "last.pt": "843c6cb120657f538d472d1ee49ee9f5c554c50f48b702575e98e08c12824643",
+          "history.json": "733c65364abeb7d352b9cf78bb9f411cc62de63abf3cab81ce51195a48b35121"
+        }
+      }
+    },
+    {
+      "arm": "base",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/calibration/novel02_seed37/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "2e00f6183f8ce58b9930c89cb4b459431d38ebd7da070c8babed60e21de9bcc2",
+        "pool": "novel02",
+        "seed": 37,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/2"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.058555226824457594,
+                  "top5": 0.18978057199211046,
+                  "mean_rank": 40.58015902366864,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.255,
+                  "top5": 0.655,
+                  "mean_rank": 7.25,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05350098619329389,
+                  "top5": 0.17480276134122288,
+                  "mean_rank": 44.758505917159766,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.19,
+                  "top5": 0.475,
+                  "mean_rank": 11.435,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.05029585798816568,
+                  "top5": 0.16457100591715976,
+                  "mean_rank": 45.92850098619329,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.145,
+                  "top5": 0.385,
+                  "mean_rank": 18.87,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.045426528599605526,
+                  "top5": 0.1521819526627219,
+                  "mean_rank": 48.42393984220907,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.12,
+                  "top5": 0.375,
+                  "mean_rank": 20.85,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.24953031539916992
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "d84bd563d2f5a9450ed5859ee5deb7827b31d650393df9f894e786477c0a90f2",
+          "last.pt": "c651df52c0bc4c9f4b5346105c403ae16773e8bef792ff4e342a9e886167989d",
+          "history.json": "c6a798beb4939546fa66e9c7a357972af06c53d1201c1a5bcf049f3c3fc09221"
+        }
+      }
+    },
+    {
+      "arm": "base",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/calibration/seen_seed33/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "c29b88a8beb89813f09182534b0c1d1163e66d0740f85ace9b24d8a61d4396f4",
+        "pool": "seen",
+        "seed": 33,
+        "best_epoch": 0,
+        "trained_epochs": 5,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/10",
+          "Gifford2022Large/3",
+          "Gifford2022Large/4",
+          "Gifford2022Large/5",
+          "Gifford2022Large/6",
+          "Gifford2022Large/7",
+          "Gifford2022Large/8",
+          "Gifford2022Large/9"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.058555226824457594,
+                  "top5": 0.18978057199211046,
+                  "mean_rank": 40.58015902366864,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.255,
+                  "top5": 0.655,
+                  "mean_rank": 7.25,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05350098619329389,
+                  "top5": 0.17480276134122288,
+                  "mean_rank": 44.758505917159766,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.19,
+                  "top5": 0.475,
+                  "mean_rank": 11.435,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.058555226824457594,
+                  "top5": 0.18978057199211046,
+                  "mean_rank": 40.58015902366864,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.255,
+                  "top5": 0.655,
+                  "mean_rank": 7.25,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05350098619329389,
+                  "top5": 0.17480276134122288,
+                  "mean_rank": 44.758505917159766,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.19,
+                  "top5": 0.475,
+                  "mean_rank": 11.435,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            }
+          },
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03938609467455621,
+                  "top5": 0.14065581854043394,
+                  "mean_rank": 47.79024901380671,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.13,
+                  "top5": 0.285,
+                  "mean_rank": 25.55,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04265285996055227,
+                  "top5": 0.14182692307692307,
+                  "mean_rank": 49.51057075936884,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.255,
+                  "mean_rank": 27.74,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03938609467455621,
+                  "top5": 0.14065581854043394,
+                  "mean_rank": 47.79024901380671,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.13,
+                  "top5": 0.285,
+                  "mean_rank": 25.55,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04265285996055227,
+                  "top5": 0.14182692307692307,
+                  "mean_rank": 49.51057075936884,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.255,
+                  "mean_rank": 27.74,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "a263561cad6af80c8100b17344bc7175af500bf846a0a8099a488f30e354e894",
+          "last.pt": "b9017c79a3bbc29c6a1eff42ca4c90e70f515c0e2d22b9ce25975a9e07fb84e7",
+          "history.json": "54e96590031822b730354ceffa02e4d11b1b1193d6473214d01b81a3b4d7a473"
+        }
+      }
+    },
+    {
+      "arm": "base",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/calibration/seen_seed34/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "6aece517a699948fa3f6fb5664896a00334fd31a06b0f8584b93404ad707beea",
+        "pool": "seen",
+        "seed": 34,
+        "best_epoch": 1,
+        "trained_epochs": 6,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/10",
+          "Gifford2022Large/3",
+          "Gifford2022Large/4",
+          "Gifford2022Large/5",
+          "Gifford2022Large/6",
+          "Gifford2022Large/7",
+          "Gifford2022Large/8",
+          "Gifford2022Large/9"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.058555226824457594,
+                  "top5": 0.18978057199211046,
+                  "mean_rank": 40.58015902366864,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.255,
+                  "top5": 0.655,
+                  "mean_rank": 7.25,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05350098619329389,
+                  "top5": 0.17480276134122288,
+                  "mean_rank": 44.758505917159766,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.19,
+                  "top5": 0.475,
+                  "mean_rank": 11.435,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.058616863905325445,
+                  "top5": 0.1892258382642998,
+                  "mean_rank": 40.587339743589745,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.255,
+                  "top5": 0.655,
+                  "mean_rank": 7.29,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05331607495069034,
+                  "top5": 0.17467948717948717,
+                  "mean_rank": 44.771388067061146,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.19,
+                  "top5": 0.475,
+                  "mean_rank": 11.47,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0018438040278851986
+            }
+          },
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03938609467455621,
+                  "top5": 0.14065581854043394,
+                  "mean_rank": 47.79024901380671,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.13,
+                  "top5": 0.285,
+                  "mean_rank": 25.55,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04265285996055227,
+                  "top5": 0.14182692307692307,
+                  "mean_rank": 49.51057075936884,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.255,
+                  "mean_rank": 27.74,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03926282051282051,
+                  "top5": 0.14084072978303747,
+                  "mean_rank": 47.790002465483234,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.13,
+                  "top5": 0.285,
+                  "mean_rank": 25.495,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04252958579881657,
+                  "top5": 0.14213510848126232,
+                  "mean_rank": 49.51556336291913,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.255,
+                  "mean_rank": 27.765,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0021206731908023357
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "64aedb7af22f69ad0ac3238b32b87f2cf3644881017587d01b06f58214378ad5",
+          "last.pt": "a47e98ec679329bfdcfb4127c2779d332ac95d221334435d45faf8fe07a37afa",
+          "history.json": "6c459c3400682f7b76d0422eca564e0798c95b62ff711be8567ad7cb7adc5690"
+        }
+      }
+    },
+    {
+      "arm": "base",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/calibration/seen_seed35/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "5cac7cbb96d39fe0f8fe5fd043bb872ada7079d03eb0ec0a55e8d673e5844bca",
+        "pool": "seen",
+        "seed": 35,
+        "best_epoch": 1,
+        "trained_epochs": 6,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/10",
+          "Gifford2022Large/3",
+          "Gifford2022Large/4",
+          "Gifford2022Large/5",
+          "Gifford2022Large/6",
+          "Gifford2022Large/7",
+          "Gifford2022Large/8",
+          "Gifford2022Large/9"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.058555226824457594,
+                  "top5": 0.18978057199211046,
+                  "mean_rank": 40.58015902366864,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.255,
+                  "top5": 0.655,
+                  "mean_rank": 7.25,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05350098619329389,
+                  "top5": 0.17480276134122288,
+                  "mean_rank": 44.758505917159766,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.19,
+                  "top5": 0.475,
+                  "mean_rank": 11.435,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.058493589743589744,
+                  "top5": 0.18953402366863906,
+                  "mean_rank": 40.58481262327416,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.255,
+                  "top5": 0.655,
+                  "mean_rank": 7.295,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05350098619329389,
+                  "top5": 0.17467948717948717,
+                  "mean_rank": 44.77120315581854,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.19,
+                  "top5": 0.475,
+                  "mean_rank": 11.47,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0018696427578106523
+            }
+          },
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03938609467455621,
+                  "top5": 0.14065581854043394,
+                  "mean_rank": 47.79024901380671,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.13,
+                  "top5": 0.285,
+                  "mean_rank": 25.55,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04265285996055227,
+                  "top5": 0.14182692307692307,
+                  "mean_rank": 49.51057075936884,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.255,
+                  "mean_rank": 27.74,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03926282051282051,
+                  "top5": 0.14065581854043394,
+                  "mean_rank": 47.797707100591715,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.13,
+                  "top5": 0.285,
+                  "mean_rank": 25.555,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04252958579881657,
+                  "top5": 0.14213510848126232,
+                  "mean_rank": 49.52181952662722,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.255,
+                  "mean_rank": 27.76,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0019664622377604246
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "f5a34cede4c7a9e4a7197c514a1b07f9a008434b551ef2341f5b459106b75f2d",
+          "last.pt": "4784372523298da21866fe52798a61d976bb286576215fbd4139b851288447d3",
+          "history.json": "4a24c296401bc907fdb8b46faa88ae42c4ad7f7757f69280bf118612a3585642"
+        }
+      }
+    },
+    {
+      "arm": "base",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/calibration/seen_seed36/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "f3c93026fe3f5a00ec6f15f8579b4cb39bbf74d4e0ac323900726d7f97a3ab20",
+        "pool": "seen",
+        "seed": 36,
+        "best_epoch": 1,
+        "trained_epochs": 6,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/10",
+          "Gifford2022Large/3",
+          "Gifford2022Large/4",
+          "Gifford2022Large/5",
+          "Gifford2022Large/6",
+          "Gifford2022Large/7",
+          "Gifford2022Large/8",
+          "Gifford2022Large/9"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.058555226824457594,
+                  "top5": 0.18978057199211046,
+                  "mean_rank": 40.58015902366864,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.255,
+                  "top5": 0.655,
+                  "mean_rank": 7.25,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05350098619329389,
+                  "top5": 0.17480276134122288,
+                  "mean_rank": 44.758505917159766,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.19,
+                  "top5": 0.475,
+                  "mean_rank": 11.435,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.058678500986193295,
+                  "top5": 0.1892258382642998,
+                  "mean_rank": 40.587339743589745,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.255,
+                  "top5": 0.66,
+                  "mean_rank": 7.295,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05350098619329389,
+                  "top5": 0.17467948717948717,
+                  "mean_rank": 44.77111070019724,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.19,
+                  "top5": 0.475,
+                  "mean_rank": 11.465,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0020758865866810083
+            }
+          },
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03938609467455621,
+                  "top5": 0.14065581854043394,
+                  "mean_rank": 47.79024901380671,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.13,
+                  "top5": 0.285,
+                  "mean_rank": 25.55,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04265285996055227,
+                  "top5": 0.14182692307692307,
+                  "mean_rank": 49.51057075936884,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.255,
+                  "mean_rank": 27.74,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03932445759368836,
+                  "top5": 0.14053254437869822,
+                  "mean_rank": 47.8194033530572,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.125,
+                  "top5": 0.285,
+                  "mean_rank": 25.635,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04252958579881657,
+                  "top5": 0.14201183431952663,
+                  "mean_rank": 49.53457840236686,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.255,
+                  "mean_rank": 27.795,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0022779626306146383
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "9616b427f19b1ff0134fd9e4ab027d26d512cac87955556f8d1fbcac40f2e797",
+          "last.pt": "c1fc3244a1cabfc27bd7bfed6c381e9d835def35d0b06602fcdfe782e58d5a74",
+          "history.json": "17286677a15207ecb30a53d9327d333f68e1905eeece290aefc9b4405c79a14a"
+        }
+      }
+    },
+    {
+      "arm": "base",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/calibration/seen_seed37/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "bca0e0ac1599d8058bd78dbe1b7401077be21dbcf9ad804f631b65ee40d27f70",
+        "pool": "seen",
+        "seed": 37,
+        "best_epoch": 1,
+        "trained_epochs": 6,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/10",
+          "Gifford2022Large/3",
+          "Gifford2022Large/4",
+          "Gifford2022Large/5",
+          "Gifford2022Large/6",
+          "Gifford2022Large/7",
+          "Gifford2022Large/8",
+          "Gifford2022Large/9"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.058555226824457594,
+                  "top5": 0.18978057199211046,
+                  "mean_rank": 40.58015902366864,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.255,
+                  "top5": 0.655,
+                  "mean_rank": 7.25,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05350098619329389,
+                  "top5": 0.17480276134122288,
+                  "mean_rank": 44.758505917159766,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.19,
+                  "top5": 0.475,
+                  "mean_rank": 11.435,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.058616863905325445,
+                  "top5": 0.1891025641025641,
+                  "mean_rank": 40.59217825443787,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.255,
+                  "top5": 0.655,
+                  "mean_rank": 7.31,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05350098619329389,
+                  "top5": 0.17467948717948717,
+                  "mean_rank": 44.77391518737672,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.19,
+                  "top5": 0.475,
+                  "mean_rank": 11.47,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.001654365798458457
+            }
+          },
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03938609467455621,
+                  "top5": 0.14065581854043394,
+                  "mean_rank": 47.79024901380671,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.13,
+                  "top5": 0.285,
+                  "mean_rank": 25.55,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04265285996055227,
+                  "top5": 0.14182692307692307,
+                  "mean_rank": 49.51057075936884,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.255,
+                  "mean_rank": 27.74,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03926282051282051,
+                  "top5": 0.14096400394477318,
+                  "mean_rank": 47.78673570019724,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.13,
+                  "top5": 0.285,
+                  "mean_rank": 25.53,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04259122287968442,
+                  "top5": 0.14188856015779092,
+                  "mean_rank": 49.511895956607496,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.255,
+                  "mean_rank": 27.79,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0019769950304180384
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "84c79fb457078cac897a3509cd3c2cba5df5ed7f05ebbf653a1335a8e213687a",
+          "last.pt": "fe3b4579b07d88aa5b898764da01488d132edb23f911fca5df5d73118bc15aa6",
+          "history.json": "01c1fde332077eb937efbf4bd7b6da31fbdf75d41984c5dfaaf17943a500d273"
+        }
+      }
+    },
+    {
+      "arm": "identity",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/calibration/novel01_seed33/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "754458d7700e48c8d2c4856ecf17f36b7deefa81cdbb1e156b5e0f319e066aec",
+        "pool": "novel01",
+        "seed": 33,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/1"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03883136094674556,
+                  "top5": 0.14127218934911243,
+                  "mean_rank": 46.62275024654832,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.3,
+                  "mean_rank": 22.49,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04203648915187377,
+                  "top5": 0.14158037475345167,
+                  "mean_rank": 49.13239644970414,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.295,
+                  "mean_rank": 25.84,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03790680473372781,
+                  "top5": 0.13147189349112426,
+                  "mean_rank": 48.52785996055227,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.27,
+                  "mean_rank": 25.775,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.03655078895463511,
+                  "top5": 0.12912968441814596,
+                  "mean_rank": 51.85496794871795,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.05,
+                  "top5": 0.235,
+                  "mean_rank": 30.29,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.2357489913702011
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "d4fe95de379616dc6fd762621fd2fd37b129bc896fecbc3ef110ad50882c1b0f",
+          "last.pt": "0a373edcc1b14af1051e2f2087ab848bc6dc9e19d56213b2caf1a5208f253fde",
+          "history.json": "c2277a4a49d531ede9ff2456a90382ba1c8859bc23ac1ae4d78f76ccbd64c574"
+        }
+      }
+    },
+    {
+      "arm": "identity",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/calibration/novel01_seed34/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "427f72d9f49dea1ba58b535d231a9ac74d848247ce7fdceff6f55bc0e10c9667",
+        "pool": "novel01",
+        "seed": 34,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/1"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03883136094674556,
+                  "top5": 0.14127218934911243,
+                  "mean_rank": 46.62275024654832,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.3,
+                  "mean_rank": 22.49,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04203648915187377,
+                  "top5": 0.14158037475345167,
+                  "mean_rank": 49.13239644970414,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.295,
+                  "mean_rank": 25.84,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03821499013806706,
+                  "top5": 0.13535502958579881,
+                  "mean_rank": 47.82550542406312,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.065,
+                  "top5": 0.28,
+                  "mean_rank": 24.56,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.036304240631163706,
+                  "top5": 0.1301775147928994,
+                  "mean_rank": 51.28020216962525,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.27,
+                  "mean_rank": 29.3,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.23292332887649536
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "16657d6fe936dc61aa16ef9018497272e3a70b3a3892438cc974d5494ecf0a5c",
+          "last.pt": "2964c5712e6d47d6276efd65b6224c72957bb5e90309eb071636947ab87d37c5",
+          "history.json": "4b392cf344ffae5146f6c48607c67f2a4c09252f97a580b06d37c8e60b19f931"
+        }
+      }
+    },
+    {
+      "arm": "identity",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/calibration/novel01_seed35/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "b2beaf4f24a6f711f510c9137793219615305c4aea0c53afef53cbfab496474b",
+        "pool": "novel01",
+        "seed": 35,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/1"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03883136094674556,
+                  "top5": 0.14127218934911243,
+                  "mean_rank": 46.62275024654832,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.3,
+                  "mean_rank": 22.49,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04203648915187377,
+                  "top5": 0.14158037475345167,
+                  "mean_rank": 49.13239644970414,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.295,
+                  "mean_rank": 25.84,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.039694280078895465,
+                  "top5": 0.13652613412228798,
+                  "mean_rank": 47.4530325443787,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.08,
+                  "top5": 0.295,
+                  "mean_rank": 23.59,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.03741370808678501,
+                  "top5": 0.13147189349112426,
+                  "mean_rank": 50.79536489151874,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.07,
+                  "top5": 0.27,
+                  "mean_rank": 28.445,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.2174283266067505
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "4ba9ffe11ab76d96c98c6fdd3295cc442ed2538af0fd5aae9e7dfc51f78c58db",
+          "last.pt": "407898f6b0e537df32f4973f2ea661b5f097118c8ee9d693dcf36f1666dc98f9",
+          "history.json": "39de0a112616841f7629e06aeb48e29f000f0b817c0bd037a43b14b95da385c2"
+        }
+      }
+    },
+    {
+      "arm": "identity",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/calibration/novel01_seed36/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "3af286de2d4ce28c92179e1aa6125684f0c722ec8547a4f143a49cc8a886353e",
+        "pool": "novel01",
+        "seed": 36,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/1"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03883136094674556,
+                  "top5": 0.14127218934911243,
+                  "mean_rank": 46.62275024654832,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.3,
+                  "mean_rank": 22.49,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04203648915187377,
+                  "top5": 0.14158037475345167,
+                  "mean_rank": 49.13239644970414,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.295,
+                  "mean_rank": 25.84,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03796844181459566,
+                  "top5": 0.13350591715976332,
+                  "mean_rank": 48.04191321499014,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.065,
+                  "top5": 0.28,
+                  "mean_rank": 25.145,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.036057692307692304,
+                  "top5": 0.1291913214990138,
+                  "mean_rank": 51.3075073964497,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.055,
+                  "top5": 0.24,
+                  "mean_rank": 29.845,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.22346249222755432
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "5f249220d957b3dae2b223c3a511f6fb79f490b9da7cdd660b725464f5f7976e",
+          "last.pt": "3a1f48ed1a04b6e503876f68723532b39e5e6e44f7ea237e8c88a566c4281d10",
+          "history.json": "ad955954b76e89a73036fb11260c58bce9e601d95a058f2ebee6615658a653c9"
+        }
+      }
+    },
+    {
+      "arm": "identity",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/calibration/novel01_seed37/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "87fd3fc74d0c5fa75b1b8f94ec711ceee142098e83de8026390073dd52ea3c50",
+        "pool": "novel01",
+        "seed": 37,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/1"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03883136094674556,
+                  "top5": 0.14127218934911243,
+                  "mean_rank": 46.62275024654832,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.3,
+                  "mean_rank": 22.49,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04203648915187377,
+                  "top5": 0.14158037475345167,
+                  "mean_rank": 49.13239644970414,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.295,
+                  "mean_rank": 25.84,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03938609467455621,
+                  "top5": 0.13652613412228798,
+                  "mean_rank": 47.363042406311635,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.065,
+                  "top5": 0.285,
+                  "mean_rank": 23.81,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.03655078895463511,
+                  "top5": 0.13085552268244577,
+                  "mean_rank": 50.78907790927022,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.26,
+                  "mean_rank": 28.5,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.2269812822341919
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "bc13fb2b7ce2f27ec68bdb519ea4e4cb26c0f5011eb755a23965b162701c5440",
+          "last.pt": "d480682e5b42ec37bc42ea95a1cb38701f7c7350834f03edcf4804045021df91",
+          "history.json": "6b3dc30738c89d172c43c90a9c0b1bfd323e777881f03243446600e203d0e33f"
+        }
+      }
+    },
+    {
+      "arm": "identity",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/calibration/novel02_seed33/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "4fafc8baba4b4cc5d811a1bf8075da844de0a9235f13a76081c11df37c244435",
+        "pool": "novel02",
+        "seed": 33,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/2"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.053007889546351085,
+                  "top5": 0.18293885601577908,
+                  "mean_rank": 41.259677021696255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.205,
+                  "top5": 0.585,
+                  "mean_rank": 8.605,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.050727317554240633,
+                  "top5": 0.16913214990138067,
+                  "mean_rank": 45.49063116370809,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.165,
+                  "top5": 0.435,
+                  "mean_rank": 13.28,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.04776873767258383,
+                  "top5": 0.15803747534516766,
+                  "mean_rank": 46.91734467455621,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.13,
+                  "top5": 0.375,
+                  "mean_rank": 21.755,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.041974852071005916,
+                  "top5": 0.14829881656804733,
+                  "mean_rank": 48.90692800788955,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.33,
+                  "mean_rank": 22.55,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.19450390338897705
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "b4c932e2ca76853784e9b65ea00ba5bfdc810a67a2ae5d96718d1b1a45f1fd72",
+          "last.pt": "dd5f4eaa1f145ec78a21d25e702138322261a8a9bc6363a2f1a040d147de8340",
+          "history.json": "99c02ccfd450f62fb38b6d215a33f7c8d235fc3797f004295d4fc01ba8745ca9"
+        }
+      }
+    },
+    {
+      "arm": "identity",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/calibration/novel02_seed34/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "eafa7f0a942d016a4ff434ce4fe0d8766cfcb3ba5de5515e2e565ee36da218e6",
+        "pool": "novel02",
+        "seed": 34,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/2"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.053007889546351085,
+                  "top5": 0.18293885601577908,
+                  "mean_rank": 41.259677021696255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.205,
+                  "top5": 0.585,
+                  "mean_rank": 8.605,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.050727317554240633,
+                  "top5": 0.16913214990138067,
+                  "mean_rank": 45.49063116370809,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.165,
+                  "top5": 0.435,
+                  "mean_rank": 13.28,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.047337278106508875,
+                  "top5": 0.1573594674556213,
+                  "mean_rank": 47.04345414201183,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.14,
+                  "top5": 0.365,
+                  "mean_rank": 22.265,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.041543392504930964,
+                  "top5": 0.1478673570019724,
+                  "mean_rank": 48.978981755424066,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.1,
+                  "top5": 0.32,
+                  "mean_rank": 22.85,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.20239441096782684
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "a78964878424b3854a7727d1a24fd1677045c65bdd51dd0df49fcfa9948374a1",
+          "last.pt": "12ce539057489d7352f656f3e0f7df362ff852b78774835b175de9dce4ac32d6",
+          "history.json": "ee626f7a4f16d8e669f7a7c7706b21b362e94c36680eef4931283b72165131f3"
+        }
+      }
+    },
+    {
+      "arm": "identity",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/calibration/novel02_seed35/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "b7dcb9245784cd3adb69da880f5421ab50110ca32fb91d5d378804d0cd57550a",
+        "pool": "novel02",
+        "seed": 35,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/2"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.053007889546351085,
+                  "top5": 0.18293885601577908,
+                  "mean_rank": 41.259677021696255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.205,
+                  "top5": 0.585,
+                  "mean_rank": 8.605,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.050727317554240633,
+                  "top5": 0.16913214990138067,
+                  "mean_rank": 45.49063116370809,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.165,
+                  "top5": 0.435,
+                  "mean_rank": 13.28,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.047337278106508875,
+                  "top5": 0.15717455621301776,
+                  "mean_rank": 47.14521696252466,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.12,
+                  "top5": 0.37,
+                  "mean_rank": 22.34,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04203648915187377,
+                  "top5": 0.14811390532544377,
+                  "mean_rank": 49.06095907297831,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.105,
+                  "top5": 0.325,
+                  "mean_rank": 22.6,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.1928826868534088
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "ce085aef824c9e9d1907779ca5971e348b2961767d2dd2d99065d2f4d2f37fc7",
+          "last.pt": "26b072b6254ab8d2713365088ab87c6f1f67c950b7e0c19046a9cfcbeef3a145",
+          "history.json": "754914eb9deb0ca146d92ce0f5101f995590ca9f6c75c546d3d89bc07be337c5"
+        }
+      }
+    },
+    {
+      "arm": "identity",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/calibration/novel02_seed36/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "e5b2c21af59cdb98a4f8a1724cb7a9b634b45ad9f0914748f7bef27067269726",
+        "pool": "novel02",
+        "seed": 36,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/2"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.053007889546351085,
+                  "top5": 0.18293885601577908,
+                  "mean_rank": 41.259677021696255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.205,
+                  "top5": 0.585,
+                  "mean_rank": 8.605,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.050727317554240633,
+                  "top5": 0.16913214990138067,
+                  "mean_rank": 45.49063116370809,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.165,
+                  "top5": 0.435,
+                  "mean_rank": 13.28,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.047214003944773174,
+                  "top5": 0.15680473372781065,
+                  "mean_rank": 47.09100714990138,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.135,
+                  "top5": 0.375,
+                  "mean_rank": 22.33,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.041543392504930964,
+                  "top5": 0.14657297830374755,
+                  "mean_rank": 49.01923076923077,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.105,
+                  "top5": 0.315,
+                  "mean_rank": 22.67,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.19243067502975464
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "6392d1c92a86190460b93331335933a6de1fad86c339acddc0598eb81ef64fef",
+          "last.pt": "7176871d1cbf964051dfdef39788556334ba511d80266d3c5fc198bc7616d929",
+          "history.json": "46f6fa7ada7da4bd62c4e420d82966fc382ee9fd25601860d5d9d147b91c6d54"
+        }
+      }
+    },
+    {
+      "arm": "identity",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/calibration/novel02_seed37/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "aa746bb4458543c98c8fde541d4eaf138eb3de7114dbb895c70b87408c2507ba",
+        "pool": "novel02",
+        "seed": 37,
+        "best_epoch": 20,
+        "trained_epochs": 20,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/2"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.053007889546351085,
+                  "top5": 0.18293885601577908,
+                  "mean_rank": 41.259677021696255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.205,
+                  "top5": 0.585,
+                  "mean_rank": 8.605,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.050727317554240633,
+                  "top5": 0.16913214990138067,
+                  "mean_rank": 45.49063116370809,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.165,
+                  "top5": 0.435,
+                  "mean_rank": 13.28,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.04672090729783038,
+                  "top5": 0.1569896449704142,
+                  "mean_rank": 47.205035749506905,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.12,
+                  "top5": 0.36,
+                  "mean_rank": 22.65,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04098865877712032,
+                  "top5": 0.14681952662721892,
+                  "mean_rank": 49.08465853057199,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.105,
+                  "top5": 0.325,
+                  "mean_rank": 23.045,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.1977609395980835
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "f8202b21bc9ab1def66730cbb1573ea40f80ac5f9bcc7935fbe4f67efbf07c9e",
+          "last.pt": "ffd864f5035772dad63e5ae50fb47fc03f99febdb16bf3e3cc84546502742d13",
+          "history.json": "8d97487ad3a420c2ca9bb35dbfe86d571195f8e3d2d9bd966ed0f5e652e4cfc2"
+        }
+      }
+    },
+    {
+      "arm": "identity",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/calibration/seen_seed33/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "c81de651b9263ca23b5d70510ac93af5039a92745728fd041ec39bc36641443e",
+        "pool": "seen",
+        "seed": 33,
+        "best_epoch": 2,
+        "trained_epochs": 7,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/10",
+          "Gifford2022Large/3",
+          "Gifford2022Large/4",
+          "Gifford2022Large/5",
+          "Gifford2022Large/6",
+          "Gifford2022Large/7",
+          "Gifford2022Large/8",
+          "Gifford2022Large/9"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.053007889546351085,
+                  "top5": 0.18293885601577908,
+                  "mean_rank": 41.259677021696255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.205,
+                  "top5": 0.585,
+                  "mean_rank": 8.605,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.050727317554240633,
+                  "top5": 0.16913214990138067,
+                  "mean_rank": 45.49063116370809,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.165,
+                  "top5": 0.435,
+                  "mean_rank": 13.28,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.05239151873767258,
+                  "top5": 0.1818293885601578,
+                  "mean_rank": 41.341284516765285,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.2,
+                  "top5": 0.565,
+                  "mean_rank": 8.86,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.05066568047337278,
+                  "top5": 0.16808431952662722,
+                  "mean_rank": 45.584535256410255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.165,
+                  "top5": 0.43,
+                  "mean_rank": 13.59,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.006052112206816673
+            }
+          },
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03883136094674556,
+                  "top5": 0.14127218934911243,
+                  "mean_rank": 46.62275024654832,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.3,
+                  "mean_rank": 22.49,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04203648915187377,
+                  "top5": 0.14158037475345167,
+                  "mean_rank": 49.13239644970414,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.295,
+                  "mean_rank": 25.84,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03901627218934911,
+                  "top5": 0.14287475345167652,
+                  "mean_rank": 46.207223865877715,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.095,
+                  "top5": 0.31,
+                  "mean_rank": 21.6,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.042899408284023666,
+                  "top5": 0.1424432938856016,
+                  "mean_rank": 48.7914201183432,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.065,
+                  "top5": 0.3,
+                  "mean_rank": 25.03,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.006989228073507547
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "d328a7811bb0ab3a3ec582f00d2c476517230c73a338778992006d967c4961ba",
+          "last.pt": "9ade77c33d1eba7be82678ec86475af6c144551686e9cfe7bf29017f8e1c8bb9",
+          "history.json": "90c6882ba1bee98fe342b15d506d6fdb8f67f80abff8afa0b0f3f97b6ae2f12b"
+        }
+      }
+    },
+    {
+      "arm": "identity",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/calibration/seen_seed34/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "4e6d66d7c1adb7951bd528d60fc268bb738772199ad0e2df02f6f33aa4efa769",
+        "pool": "seen",
+        "seed": 34,
+        "best_epoch": 0,
+        "trained_epochs": 5,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/10",
+          "Gifford2022Large/3",
+          "Gifford2022Large/4",
+          "Gifford2022Large/5",
+          "Gifford2022Large/6",
+          "Gifford2022Large/7",
+          "Gifford2022Large/8",
+          "Gifford2022Large/9"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.053007889546351085,
+                  "top5": 0.18293885601577908,
+                  "mean_rank": 41.259677021696255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.205,
+                  "top5": 0.585,
+                  "mean_rank": 8.605,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.050727317554240633,
+                  "top5": 0.16913214990138067,
+                  "mean_rank": 45.49063116370809,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.165,
+                  "top5": 0.435,
+                  "mean_rank": 13.28,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.053007889546351085,
+                  "top5": 0.18293885601577908,
+                  "mean_rank": 41.259677021696255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.205,
+                  "top5": 0.585,
+                  "mean_rank": 8.605,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.050727317554240633,
+                  "top5": 0.16913214990138067,
+                  "mean_rank": 45.49063116370809,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.165,
+                  "top5": 0.435,
+                  "mean_rank": 13.28,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            }
+          },
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03883136094674556,
+                  "top5": 0.14127218934911243,
+                  "mean_rank": 46.62275024654832,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.3,
+                  "mean_rank": 22.49,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04203648915187377,
+                  "top5": 0.14158037475345167,
+                  "mean_rank": 49.13239644970414,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.295,
+                  "mean_rank": 25.84,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03883136094674556,
+                  "top5": 0.14127218934911243,
+                  "mean_rank": 46.62275024654832,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.3,
+                  "mean_rank": 22.49,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04203648915187377,
+                  "top5": 0.14158037475345167,
+                  "mean_rank": 49.13239644970414,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.295,
+                  "mean_rank": 25.84,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "4f0c70f48facb2823e4faf81295e1d3e50a5b6a8d7a802bb845b8559efd895e9",
+          "last.pt": "d94d60c05ead8032b39408ee5b043f0cd802b11409d494cfe7949cf14b536f6d",
+          "history.json": "e26c49a08cbf4759b6f652ed71427a43e066137b3303c51479bf8ca83b21b702"
+        }
+      }
+    },
+    {
+      "arm": "identity",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/calibration/seen_seed35/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "3057bafc9ce062e657347ba2327aa2ac120777d8a5118e050ce4afcdd612926b",
+        "pool": "seen",
+        "seed": 35,
+        "best_epoch": 0,
+        "trained_epochs": 5,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/10",
+          "Gifford2022Large/3",
+          "Gifford2022Large/4",
+          "Gifford2022Large/5",
+          "Gifford2022Large/6",
+          "Gifford2022Large/7",
+          "Gifford2022Large/8",
+          "Gifford2022Large/9"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.053007889546351085,
+                  "top5": 0.18293885601577908,
+                  "mean_rank": 41.259677021696255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.205,
+                  "top5": 0.585,
+                  "mean_rank": 8.605,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.050727317554240633,
+                  "top5": 0.16913214990138067,
+                  "mean_rank": 45.49063116370809,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.165,
+                  "top5": 0.435,
+                  "mean_rank": 13.28,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.053007889546351085,
+                  "top5": 0.18293885601577908,
+                  "mean_rank": 41.259677021696255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.205,
+                  "top5": 0.585,
+                  "mean_rank": 8.605,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.050727317554240633,
+                  "top5": 0.16913214990138067,
+                  "mean_rank": 45.49063116370809,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.165,
+                  "top5": 0.435,
+                  "mean_rank": 13.28,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            }
+          },
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03883136094674556,
+                  "top5": 0.14127218934911243,
+                  "mean_rank": 46.62275024654832,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.3,
+                  "mean_rank": 22.49,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04203648915187377,
+                  "top5": 0.14158037475345167,
+                  "mean_rank": 49.13239644970414,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.295,
+                  "mean_rank": 25.84,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03883136094674556,
+                  "top5": 0.14127218934911243,
+                  "mean_rank": 46.62275024654832,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.3,
+                  "mean_rank": 22.4925,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04203648915187377,
+                  "top5": 0.14158037475345167,
+                  "mean_rank": 49.13239644970414,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.295,
+                  "mean_rank": 25.84,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "89f23bda8d94fff10dfba4ca11ff8eefa343fff7ec393f5e5bb504572f70f2dd",
+          "last.pt": "3ecadb8be83aedc408f27f8d3a7162dfef48aa59a712453e76ced6bdbaf715fb",
+          "history.json": "b70ddafd9b72ca08dc6e6da1e57bb652383b3825f92ff0f79eba40b6c551e033"
+        }
+      }
+    },
+    {
+      "arm": "identity",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/calibration/seen_seed36/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "a4c294bd628dde3c589a4f6d87c5c9c4a350377aca79aea0f1da8ea55be0fdd3",
+        "pool": "seen",
+        "seed": 36,
+        "best_epoch": 0,
+        "trained_epochs": 5,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/10",
+          "Gifford2022Large/3",
+          "Gifford2022Large/4",
+          "Gifford2022Large/5",
+          "Gifford2022Large/6",
+          "Gifford2022Large/7",
+          "Gifford2022Large/8",
+          "Gifford2022Large/9"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.053007889546351085,
+                  "top5": 0.18293885601577908,
+                  "mean_rank": 41.259677021696255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.205,
+                  "top5": 0.585,
+                  "mean_rank": 8.605,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.050727317554240633,
+                  "top5": 0.16913214990138067,
+                  "mean_rank": 45.49063116370809,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.165,
+                  "top5": 0.435,
+                  "mean_rank": 13.28,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.053007889546351085,
+                  "top5": 0.18293885601577908,
+                  "mean_rank": 41.259677021696255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.205,
+                  "top5": 0.585,
+                  "mean_rank": 8.605,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.050727317554240633,
+                  "top5": 0.16913214990138067,
+                  "mean_rank": 45.49063116370809,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.165,
+                  "top5": 0.435,
+                  "mean_rank": 13.28,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            }
+          },
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03883136094674556,
+                  "top5": 0.14127218934911243,
+                  "mean_rank": 46.62275024654832,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.3,
+                  "mean_rank": 22.49,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04203648915187377,
+                  "top5": 0.14158037475345167,
+                  "mean_rank": 49.13239644970414,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.295,
+                  "mean_rank": 25.84,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03883136094674556,
+                  "top5": 0.14127218934911243,
+                  "mean_rank": 46.62275024654832,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.3,
+                  "mean_rank": 22.4925,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04203648915187377,
+                  "top5": 0.14158037475345167,
+                  "mean_rank": 49.13239644970414,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.295,
+                  "mean_rank": 25.84,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "cccf2852d168153e059380a882ef096f04e37b16e12281514cf035a2091cc1e1",
+          "last.pt": "67dbcaac1733f31c11ec36d27564657661c8c8370b8bf415b304105c43396660",
+          "history.json": "cddefa83bc99ad70dc0567b3fb1194a3e1f9e5c20cce10dcb84e2b9ff2ebd2a0"
+        }
+      }
+    },
+    {
+      "arm": "identity",
+      "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/calibration/seen_seed37/result.json",
+      "result": {
+        "state": "complete",
+        "fingerprint": "76d190d9423a493cbeba37c3842c667709825cc742772a3055f69777f066c54c",
+        "pool": "seen",
+        "seed": 37,
+        "best_epoch": 0,
+        "trained_epochs": 5,
+        "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+        "checkpoint": {
+          "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+          "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+          "variant": "ema0.9998",
+          "epoch": 11,
+          "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+        },
+        "train_subjects": [
+          "Gifford2022Large/10",
+          "Gifford2022Large/3",
+          "Gifford2022Large/4",
+          "Gifford2022Large/5",
+          "Gifford2022Large/6",
+          "Gifford2022Large/7",
+          "Gifford2022Large/8",
+          "Gifford2022Large/9"
+        ],
+        "fit_images": 14886,
+        "fit_trials": 14886,
+        "dev_images": 1654,
+        "trainable_parameters": 67136,
+        "tests": {
+          "test01": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.053007889546351085,
+                  "top5": 0.18293885601577908,
+                  "mean_rank": 41.259677021696255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.205,
+                  "top5": 0.585,
+                  "mean_rank": 8.605,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.050727317554240633,
+                  "top5": 0.16913214990138067,
+                  "mean_rank": 45.49063116370809,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.165,
+                  "top5": 0.435,
+                  "mean_rank": 13.28,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.053007889546351085,
+                  "top5": 0.18293885601577908,
+                  "mean_rank": 41.259677021696255,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.205,
+                  "top5": 0.585,
+                  "mean_rank": 8.605,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.050727317554240633,
+                  "top5": 0.16913214990138067,
+                  "mean_rank": 45.49063116370809,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.165,
+                  "top5": 0.435,
+                  "mean_rank": 13.28,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 84,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            }
+          },
+          "test02": {
+            "zero": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03883136094674556,
+                  "top5": 0.14127218934911243,
+                  "mean_rank": 46.62275024654832,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.3,
+                  "mean_rank": 22.49,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04203648915187377,
+                  "top5": 0.14158037475345167,
+                  "mean_rank": 49.13239644970414,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.295,
+                  "mean_rank": 25.84,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            },
+            "calibrated": {
+              "blur": {
+                "single_trial": {
+                  "top1": 0.03883136094674556,
+                  "top5": 0.14127218934911243,
+                  "mean_rank": 46.62275024654832,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.09,
+                  "top5": 0.3,
+                  "mean_rank": 22.4925,
+                  "count": 200
+                }
+              },
+              "clean": {
+                "single_trial": {
+                  "top1": 0.04203648915187377,
+                  "top5": 0.14158037475345167,
+                  "mean_rank": 49.13239644970414,
+                  "count": 16224
+                },
+                "subject_aggregated": {
+                  "top1": 0.06,
+                  "top5": 0.295,
+                  "mean_rank": 25.84,
+                  "count": 200
+                }
+              },
+              "repeats_min": 80,
+              "repeats_max": 83,
+              "candidate_count": 200,
+              "correction_ratio": 0.0
+            }
+          }
+        },
+        "artifacts_sha256": {
+          "best.pt": "a127605bd90db259fbc57d134ee694a065eb81cf744b818f3681188c4db9f1f6",
+          "last.pt": "dfe2a44b377da7d4cff04b2e365eeafc3524b0fff1cd953c13e0185d5d22bfee",
+          "history.json": "da800366917a6689fd4f1003e53d167018ab15e3db245c8465c7a91dd45308c9"
+        }
+      }
+    }
+  ]
+}

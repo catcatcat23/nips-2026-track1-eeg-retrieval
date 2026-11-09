@@ -1,0 +1,140 @@
+{
+  "arm": "D",
+  "best_epoch": 5,
+  "selection": {
+    "candidate_images": 200,
+    "per_subject": {
+      "Gifford2022Large/1": {
+        "single_trial": {
+          "top1": 0.08912721893491124,
+          "top5": 0.27058678500986194,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.405,
+          "top5": 0.785,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/10": {
+        "single_trial": {
+          "top1": 0.12456854043392505,
+          "top5": 0.35077662721893493,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.43,
+          "top5": 0.795,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/2": {
+        "single_trial": {
+          "top1": 0.08099112426035503,
+          "top5": 0.25486932938856016,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.355,
+          "top5": 0.715,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/3": {
+        "single_trial": {
+          "top1": 0.10657051282051282,
+          "top5": 0.2994945759368836,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.375,
+          "top5": 0.765,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/4": {
+        "single_trial": {
+          "top1": 0.09393491124260354,
+          "top5": 0.27588757396449703,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.44,
+          "top5": 0.76,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/5": {
+        "single_trial": {
+          "top1": 0.07248520710059171,
+          "top5": 0.22509861932938857,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.315,
+          "top5": 0.65,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/6": {
+        "single_trial": {
+          "top1": 0.09942061143984221,
+          "top5": 0.2900641025641026,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.35,
+          "top5": 0.795,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/7": {
+        "single_trial": {
+          "top1": 0.0952292899408284,
+          "top5": 0.2759492110453649,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.36,
+          "top5": 0.7,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/8": {
+        "single_trial": {
+          "top1": 0.13954635108481261,
+          "top5": 0.36224112426035504,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.455,
+          "top5": 0.8,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/9": {
+        "single_trial": {
+          "top1": 0.06866370808678501,
+          "top5": 0.21104536489151873,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.365,
+          "top5": 0.68,
+          "count": 200
+        }
+      }
+    },
+    "single_trial": {
+      "top1": 0.09705374753451676,
+      "top5": 0.2816013313609467,
+      "count": 162240
+    },
+    "subject_aggregated": {
+      "top1": 0.385,
+      "top5": 0.7445,
+      "count": 2000
+    }
+  },
+  "role": "public_test_used_for_model_selection_not_independent_test"
+}

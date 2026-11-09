@@ -1,0 +1,11 @@
+{
+  "state": "passed",
+  "checks": [
+    "all four native zero metrics reproduced",
+    "same support images and EEG records across model arms",
+    "calibration/test/source-validation IDs disjoint via load()",
+    "source reference excludes heldout subject",
+    "finite 512-D cached features",
+    "source labels only on support pairs"
+  ]
+}

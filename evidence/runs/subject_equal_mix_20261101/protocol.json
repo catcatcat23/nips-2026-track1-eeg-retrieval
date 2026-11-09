@@ -1,0 +1,8 @@
+{
+  "image": 30,
+  "mixture": "50/25/25 per subject, nearest integer counts; shuffled assignment seed20261103",
+  "sampling": "one input per original anchor; mean includes anchor and k-1 distinct same-person/image trials; sources may repeat between inputs as in augmentation",
+  "features": "same cached single trials, freshly encoded EEG averages; frozen eval; raw512 pooled",
+  "projection": "PCA50 fit baseline; TSNE joint baseline plus newly averaged samples, shared singleton points deduplicated; seed33 perplexity30 1000iter",
+  "limitations": "one image, one sampling realization; no mask, no training, not independent observations, no significance claim"
+}

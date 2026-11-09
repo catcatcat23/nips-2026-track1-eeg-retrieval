@@ -1,0 +1,65 @@
+{
+  "variant": "ema0.9998",
+  "epoch": 10,
+  "selection": "seen-subject validation blur single-trial Top5",
+  "metrics": {
+    "blur": {
+      "candidate_images": 200,
+      "per_subject": {
+        "Gifford2022Large/3": {
+          "single_trial": {
+            "top1": 0.04709072978303747,
+            "top5": 0.1580991124260355,
+            "count": 16224
+          },
+          "subject_aggregated": {
+            "top1": 0.12,
+            "top5": 0.33,
+            "count": 200
+          }
+        }
+      },
+      "single_trial": {
+        "top1": 0.04709072978303747,
+        "top5": 0.1580991124260355,
+        "count": 16224
+      },
+      "subject_aggregated": {
+        "top1": 0.12,
+        "top5": 0.33,
+        "count": 200
+      }
+    },
+    "clean": {
+      "candidate_images": 200,
+      "per_subject": {
+        "Gifford2022Large/3": {
+          "single_trial": {
+            "top1": 0.041851577909270216,
+            "top5": 0.15168885601577908,
+            "count": 16224
+          },
+          "subject_aggregated": {
+            "top1": 0.105,
+            "top5": 0.33,
+            "count": 200
+          }
+        }
+      },
+      "single_trial": {
+        "top1": 0.041851577909270216,
+        "top5": 0.15168885601577908,
+        "count": 16224
+      },
+      "subject_aggregated": {
+        "top1": 0.105,
+        "top5": 0.33,
+        "count": 200
+      }
+    },
+    "split": "test",
+    "subjects": [
+      "Gifford2022Large/3"
+    ]
+  }
+}

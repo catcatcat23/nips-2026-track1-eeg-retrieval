@@ -1,0 +1,24 @@
+{
+  "models": [
+    "pretrained",
+    "v70",
+    "v71",
+    "v72"
+  ],
+  "weights": "epoch10 EMA0.9998",
+  "selection": "first image and first subject from previous fixed sampling; all available trials",
+  "k": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "plots": [
+    "identity",
+    "image",
+    "shared-coordinate repetition"
+  ],
+  "seed": 33,
+  "normalization": "L2 PCA50",
+  "overlap": "raw pool shared across k; disjoint within k; no replication to inflate point count"
+}

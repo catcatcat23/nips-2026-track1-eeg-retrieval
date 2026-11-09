@@ -1,0 +1,9 @@
+{
+  "B": {
+    "initial_loss": 2.1692018508911133,
+    "final_loss": 0.04318838566541672,
+    "steps": 2,
+    "top1": 1.0,
+    "train_mode_gradients_finite": true
+  }
+}

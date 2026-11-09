@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "shape": [
+    8,
+    63,
+    512
+  ],
+  "initial_loss": 2.1692018508911133,
+  "final_loss": 0.08174331486225128,
+  "steps": 3,
+  "tiny_top1": 1.0,
+  "frozen_source": true,
+  "attention_gradient_nonzero": true,
+  "token_swap_output_change": 0.5988714694976807,
+  "cached_h_match": true,
+  "updates_discarded": true
+}

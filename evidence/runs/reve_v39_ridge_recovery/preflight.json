@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "ridge_solve_error": 1.5541758873567418e-15,
+  "initial_loss": 2.0577478408813477,
+  "final_loss": 0.5584232807159424,
+  "steps": 5,
+  "tiny_top1": 1.0,
+  "updates_discarded": true,
+  "frozen_ridge_unchanged": true
+}

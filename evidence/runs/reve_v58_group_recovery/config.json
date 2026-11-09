@@ -1,0 +1,49 @@
+{
+  "source_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v57_stage2_epoch18/source_global.pt",
+  "checkpoint_sha256": "da67a26cbb2e87ccc26db6673b498efc7b75507afcade4b94221470f91e18ab3",
+  "cache_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v57_stage2_epoch18/cache",
+  "initial_reference": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v39_ridge_recovery/B/initial_head.pt",
+  "seed": 33,
+  "batch_size": 256,
+  "epochs": 40,
+  "patience": 5,
+  "lr": 0.0001,
+  "weight_decay": 0.05,
+  "scheduler": "OneCycle pct_start=.1 div_factor25 final_div_factor10000",
+  "selection": "clean subject_aggregated Top5; top3 checkpoints; public test development",
+  "source_epoch": 18,
+  "training_splits": [
+    "train",
+    "val"
+  ],
+  "loss": "original one-way ClipLoss norm_kind=y temperature=False; no distillation",
+  "condition": "disabled; v45 only",
+  "baseline": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v57_stage2_epoch18/v45/result.json",
+  "blur_reference": {
+    "single_trial": {
+      "top1": 0.17484590729783037,
+      "top5": 0.4204943293885602,
+      "count": 162240
+    },
+    "subject_aggregated": {
+      "top1": 0.845,
+      "top5": 0.9845,
+      "count": 2000
+    }
+  },
+  "run_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v58_group_recovery",
+  "stage1_checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v57_mixed_channel/stage1/epoch_018.pt",
+  "stage1_checkpoint_sha256": "a96813a122ad709a09f635e6b6d91e10a8c7ad4d5895eb8d650c68f740f15087",
+  "experiment": "frozen v57 epoch18; v45 single + output-average clean; then add input-average teacher consistency",
+  "arms": [
+    "output_mean",
+    "output_mean_consistency"
+  ],
+  "group_size": 4,
+  "groups_per_step": 64,
+  "group_weight": 0.3,
+  "consistency_weight": 0.1,
+  "teacher": "same head eval, stop gradient; mean input",
+  "initialization": "fresh v45 same seed33; no stage2 checkpoint loading"
+}

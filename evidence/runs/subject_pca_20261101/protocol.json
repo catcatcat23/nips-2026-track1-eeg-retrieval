@@ -1,0 +1,8 @@
+{
+  "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/controlled_tsne_20261101",
+  "features": "raw encoder pooled 512-D; centered by PCA, no L2 or standardization",
+  "fit": "all subjects, fixed image 30, single trials only, separately per model/domain",
+  "transform": "same PCA applied to k=1/2/3/4 inputs; shared axes within model",
+  "sampling": "all valid single trials in existing cache; disjoint chunks within k; raw pool shared across k",
+  "models": "pretrained and epoch10 EMA .9998 v70/v71/v72"
+}

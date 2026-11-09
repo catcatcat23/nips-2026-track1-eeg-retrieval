@@ -1,0 +1,70 @@
+{
+ "checkpoints": {
+  "v57_ep9": {
+   "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v60_stage2_epoch9/source_global.pt",
+   "sha256": "5a89dcc6573d90a0b74bbf8d55aa089452476a3027bc7d1af6510909dee1eb2e",
+   "epoch": 9
+  },
+  "v55mixed_ep11": {
+   "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v56_mixed_stage2/source_global.pt",
+   "sha256": "4fd39b8d514138f24be8f4206beddd25e7ed35bb0471139b960f3455e7031c15",
+   "epoch": 11
+  },
+  "v55noise_ep10": {
+   "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v56_noise_stage2/source_global.pt",
+   "sha256": "2c1b154892fb3d41d3107ae5dd7cb056a38c4f012f02d3f40b6d24fc691995e6",
+   "epoch": 10
+  }
+ },
+ "identical_tensors": [
+  "positions"
+ ],
+ "v57_ep9": {
+  "single_trial": {
+   "top1": 0.16932938856015778,
+   "top5": 0.4101516272189349,
+   "count": 162240
+  },
+  "subject_aggregated": {
+   "top1": 0.6295,
+   "top5": 0.901,
+   "count": 2000
+  }
+ },
+ "v55mixed_ep11": {
+  "single_trial": {
+   "top1": 0.16648791913214991,
+   "top5": 0.4054672090729783,
+   "count": 162240
+  },
+  "subject_aggregated": {
+   "top1": 0.647,
+   "top5": 0.9105,
+   "count": 2000
+  }
+ },
+ "v55noise_ep10": {
+  "single_trial": {
+   "top1": 0.16881163708086785,
+   "top5": 0.4084689349112426,
+   "count": 162240
+  },
+  "subject_aggregated": {
+   "top1": 0.624,
+   "top5": 0.9035,
+   "count": 2000
+  }
+ },
+ "uniform_soup": {
+  "single_trial": {
+   "top1": 0.09144477317554241,
+   "top5": 0.2696868836291913,
+   "count": 162240
+  },
+  "subject_aggregated": {
+   "top1": 0.2625,
+   "top5": 0.581,
+   "count": 2000
+  }
+ }
+}

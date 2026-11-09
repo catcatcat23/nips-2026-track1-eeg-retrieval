@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-09",
+  "baseline_check": "passed: cache shapes/channels/submitted checkpoint SHA256",
+  "v93_report_tests": 4,
+  "python_ast": "passed for all published Python files",
+  "artifact_hashes_checked": 1162,
+  "snapshot_mappings_checked": 2431,
+  "output_guard": "passed: missing output and /tmp rejected",
+  "secret_pattern_scan": "no matches",
+  "training_started": false,
+  "scope": "Research archive launchers retain machine-specific paths; no full retraining or reproduction of every historical experiment performed.",
+  "research_test_command": "PYTHONPATH=research python -B -m unittest discover -s research/tools/v64_controls -p test_summarize_unseen_calibration.py",
+  "resolved_validation_issue": "Initial archive test import failed without PYTHONPATH=research; documented correct import root and all 4 tests passed."
+}

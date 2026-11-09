@@ -1,0 +1,13 @@
+{
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/stage1/ema0.9998_epoch_010.pt",
+  "images": [
+    6,
+    30,
+    73
+  ],
+  "selection": "All three previously discussed images, fixed before observing blur results",
+  "features": "same forward pass pooled512, EEG blur prediction1536, clean1536; no image-side features",
+  "scope": "layer diagnostic within v64, not v71 augmentation ablation",
+  "clustering": "original raw and L2 with seeds5/33/34, plus raw direct tSNE2D seed5; K=10",
+  "precision": "FP32 CPU, eval mode, no EEG augmentation"
+}

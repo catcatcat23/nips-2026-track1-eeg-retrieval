@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "only_change": "remove fixed ridge addition",
+  "delta_initialization_exactly_matches_v39": true,
+  "initial_prediction": "all zeros, expected after removing ridge with zero-init final delta layer",
+  "initial_loss": 2.079441547393799,
+  "final_loss": 0.567602276802063,
+  "steps": 5,
+  "tiny_top1": 1.0,
+  "updates_discarded": true
+}

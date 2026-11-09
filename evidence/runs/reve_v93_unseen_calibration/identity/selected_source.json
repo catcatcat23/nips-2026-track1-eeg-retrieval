@@ -1,0 +1,14 @@
+{
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+  "checkpoint_sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+  "variant": "ema0.9998",
+  "epoch": 11,
+  "source_validation_blur_top5": 0.23644490994445172,
+  "selection": "source validation only",
+  "excluded_subjects": [
+    "Gifford2022Large/1",
+    "Gifford2022Large/2"
+  ],
+  "target_eeg_read": false,
+  "target_test_evaluated": false
+}

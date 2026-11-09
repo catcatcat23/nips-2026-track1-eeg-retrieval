@@ -1,0 +1,39 @@
+{
+  "run_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v46_learned_skip",
+  "source_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/dropout/best.pt",
+  "checkpoint_sha256": "c7093ff8b099eaf01a7ec2d70a180af08e2f35570a2d36d3e73494f36cb6aa8e",
+  "seed": 33,
+  "batch_size": 256,
+  "epochs": 40,
+  "patience": 5,
+  "lr": 0.0001,
+  "weight_decay": 0.05,
+  "scheduler": "OneCycleLR pct_start=0.1 default div_factor=25 final_div_factor=10000",
+  "training_splits": [
+    "train",
+    "val"
+  ],
+  "selection": "public test single_trial Top5, includes zero-output epoch0; not independent test",
+  "arms": {
+    "B": "v45 + zero-initialized trainable Linear(1536,1536) skip"
+  },
+  "frozen": "v33 epoch7 REVE and blur_head eval frozen; adapter unused; fresh B head only",
+  "output": "raw output; official average predictions then normalize",
+  "precision": "float32 TF32 disabled",
+  "initial_reference": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v39_ridge_recovery/B/initial_head.pt",
+  "source_sha": "f49a01267166c866789e75401c9e58048e5fe493",
+  "cache_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v38_frozen_v33_recovery/cache",
+  "cosine_weight": 0.0,
+  "residual": "LN + 2 residual blocks width3072 dropout.1 + LN + zero-init Linear; output scale .1",
+  "parent_dependency_sha": "f361302dfd765ffa2b9be7386e91c477561202ca",
+  "v39_initial_reference": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v39_ridge_recovery/B/initial_head.pt",
+  "blur_reference": "/home/Anteng/eeg-retrieval/audits/v33_v36_blur/v33_results.json",
+  "ridge_enabled": false,
+  "variant": "linear_skip",
+  "control": "v45; independent change, not sequential finetuning",
+  "hidden_width": 3072,
+  "dropout": 0.1,
+  "trainable_skip": true,
+  "residual_scale": 0.1
+}

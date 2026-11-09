@@ -1,0 +1,36 @@
+from pathlib import Path
+import ast,json,shutil,hashlib
+
+b=Path('/mnt/DATA-4/anteng/eeg-retrieval/experiments')
+p=b/'reve_v82_grouped_identity_weight1'
+o=b/'reve_v88_things_identity_picture'
+assert not o.exists()
+o.mkdir();shutil.copytree(p/'source_gradient_monitor',o/'source',ignore=shutil.ignore_patterns('__pycache__'))
+shutil.copyfile(Path(__file__).with_name('within_subject_picture.py'),o/'source/within_subject_picture.py')
+for n in ['local.npy','local_complete.json','predictability']:(o/n).symlink_to((p/n).resolve())
+c=json.loads((p/'config.json').read_text());c.update(run_root=str(o),experiment='v88 THINGS: v82 + same-subject image SupCon on blur projection',parent=str(p),picture_weight=.1,picture_temperature=.1,picture_location='blur projection1536',only_change='Reuse same identity auxiliary batch and REVE forward for picture loss; no additional sampling or EEG forward',initialization='fresh pretrained REVE seed33; not resumed from v82')
+(o/'config.json').write_text(json.dumps(c,indent=2))
+f=o/'source/local_ot_train_ema.py';f.chmod(0o644);s=f.read_text()
+s=s.replace('from grouped_identity import auxiliary_backward','from within_subject_picture import auxiliary_backward')
+s=s.replace('total=np.zeros(5)','total=np.zeros(6)')
+s=s.replace("identity=auxiliary_backward(model,cfg);parts['identity']=identity;loss=loss.detach()+cfg['identity_weight']*identity", "identity,picture=auxiliary_backward(model,cfg);parts['identity']=identity;parts['picture']=picture;loss=loss.detach()+cfg['identity_weight']*identity+cfg['picture_weight']*picture")
+s=s.replace("retrieval_loss=float(loss)-cfg['identity_weight']*float(identity)", "picture_loss=float(picture),retrieval_loss=float(loss)-cfg['identity_weight']*float(identity)-cfg['picture_weight']*float(picture)")
+s=s.replace("['clean','blur','local','identity']","['clean','blur','local','identity','picture']")
+s=s.replace("['total','clean','blur','local','identity']","['total','clean','blur','local','identity','picture']")
+ast.parse(s);f.write_text(s)
+f=o/'source/gradient_balance.py';f.chmod(0o644);s=f.read_text().replace('identity_weighted_encoder_l2','auxiliary_weighted_encoder_l2').replace('identity_to_retrieval_ratio','auxiliary_to_retrieval_ratio')
+s=s.replace("    row['identity_unweighted_encoder_l2']=row['auxiliary_weighted_encoder_l2']/weight\n",'')
+s=s.replace('identity already weighted','combined identity + picture auxiliary gradients, both weighted')
+ast.parse(s);f.write_text(s)
+f=o/'source/run_control.py';f.chmod(0o644);s=f.read_text().replace("    assert json.loads((out/'preflight.json').read_text())['passed']", "    assert json.loads((out/'preflight.json').read_text())['passed']\n    assert json.loads((out/'picture_gpu_check.json').read_text())['passed']")
+ast.parse(s);f.write_text(s)
+hashes={str(f.relative_to(o/'source')):hashlib.sha256(f.read_bytes()).hexdigest() for f in (o/'source').rglob('*.py')}
+(o/'source_sha256.json').write_text(json.dumps(hashes,indent=2))
+for n in hashes:(o/'source'/n).chmod(0o444)
+launch=(p/'launch.sh').read_text().replace(str(p),str(o)).replace('source_gradient_monitor','source').replace('CUDA_VISIBLE_DEVICES=2','CUDA_VISIBLE_DEVICES=3').replace('gpu2','gpu3').replace('nvidia-smi -i 2','nvidia-smi -i 3')
+launch=launch.replace('echo preflight > queue_status.txt','export TMPDIR=/mnt/DATA-4/anteng/tmp\necho preflight > queue_status.txt')
+launch=launch.replace('echo training > queue_status.txt','python -u source/within_subject_picture.py --config config.json --gpu > picture_preflight.log 2>&1\necho training > queue_status.txt')
+(o/'launch.sh').write_text(launch)
+(o/'queue_status.txt').write_text('CPU checks pending; planned GPU3 after v86\n')
+(o/'protocol.json').write_text(json.dumps(dict(parent=str(p),dataset='THINGS-EEG2',retrieval_batch=256,auxiliary_batch='same v82 sampler:32 images x4 subjects x2 trials',identity='same image: same subject positive, other subject negative; pooled512, weight1',picture='same subject: same image positive, other image negative; blur1536, weight0.1; exclude anchors without negatives',encoder_forwards='unchanged: one retrieval pass, one auxiliary pass',selection='unchanged public-test blur single Top5; all epochs retained; same-epoch raw/EMA comparison',weights='picture0.1 fixed before training, gradient scales logged; not automatically tuned',test='no augmentation; single and subject-aggregated clean/blur retrieval',queued='GPU3 after v86'),indent=2))
+print(o)

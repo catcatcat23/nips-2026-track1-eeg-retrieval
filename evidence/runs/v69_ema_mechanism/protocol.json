@@ -1,0 +1,19 @@
+{
+  "purpose": "distinguish output-norm weighting, perturbation robustness, and general parameter averaging",
+  "source_sha256": "8bbb6e5cf416cf9ae24d33228e888431761b27e4ab1a7e42d2e9c51455fbd06e",
+  "variants": [
+    "raw ep15",
+    "EMA .9998 ep15",
+    "best clean aggregate raw: THINGS ep10 Alljoined ep12",
+    "uniform parameter average raw ep13-15"
+  ],
+  "full_test": "all valid trials; 200 candidates; clean and blur; original and per-trial-unit-normalized output aggregation",
+  "perturbation": "fixed 8 trials per subject/image; random seed101 subset; post-preprocessing Gaussian std .02/.05/.1 or mask1/4 channels on every trial; seeds101/102/103 paired across raw and EMA",
+  "limitations": [
+    "fixed joint-trained model; not pure REVE augmentation ablation",
+    "public tests already used for selection",
+    "no unseen-subject claim",
+    "synthetic robustness does not prove natural EEG noise is the cause",
+    "ordinary checkpoint average is not independently SWA-trained model"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "lr": 3e-05,
+  "late_degradation": "mean step50 minus step200 >=2 percentage points in any subject/budget/arm",
+  "selection": "fixed200; optional development-only mean rank",
+  "gate": "mean >=2pp, both subjects positive, >=7/10 pairs positive",
+  "stages": "stage1 then stage2 then conditional internal selection; decision before LoRA"
+}

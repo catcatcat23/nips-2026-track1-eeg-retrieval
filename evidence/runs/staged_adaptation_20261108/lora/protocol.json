@@ -1,0 +1,26 @@
+{
+  "rank": 4,
+  "alpha": 4,
+  "dropout": 0,
+  "blocks": [
+    20,
+    21
+  ],
+  "qkv": "separate rank4 branches within combined QKV",
+  "frozen_prefix": "cached float32 input to block20",
+  "lr": 0.0001,
+  "steps": 200,
+  "batch_size": 50,
+  "weight_decay": 0.01,
+  "clip": 1,
+  "budgets": "200 first; 50 only if200 meets >=2pp bothsubjects positive >=7/10",
+  "loss": "native blur one-way CE image-normalized temperature1",
+  "selection": "fixed200; no test checkpoint selection",
+  "seeds": [
+    33,
+    34,
+    35,
+    36,
+    37
+  ]
+}

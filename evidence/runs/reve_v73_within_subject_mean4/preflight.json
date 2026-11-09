@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "tiny": {
+    "things": {
+      "steps": 4,
+      "initial_loss": 2.214681625366211,
+      "final_loss": 0.5742314457893372,
+      "tiny_top1": 1.0
+    },
+    "alljoined": {
+      "steps": 5,
+      "initial_loss": 2.1739602088928223,
+      "final_loss": 0.6079039573669434,
+      "tiny_top1": 1.0
+    }
+  },
+  "initial_state_sha256": "55c922a2293f25ef5a9023202fa5c805de4ac47b6dcc23cc9d735a946b559585",
+  "updates_discarded": true
+}

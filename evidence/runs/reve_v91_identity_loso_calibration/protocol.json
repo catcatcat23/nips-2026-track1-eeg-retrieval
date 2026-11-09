@@ -1,0 +1,19 @@
+{
+  "baseline": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v79_v64_loso",
+  "folds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "identity": "global subject supervised contrast directly pooled512, weight1 temperature.1; same batch256",
+  "selection": "source-subject image-disjoint validation only; best blur single Top5 across raw/EMA",
+  "calibration": "50/200/1000 unique target training images, one trial per image; frozen encoder and heads, rank64 residual on h; 200 AdamW updates, no test selection",
+  "status": "four folds launched",
+  "gpu_assignment": {
+    "0": "S1",
+    "1": "S2",
+    "2": "S3",
+    "3": "S4"
+  }
+}

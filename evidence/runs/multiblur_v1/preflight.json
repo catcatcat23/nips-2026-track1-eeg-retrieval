@@ -1,0 +1,11 @@
+{
+  "state": "gpu_preflight_passed",
+  "gradient_max_relative_error": 1.1839700239380723e-05,
+  "overfit_top1": 1.0,
+  "initial_loss": 2.9644460678100586,
+  "final_loss": 0.07829143851995468,
+  "input_shape": [
+    63,
+    200
+  ]
+}

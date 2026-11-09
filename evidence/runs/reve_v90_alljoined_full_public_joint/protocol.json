@@ -1,0 +1,11 @@
+{
+  "changes": [
+    "Alljoined train+test pooled",
+    "fixed15epochs with original40epoch OneCycle trajectory",
+    "no early stopping/model ranking"
+  ],
+  "official_source": "https://github.com/neural-interfaces26/2026-competition/blob/main/codabench/pages/scientific_faq_image.md",
+  "evaluation": "Alljoined test now in-sample; THINGS test image identities now seen through Alljoined; neither is independent",
+  "initialization": "fresh pretrained REVE seed33",
+  "final_checkpoint": "ema0.9998_epoch_015.pt"
+}

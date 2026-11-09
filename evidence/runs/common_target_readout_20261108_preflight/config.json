@@ -1,0 +1,44 @@
+{
+  "task": "common frozen blur target readout; no image adapter",
+  "folds": [
+    1,
+    2
+  ],
+  "arms": [
+    "baseline",
+    "identity"
+  ],
+  "heads": [
+    "linear",
+    "mlp256"
+  ],
+  "budgets": [
+    50,
+    200,
+    1000
+  ],
+  "seeds": [
+    33,
+    34,
+    35,
+    36,
+    37
+  ],
+  "steps": 200,
+  "report_steps": [
+    0,
+    50,
+    200
+  ],
+  "batch": 50,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "optimizer": "AdamW",
+  "loss": "one-way image-normalized cross entropy; temperature=1",
+  "eeg_normalization": "per-sample LayerNorm512, no learned affine",
+  "device": "cpu",
+  "selection": "fixed final step200; no test selection",
+  "aggregation": "mean raw predictions within heldout subject and image, all available repeats",
+  "sampling": "nested subsets of existing shared1000-image cache, one fixed trial per image; seed varies subset/order/init, not pool/trial acquisition; budget1000 has identical support set across seeds",
+  "scope": "diagnostic probe, not original native blur metric or zero-shot system"
+}

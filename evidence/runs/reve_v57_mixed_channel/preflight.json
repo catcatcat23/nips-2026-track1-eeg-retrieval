@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "initial_loss": 4.42593240737915,
+  "final_loss": 1.583152413368225,
+  "steps": 4,
+  "tiny_blur_top1": 1.0,
+  "gradients": {
+    "encoder": 56736.89560294151,
+    "global_projection": 2926.6221517920494,
+    "global_adapter": 7200.485376358032,
+    "recovery": 5762.213759612292,
+    "queries_attention": 70.14860016107559,
+    "local_image": 195.0659209638834
+  },
+  "checks": {
+    "upstream_score_and_gradient_parity": true,
+    "duplicate_positive_permutation": true
+  },
+  "initial_global_matches_v33": true,
+  "probe_weights": "synthetic positive weights; real Ridge weights checked before training",
+  "updates_discarded": true
+}

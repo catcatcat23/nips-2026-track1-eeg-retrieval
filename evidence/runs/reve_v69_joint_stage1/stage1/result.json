@@ -1,0 +1,30 @@
+{
+  "best": {
+    "epoch": 10,
+    "variant": "ema0.9998",
+    "score": 0.29458355191238733,
+    "path": "ema0.9998_epoch_010.pt"
+  },
+  "top3": [
+    {
+      "epoch": 10,
+      "variant": "ema0.9998",
+      "score": 0.29458355191238733,
+      "path": "ema0.9998_epoch_010.pt"
+    },
+    {
+      "epoch": 11,
+      "variant": "ema0.9998",
+      "score": 0.2944160566318794,
+      "path": "ema0.9998_epoch_011.pt"
+    },
+    {
+      "epoch": 12,
+      "variant": "ema0.9998",
+      "score": 0.29335328717078735,
+      "path": "ema0.9998_epoch_012.pt"
+    }
+  ],
+  "stopped_epoch": 15,
+  "role": "public tests used for selection; not independent evaluation"
+}

@@ -1,0 +1,14 @@
+{
+  "best": {
+    "raw": 0.39973496055226826,
+    "ema0.999": 0.4286612426035503,
+    "ema0.9998": 0.4309418145956608
+  },
+  "best_epoch": {
+    "raw": 9,
+    "ema0.999": 8,
+    "ema0.9998": 10
+  },
+  "selection": "blur single_trial Top5 per variant; public test development, not independent",
+  "stopped_epoch": 15
+}

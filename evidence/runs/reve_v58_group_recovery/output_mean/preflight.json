@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "initial_loss": 2.079441547393799,
+  "final_loss": 0.5314001441001892,
+  "steps": 5,
+  "tiny_top1": 1.0,
+  "grouped_loss_initial": 2.079441547393799,
+  "grouped_loss_final": 3.591114727896638e-05,
+  "grouped_gradients_finite": true
+}

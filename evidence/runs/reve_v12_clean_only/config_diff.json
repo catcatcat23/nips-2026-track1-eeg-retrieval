@@ -1,0 +1,26 @@
+{
+  "run_root": [
+    "/mnt/DATA-4/anteng/eeg-retrieval/experiments/multiblur_v11_reve_image_adapter",
+    "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v12_clean_only"
+  ],
+  "blur_weight": [
+    0.3,
+    0.0
+  ],
+  "restore_weight": [
+    0.1,
+    0.0
+  ],
+  "scope": [
+    "Competition 120 Hz EEG; official REVE probe interpolation to 200 points and per-channel window normalization; full pretrained REVE backbone finetuning; mean pooling; blur and recovery heads; trainable image MLP 1536-768-1536 ELU, no dropout; h aligns A(blur); shared R reconstructs A(blur) to fixed clean",
+    "Competition120 EEG, same REVE preprocessing and head as v10/v11; clean-only bilateral multipos contrast; no blur, recovery or image adapter"
+  ],
+  "image_adapter": [
+    true,
+    false
+  ],
+  "clean_only": [
+    null,
+    true
+  ]
+}

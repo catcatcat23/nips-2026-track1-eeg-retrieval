@@ -1,0 +1,7 @@
+{
+  "features": "same cached raw512 averaged within subject/image, all valid test trials; v70/v71/v72 epoch10 EMA.9998",
+  "labels": "200 exact image IDs, not semantic categories",
+  "projection": "reuse direct512 tSNE2D seed5 perplexity30 iter2000, no PCA preprocessing; independently fitted models",
+  "clustering": "KMeans K200 n_init10 seed5 max_iter300 on raw512, L2 normalized512 and tSNE2D; labels only for scoring/color matching",
+  "limitations": "single clustering seed, test-selected training checkpoints; no significance claims; this is encoder-feature image clustering, not candidate-image retrieval accuracy"
+}

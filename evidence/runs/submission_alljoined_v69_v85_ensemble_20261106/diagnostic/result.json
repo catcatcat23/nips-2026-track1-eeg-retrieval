@@ -1,0 +1,50 @@
+{
+  "results": {
+    "v69_blur_to_clean": {
+      "single_trial": {
+        "top1": 0.005001634319475538,
+        "top5": 0.024746063756961277
+      },
+      "subject_aggregated": {
+        "top1": 0.005,
+        "top5": 0.02125
+      }
+    },
+    "v85_blur_to_clean": {
+      "single_trial": {
+        "top1": 0.004622348856284729,
+        "top5": 0.02343860817653117
+      },
+      "subject_aggregated": {
+        "top1": 0.003,
+        "top5": 0.02275
+      }
+    },
+    "ensemble_blur_to_clean": {
+      "single_trial": {
+        "top1": 0.00399329003928534,
+        "top5": 0.022310002651914622
+      },
+      "subject_aggregated": {
+        "top1": 0.0025,
+        "top5": 0.01775
+      }
+    },
+    "ensemble_recovered_to_clean": {
+      "single_trial": {
+        "top1": 0.041499380192047956,
+        "top5": 0.14094309484603476
+      },
+      "subject_aggregated": {
+        "top1": 0.29275,
+        "top5": 0.60425
+      }
+    }
+  },
+  "samples": 324294,
+  "candidates": 200,
+  "groups": 4000,
+  "seconds": 290.95276498794556,
+  "zip_replay_passed": true,
+  "protocol": "single trial forward; raw predictions averaged per subject-image; clean gallery; no refit"
+}

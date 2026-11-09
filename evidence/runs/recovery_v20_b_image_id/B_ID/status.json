@@ -1,0 +1,6 @@
+{
+  "state": "training",
+  "epoch": 6,
+  "best_top5": 0.39355892504930967,
+  "stale": 0
+}

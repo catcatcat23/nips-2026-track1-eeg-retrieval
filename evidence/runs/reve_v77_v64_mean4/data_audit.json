@@ -1,0 +1,7 @@
+{
+  "train_count": 668400,
+  "test_count": 162240,
+  "fixed_repeats": 4,
+  "identity_weight": 0,
+  "selection": "original v64 public test selection; not independent test"
+}

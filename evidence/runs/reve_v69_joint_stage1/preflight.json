@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "layout_parity": {
+    "things": 0.0,
+    "alljoined": 0.0
+  },
+  "tiny_overfit": {
+    "things": {
+      "steps": 6,
+      "initial": 4.4242401123046875,
+      "final": 0.7928570508956909,
+      "blur": 1.0,
+      "clean": 1.0
+    },
+    "alljoined": {
+      "steps": 6,
+      "initial": 4.432011604309082,
+      "final": 0.7526088356971741,
+      "blur": 1.0,
+      "clean": 1.0
+    }
+  },
+  "accumulated_branch_gradients": {
+    "things/encoder": 1801.8403555452824,
+    "things/projection": 241.8292828798294,
+    "things/adapter": 1143.825038909912,
+    "things/recovery": 816.1108922531712,
+    "things/attention": 25.439660236239433,
+    "things/local_image": 43.11096603795886,
+    "alljoined/encoder": 3944.217029631138,
+    "alljoined/projection": 407.31142270565033,
+    "alljoined/adapter": 2106.6621437072754,
+    "alljoined/recovery": 1430.3577594211092,
+    "alljoined/attention": 37.25091814994812,
+    "alljoined/local_image": 64.70592439174652
+  },
+  "updates_discarded": true,
+  "peak_gpu_gb": 17.25872896
+}

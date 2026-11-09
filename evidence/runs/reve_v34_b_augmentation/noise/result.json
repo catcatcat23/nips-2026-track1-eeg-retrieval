@@ -1,0 +1,208 @@
+{
+  "best_epoch": 7,
+  "selection": {
+    "candidate_images": 200,
+    "per_subject": {
+      "Gifford2022Large/1": {
+        "single_trial": {
+          "top1": 0.16321499013806706,
+          "top5": 0.40643491124260356,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.545,
+          "top5": 0.88,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/10": {
+        "single_trial": {
+          "top1": 0.22472879684418146,
+          "top5": 0.5072115384615384,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.64,
+          "top5": 0.89,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/2": {
+        "single_trial": {
+          "top1": 0.13751232741617356,
+          "top5": 0.3615631163708087,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.515,
+          "top5": 0.83,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/3": {
+        "single_trial": {
+          "top1": 0.18152120315581854,
+          "top5": 0.4469921104536489,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.58,
+          "top5": 0.885,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/4": {
+        "single_trial": {
+          "top1": 0.15483234714003946,
+          "top5": 0.39866863905325445,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.57,
+          "top5": 0.88,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/5": {
+        "single_trial": {
+          "top1": 0.11957593688362919,
+          "top5": 0.3300665680473373,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.455,
+          "top5": 0.795,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/6": {
+        "single_trial": {
+          "top1": 0.18244575936883628,
+          "top5": 0.4407051282051282,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.62,
+          "top5": 0.865,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/7": {
+        "single_trial": {
+          "top1": 0.19446499013806706,
+          "top5": 0.46696252465483234,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.54,
+          "top5": 0.825,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/8": {
+        "single_trial": {
+          "top1": 0.24402120315581854,
+          "top5": 0.5356262327416174,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.685,
+          "top5": 0.925,
+          "count": 200
+        }
+      },
+      "Gifford2022Large/9": {
+        "single_trial": {
+          "top1": 0.10133136094674557,
+          "top5": 0.2854413214990138,
+          "count": 16224
+        },
+        "subject_aggregated": {
+          "top1": 0.42,
+          "top5": 0.79,
+          "count": 200
+        }
+      }
+    },
+    "single_trial": {
+      "top1": 0.17036489151873768,
+      "top5": 0.4179672090729783,
+      "count": 162240
+    },
+    "subject_aggregated": {
+      "top1": 0.557,
+      "top5": 0.8565,
+      "count": 2000
+    }
+  },
+  "config": {
+    "run_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v34_b_augmentation/noise",
+    "official_config": "/home/Anteng/eeg-retrieval/logs/full-seed33-config.json",
+    "seed": 33,
+    "batch_size": 256,
+    "epochs": 40,
+    "patience": 5,
+    "lr": 0.0001,
+    "weight_decay": 0.05,
+    "warmup_epochs": 2,
+    "min_lr": 1e-06,
+    "temperature": 0.07,
+    "local_temperature": 0.07,
+    "blur_weight": 1,
+    "restore_weight": 0,
+    "local_weight": 0.0,
+    "kernels": [
+      1,
+      3,
+      9,
+      15,
+      21,
+      27,
+      33,
+      39,
+      45,
+      51,
+      57,
+      63
+    ],
+    "extract_batch_size": 16,
+    "ridge_folds": 5,
+    "ridge_alpha": 100.0,
+    "eeg_pca": 128,
+    "image_pca": 64,
+    "scope": "Train on original train+val; public test single-trial top5 for checkpoint selection; public test score is NOT independent evaluation",
+    "split": "Original train+val combined; original test reused only for model selection",
+    "bn": "none",
+    "precision": "float32",
+    "selection_group": "single_trial",
+    "selection_metric": "top5",
+    "encoder": "reve_finetune",
+    "encoder_microbatch": 64,
+    "head_dropout": 0,
+    "pretrained_model": "brain-bzh/reve-base",
+    "pretrained_snapshot": "dc2a075c287bb2f6c04ee5875bd79535a0f7dba6",
+    "encoder_lr": 0.0001,
+    "scheduler": "onecycle",
+    "plateau_patience": 5,
+    "plateau_factor": 0.5,
+    "diagnostic_per_subject": 256,
+    "initialization": "fresh pretrained REVE; seed33; reference initialization order",
+    "image_adapter": true,
+    "image_adapter_dropout": 0.85,
+    "clean_only": false,
+    "recipe": "reference_94b3a31",
+    "required_feature_schema": "upstream_per_scale_l2_dino_v1",
+    "training_splits": [
+      "train",
+      "val"
+    ],
+    "selection_split": "test",
+    "arm": "noise",
+    "baseline": "B ProjectedHead; full-parameter training from pretrained REVE; original diagonal clean+blur loss; matched baseline arm",
+    "recovery_head": "ProjectedHead; no outer raw-h residual",
+    "only_change": "B-head dropout=.2 baseline + post-zscore Gaussian noise std=.02 trial probability=.5",
+    "reference_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v14_trainval_public_selection",
+    "test_role": "public test single Top5 model selection, not independent test",
+    "runtime": "single CUDA process; v14 used one-rank DDP, no cross-rank loss changes"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "folds": 10,
+  "dataset": "THINGS-EEG2",
+  "baseline": "v64",
+  "train": "9 subjects, 14886 training images from original train+val",
+  "validation": "same9 subjects,1654 disjoint training images fixed seed33",
+  "test": "1 heldout subject, 200 original test images, all valid repeats",
+  "selection": "validation blur single Top5 across raw and EMA; final heldout test once per fold",
+  "weights": "per-subject fitted on14886 training images only; heldout subject weights never used",
+  "foundation_note": "Downstream LOSO; does not establish exclusion from REVE foundation pretraining"
+}

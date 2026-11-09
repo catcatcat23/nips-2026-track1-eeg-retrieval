@@ -1,0 +1,27 @@
+{
+  "status": "prepared_not_launched",
+  "source_subjects": [
+    "Gifford2022Large/3",
+    "Gifford2022Large/4",
+    "Gifford2022Large/5",
+    "Gifford2022Large/6",
+    "Gifford2022Large/7",
+    "Gifford2022Large/8",
+    "Gifford2022Large/9",
+    "Gifford2022Large/10"
+  ],
+  "excluded_subjects": [
+    "Gifford2022Large/1",
+    "Gifford2022Large/2"
+  ],
+  "arms": [
+    "base",
+    "identity"
+  ],
+  "paired_difference": "pooled512 identity contrast weight0/1, temperature.1",
+  "calibration": "after source fitting: independent seen, novel01 and novel02 residual calibrators; test EEG never fitted",
+  "test": "no S1/S2 EEG or metrics accessed by source fitting/selection",
+  "pretrained": "original REVE checkpoint; downstream exclusion only",
+  "source_parent": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v91_identity_loso_calibration/source",
+  "source_parent_hashes": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v91_identity_loso_calibration/source_sha256.json"
+}

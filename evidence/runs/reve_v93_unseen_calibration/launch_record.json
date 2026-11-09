@@ -1,0 +1,49 @@
+{
+  "command": [
+    "/mnt/DATA-4/anteng/eeg-retrieval/env/bin/python",
+    "-B",
+    "-u",
+    "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/source/queue_unseen_calibration.py",
+    "--root",
+    "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration",
+    "--poll-seconds",
+    "30"
+  ],
+  "pid": 2776295,
+  "launched_at": 1794154702.4727712,
+  "initial_gpu_state": {
+    "0": {
+      "uuid": "GPU-d021ff31-a131-b9d4-d54f-0555b4769ab6",
+      "memory_mib": 18672,
+      "utilization": 84,
+      "compute_pids": [
+        2759231
+      ]
+    },
+    "1": {
+      "uuid": "GPU-5b5da993-049a-80a5-4e06-653827437373",
+      "memory_mib": 8260,
+      "utilization": 5,
+      "compute_pids": [
+        2776189
+      ]
+    },
+    "2": {
+      "uuid": "GPU-da78382b-1a8a-d6a5-34b4-e4b0eafbb497",
+      "memory_mib": 8260,
+      "utilization": 0,
+      "compute_pids": [
+        2776190
+      ]
+    },
+    "3": {
+      "uuid": "GPU-2e7f2489-e9fb-393a-1d9e-1651d2b0e74d",
+      "memory_mib": 8260,
+      "utilization": 0,
+      "compute_pids": [
+        2776194
+      ]
+    }
+  },
+  "policy": "max2 workers; start only when no compute processes, low memory and low utilization; never kill other jobs"
+}

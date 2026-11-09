@@ -1,0 +1,6 @@
+{
+  "state": "superseded",
+  "epoch": 1,
+  "best_epoch": 1,
+  "reason": "User requires B recovery head in all experiments"
+}

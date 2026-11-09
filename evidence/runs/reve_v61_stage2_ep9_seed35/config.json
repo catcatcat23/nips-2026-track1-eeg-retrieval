@@ -1,0 +1,41 @@
+{
+  "source_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v60_stage2_epoch9/source_global.pt",
+  "checkpoint_sha256": "5a89dcc6573d90a0b74bbf8d55aa089452476a3027bc7d1af6510909dee1eb2e",
+  "cache_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v60_stage2_epoch9/cache",
+  "initial_reference": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v39_ridge_recovery/B/initial_head.pt",
+  "seed": 33,
+  "batch_size": 256,
+  "epochs": 40,
+  "patience": 5,
+  "lr": 0.0001,
+  "weight_decay": 0.05,
+  "scheduler": "OneCycle pct_start=.1 div_factor25 final_div_factor10000",
+  "selection": "clean subject_aggregated Top5; top3 checkpoints; public test development",
+  "source_epoch": 9,
+  "training_splits": [
+    "train",
+    "val"
+  ],
+  "loss": "original one-way ClipLoss norm_kind=y temperature=False; no distillation",
+  "condition": "disabled; v45 only",
+  "baseline": "v45 exact original initialization; frozen v57 epoch9 (blur agg Top5 not best; retained early checkpoint)",
+  "blur_reference": {
+    "single_trial": {
+      "top1": 0.1944896449704142,
+      "top5": 0.4517320019723866,
+      "count": 162240
+    },
+    "subject_aggregated": {
+      "top1": 0.779,
+      "top5": 0.965,
+      "count": 2000
+    }
+  },
+  "run_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v61_stage2_ep9_seed35",
+  "stage1_checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v57_mixed_channel/stage1/epoch_009.pt",
+  "stage1_checkpoint_sha256": "e9c4f990fc3e5250395b5cdc2ac97a3272bc9c52eb60a76378b4744b0e45211a",
+  "purpose": "Seed check of v60: only batch-order/dropout seed 33->35. Same frozen v57 epoch9, same v60 cache (read-only, same checkpoint sha), same v45 fixed init.",
+  "comparison": "reve_v60_stage2_epoch9 (train seed 33)",
+  "train_seed": 35
+}

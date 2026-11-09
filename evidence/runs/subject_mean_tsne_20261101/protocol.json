@@ -1,0 +1,9 @@
+{
+  "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/controlled_tsne_20261101",
+  "image": 30,
+  "averaging": "Raw EEG averaged within subject/image before encoder preprocessing; cached 512D pooled features",
+  "sampling": "Disjoint chunks within k; shared raw pool across k; all valid trials; decreasing plotted n as k grows",
+  "projection": "Raw features without L2 -> PCA50 fitted on k1 -> joint TSNE all k per model/domain; perplexity30 seed33 1000iterations",
+  "diagnostic": "Cosine distances in original512D; equal subject weight for within nonself pairs, equal subject-pair weight for between pairs; descriptive only; no significance test",
+  "models": "pretrained, v70/v71/v72 ep10 EMA.9998"
+}

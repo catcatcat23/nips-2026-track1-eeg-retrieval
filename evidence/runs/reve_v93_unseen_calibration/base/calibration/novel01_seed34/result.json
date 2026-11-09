@@ -1,0 +1,100 @@
+{
+  "state": "complete",
+  "fingerprint": "3bcae902de449bfdacebfe69cd41c7829c57b1fa30eeef940d9327c15ccf8a7b",
+  "pool": "novel01",
+  "seed": 34,
+  "best_epoch": 20,
+  "trained_epochs": 20,
+  "development_selection": "minimum blur mean correct-image rank; ties retain earlier epoch; epoch0 allowed",
+  "checkpoint": {
+    "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/base/stage1/ema0.9998_epoch_011.pt",
+    "sha256": "a00c07f37698bde911e314df2096841fa23a64454c93a549cd63a13a066b5f74",
+    "variant": "ema0.9998",
+    "epoch": 11,
+    "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+  },
+  "train_subjects": [
+    "Gifford2022Large/1"
+  ],
+  "fit_images": 14886,
+  "fit_trials": 14886,
+  "dev_images": 1654,
+  "trainable_parameters": 67136,
+  "tests": {
+    "test02": {
+      "zero": {
+        "blur": {
+          "single_trial": {
+            "top1": 0.03938609467455621,
+            "top5": 0.14065581854043394,
+            "mean_rank": 47.79024901380671,
+            "count": 16224
+          },
+          "subject_aggregated": {
+            "top1": 0.13,
+            "top5": 0.285,
+            "mean_rank": 25.55,
+            "count": 200
+          }
+        },
+        "clean": {
+          "single_trial": {
+            "top1": 0.04265285996055227,
+            "top5": 0.14182692307692307,
+            "mean_rank": 49.51057075936884,
+            "count": 16224
+          },
+          "subject_aggregated": {
+            "top1": 0.1,
+            "top5": 0.255,
+            "mean_rank": 27.74,
+            "count": 200
+          }
+        },
+        "repeats_min": 80,
+        "repeats_max": 83,
+        "candidate_count": 200,
+        "correction_ratio": 0.0
+      },
+      "calibrated": {
+        "blur": {
+          "single_trial": {
+            "top1": 0.03796844181459566,
+            "top5": 0.13553994082840237,
+            "mean_rank": 49.194434171597635,
+            "count": 16224
+          },
+          "subject_aggregated": {
+            "top1": 0.09,
+            "top5": 0.265,
+            "mean_rank": 26.525,
+            "count": 200
+          }
+        },
+        "clean": {
+          "single_trial": {
+            "top1": 0.03574950690335306,
+            "top5": 0.13295118343195267,
+            "mean_rank": 51.12006903353057,
+            "count": 16224
+          },
+          "subject_aggregated": {
+            "top1": 0.055,
+            "top5": 0.225,
+            "mean_rank": 29.895,
+            "count": 200
+          }
+        },
+        "repeats_min": 80,
+        "repeats_max": 83,
+        "candidate_count": 200,
+        "correction_ratio": 0.3338114023208618
+      }
+    }
+  },
+  "artifacts_sha256": {
+    "best.pt": "5bc6f206b75ba80b7cdc571a5819587c273969e4fd8463645f77dfba180db22b",
+    "last.pt": "ca162244d22011ac838505011cd1a45f904d2b85155da83277fbb52c6a9f89bc",
+    "history.json": "88283032e77d01041a5c7c137e4dc2165df0328257d9f1ccd36c2fe48a4329c0"
+  }
+}

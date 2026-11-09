@@ -1,0 +1,46 @@
+{
+  "run_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v51_conditional_diffusion",
+  "source_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/dropout/best.pt",
+  "checkpoint_sha256": "c7093ff8b099eaf01a7ec2d70a180af08e2f35570a2d36d3e73494f36cb6aa8e",
+  "seed": 33,
+  "batch_size": 256,
+  "epochs": 40,
+  "patience": 5,
+  "lr": 0.0001,
+  "weight_decay": 0.05,
+  "scheduler": "OneCycleLR pct_start=0.1 default div_factor=25 final_div_factor=10000",
+  "training_splits": [
+    "train",
+    "val"
+  ],
+  "selection": "public test single_trial Top5 after 20-step DDIM; not independent test",
+  "arms": {
+    "B": "conditional vector U-Net diffusion prior"
+  },
+  "frozen": "v33 epoch7 REVE, projection and image adapter unchanged; only U-Net head trains",
+  "output": "raw output; official average predictions then normalize",
+  "precision": "float32 TF32 disabled",
+  "source_sha": "89d14a92234c03d96492bd6903ce8c2a4f36fcbb",
+  "cache_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v38_frozen_v33_recovery/cache",
+  "cosine_weight": 0.0,
+  "parent_dependency_sha": "f361302dfd765ffa2b9be7386e91c477561202ca",
+  "blur_reference": "/home/Anteng/eeg-retrieval/audits/v33_v36_blur/v33_results.json",
+  "ridge_enabled": false,
+  "variant": "conditional_diffusion_x0",
+  "control": "v50 frozen cache/splits/optimizer unchanged; diffusion mechanism and loss change together",
+  "dropout": 0.1,
+  "initialization": "fresh seed33; no trained head loaded",
+  "widths": [
+    1536,
+    1024,
+    512,
+    256
+  ],
+  "purpose": "test EEG-conditioned multi-step visual-feature denoising against deterministic recovery",
+  "sampling_steps": 20,
+  "diffusion_steps": 1000,
+  "noise_schedule": "cosine alpha_bar, zero terminal SNR",
+  "objective": "MSE on L2-normalized clean multiplied by sqrt(1536), x0 prediction",
+  "sampling": "DDIM eta=0; fixed shared Gaussian seed5100; guidance=1; no clean/candidate input"
+}

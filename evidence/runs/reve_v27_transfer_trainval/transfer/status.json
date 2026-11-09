@@ -1,0 +1,4 @@
+{
+  "state": "cancelled",
+  "reason": "User requested stopping erroneous experiments using image-ID loss; artifacts preserved."
+}

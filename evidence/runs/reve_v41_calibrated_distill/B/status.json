@@ -1,0 +1,6 @@
+{
+  "state": "complete",
+  "epochs": 11,
+  "best_epoch": 6,
+  "best_top5": 0.43080621301775146
+}

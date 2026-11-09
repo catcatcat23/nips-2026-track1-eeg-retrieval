@@ -1,0 +1,26 @@
+{
+  "run_root": [
+    "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1",
+    "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1"
+  ],
+  "only_change": [
+    "identity_weight 0.1 -> 1.0",
+    "identity grouping: same image -> same concept, 16 concepts x4 subjects x2 shared images x2 trials"
+  ],
+  "experiment": [
+    "v82: v81 matched control, identity weight 0.1 -> 1.0",
+    "v83: concept-conditioned identity supervision, matched v82 weight1"
+  ],
+  "identity_positives": [
+    "same image AND same subject; negatives same image different subjects; other images excluded",
+    "same concept same subject excluding self (3 positives); same concept other subjects (12 negatives); other concepts excluded"
+  ],
+  "auxiliary_concepts": [
+    null,
+    16
+  ],
+  "auxiliary_images_per_concept": [
+    null,
+    2
+  ]
+}

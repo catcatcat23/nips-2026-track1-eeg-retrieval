@@ -1,0 +1,6 @@
+{
+  "state": "stopped",
+  "epoch": 1,
+  "best_epoch": 1,
+  "reason": "User requested stopping erroneous experiments using image-ID loss; artifacts preserved."
+}

@@ -1,0 +1,5 @@
+{
+  "stopped_epoch": 15,
+  "selection": "fixed final epoch EMA .9998; no metric selection",
+  "role": "full-public-data refit; old tests are in-sample/seen-image diagnostics"
+}

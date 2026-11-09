@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "eeg_initialization_matches_adapter_control": true,
+  "image_output_equals_raw_scale_mean": true,
+  "image_adapter_parameters": 0,
+  "samples": 8,
+  "top1": 1.0,
+  "initial_loss": 2.067333698272705,
+  "final_loss": 0.003128632204607129,
+  "steps": 3,
+  "dropout_disabled_only_for_preflight": true
+}

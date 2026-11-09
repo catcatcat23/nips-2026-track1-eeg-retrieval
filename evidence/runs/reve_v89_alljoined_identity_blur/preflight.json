@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "batch64_loss": 8.598700523376465,
+  "gradients": {
+    "encoder": 7258.37800437212,
+    "global_projection": 883.5428906679153,
+    "global_adapter": 3726.1658515930176,
+    "recovery": 3037.487662985921,
+    "queries_attention": 28.431969694793224,
+    "local_image": 71.65098864212632
+  },
+  "tiny_steps": 5,
+  "tiny_initial": 4.35979700088501,
+  "tiny_final": 0.992760956287384,
+  "updates_discarded": true,
+  "peak_gpu_mem_gb": 2.488444928
+}

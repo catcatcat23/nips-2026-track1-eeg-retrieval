@@ -1,0 +1,18 @@
+{
+  "run_root": [
+    "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch",
+    "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1"
+  ],
+  "only_change": [
+    "separate grouped image-conditioned subject loss; no identity loss on retrieval batch",
+    "identity_weight 0.1 -> 1.0"
+  ],
+  "experiment": [
+    "v81: random retrieval batch256 + grouped identity-only batch256",
+    "v82: v81 matched control, identity weight 0.1 -> 1.0"
+  ],
+  "identity_weight": [
+    0.1,
+    1.0
+  ]
+}

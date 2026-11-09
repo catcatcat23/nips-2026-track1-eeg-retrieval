@@ -1,0 +1,15 @@
+{
+  "train": {
+    "things": 668400,
+    "alljoined": 1335616
+  },
+  "test": {
+    "things": 162240,
+    "alljoined": 324294
+  },
+  "train_images": 16540,
+  "test_images": 200,
+  "image_overlap": 0,
+  "initial_state_sha256": "55c922a2293f25ef5a9023202fa5c805de4ac47b6dcc23cc9d735a946b559585",
+  "trainable_parameters": 69977088
+}

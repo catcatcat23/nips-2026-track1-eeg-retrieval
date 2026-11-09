@@ -1,0 +1,362 @@
+[
+  {
+    "model": "v80",
+    "image": 30,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 809,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v80",
+    "image": 30,
+    "layer": "pooled",
+    "space": "original",
+    "n": 809,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v81",
+    "image": 30,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 809,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v81",
+    "image": 30,
+    "layer": "pooled",
+    "space": "original",
+    "n": 809,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v82",
+    "image": 30,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 809,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v82",
+    "image": 30,
+    "layer": "pooled",
+    "space": "original",
+    "n": 809,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v83",
+    "image": 30,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 809,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v83",
+    "image": 30,
+    "layer": "pooled",
+    "space": "original",
+    "n": 809,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v84",
+    "image": 30,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 809,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v84",
+    "image": 30,
+    "layer": "pooled",
+    "space": "original",
+    "n": 809,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v80",
+    "image": 30,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 809,
+    "ARI": 0.6739843518652531,
+    "NMI": 0.7381125204142386
+  },
+  {
+    "model": "v80",
+    "image": 30,
+    "layer": "blur",
+    "space": "original",
+    "n": 809,
+    "ARI": 0.7513652658035341,
+    "NMI": 0.7884550152414289
+  },
+  {
+    "model": "v81",
+    "image": 30,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 809,
+    "ARI": 0.6681843106177177,
+    "NMI": 0.7314655999090542
+  },
+  {
+    "model": "v81",
+    "image": 30,
+    "layer": "blur",
+    "space": "original",
+    "n": 809,
+    "ARI": 0.831228299593548,
+    "NMI": 0.8395513570246316
+  },
+  {
+    "model": "v82",
+    "image": 30,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 809,
+    "ARI": 0.7544269220653946,
+    "NMI": 0.7867783690508088
+  },
+  {
+    "model": "v82",
+    "image": 30,
+    "layer": "blur",
+    "space": "original",
+    "n": 809,
+    "ARI": 0.8215725514941464,
+    "NMI": 0.841015696346564
+  },
+  {
+    "model": "v83",
+    "image": 30,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 809,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v83",
+    "image": 30,
+    "layer": "blur",
+    "space": "original",
+    "n": 809,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v84",
+    "image": 30,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 809,
+    "ARI": 0.9077993691497254,
+    "NMI": 0.9132820649645241
+  },
+  {
+    "model": "v84",
+    "image": 30,
+    "layer": "blur",
+    "space": "original",
+    "n": 809,
+    "ARI": 0.9103532389806936,
+    "NMI": 0.9113109527577029
+  },
+  {
+    "model": "v80",
+    "image": 73,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 818,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v80",
+    "image": 73,
+    "layer": "pooled",
+    "space": "original",
+    "n": 818,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v81",
+    "image": 73,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 818,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v81",
+    "image": 73,
+    "layer": "pooled",
+    "space": "original",
+    "n": 818,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v82",
+    "image": 73,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 818,
+    "ARI": 0.9972802302505429,
+    "NMI": 0.9971326316347604
+  },
+  {
+    "model": "v82",
+    "image": 73,
+    "layer": "pooled",
+    "space": "original",
+    "n": 818,
+    "ARI": 0.9972802302505429,
+    "NMI": 0.9971326316347604
+  },
+  {
+    "model": "v83",
+    "image": 73,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 818,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v83",
+    "image": 73,
+    "layer": "pooled",
+    "space": "original",
+    "n": 818,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v84",
+    "image": 73,
+    "layer": "pooled",
+    "space": "tsne2d",
+    "n": 818,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v84",
+    "image": 73,
+    "layer": "pooled",
+    "space": "original",
+    "n": 818,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v80",
+    "image": 73,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 818,
+    "ARI": 0.7887127509221762,
+    "NMI": 0.8125966494151473
+  },
+  {
+    "model": "v80",
+    "image": 73,
+    "layer": "blur",
+    "space": "original",
+    "n": 818,
+    "ARI": 0.8412281134727999,
+    "NMI": 0.8668839364751373
+  },
+  {
+    "model": "v81",
+    "image": 73,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 818,
+    "ARI": 0.7600340960789802,
+    "NMI": 0.8063915466243572
+  },
+  {
+    "model": "v81",
+    "image": 73,
+    "layer": "blur",
+    "space": "original",
+    "n": 818,
+    "ARI": 0.8451810273271505,
+    "NMI": 0.8659306858349718
+  },
+  {
+    "model": "v82",
+    "image": 73,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 818,
+    "ARI": 0.823692252204708,
+    "NMI": 0.8525375725826355
+  },
+  {
+    "model": "v82",
+    "image": 73,
+    "layer": "blur",
+    "space": "original",
+    "n": 818,
+    "ARI": 0.8537154089921244,
+    "NMI": 0.8802777562738837
+  },
+  {
+    "model": "v83",
+    "image": 73,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 818,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v83",
+    "image": 73,
+    "layer": "blur",
+    "space": "original",
+    "n": 818,
+    "ARI": 1.0,
+    "NMI": 1.0
+  },
+  {
+    "model": "v84",
+    "image": 73,
+    "layer": "blur",
+    "space": "tsne2d",
+    "n": 818,
+    "ARI": 0.8920944194625204,
+    "NMI": 0.8996034601842059
+  },
+  {
+    "model": "v84",
+    "image": 73,
+    "layer": "blur",
+    "space": "original",
+    "n": 818,
+    "ARI": 0.8712193434865847,
+    "NMI": 0.8855478460046188
+  }
+]

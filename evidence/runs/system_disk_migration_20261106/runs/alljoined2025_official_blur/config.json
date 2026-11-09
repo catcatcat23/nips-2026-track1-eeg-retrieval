@@ -1,0 +1,19 @@
+{
+  "epochs": 200,
+  "patience": 20,
+  "batch": 256,
+  "seed": 33,
+  "encoder_lr": 1e-05,
+  "head_lr": 0.0001,
+  "weight_decay": 0.05,
+  "adapter_dropout": 0.85,
+  "initialization": "original pretrained REVE and fresh B ProjectedHead, no v35 weights",
+  "objective": "original one-way ClipLoss norm_kind=y temperature=False clean+blur equally weighted",
+  "selection": "original public test blur subject-aggregated Top5; top3 saved; test is model selection, not independent evaluation",
+  "scheduler": "ReduceLROnPlateau patience5 factor0.5 min_lr1e-6, no warmup",
+  "precision": "FP32 TF32 disabled",
+  "training": "Alljoined2025 stim_train 16540 images, no THINGS or 2024; exact official sessions; full-parameter joint training",
+  "model": "ReferenceModel REVE mean pooling + Linear512to1536; B ProjectedHead clean recovery; image adapter dropout0.85",
+  "stage": "stage1 only; no automatic frozen second stage",
+  "source_sha": "6e390f1b4e810153eb8602378589094b20e41ea1"
+}

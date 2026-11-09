@@ -1,0 +1,22 @@
+{
+  "initialization": "original brain-bzh/reve-base; all heads random; no retrieval checkpoint loaded",
+  "training_samples": 668400,
+  "config": {
+    "run_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v21_fresh_b_image_id",
+    "data_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+    "seed": 33,
+    "epochs": 200,
+    "patience": 20,
+    "encoder_lr": 1e-05,
+    "lr": 0.0001,
+    "batch_size": 256,
+    "initialization": "Original pretrained REVE; random projection, adapter and B recovery; all parameters trainable",
+    "loss": "equal clean and blur image-balanced multi-positive y-only CE, temperature 1",
+    "scheduler": "plateau public test single Top5 patience5 factor0.5 min_lr1e-6; no warmup",
+    "preprocessing": "unchanged official cached EEG + existing reference REVE input adapter",
+    "optimizer": "AdamW wd0.05 clip1 FP32",
+    "selection": "public test single Top5; not independent evaluation",
+    "training": "THINGS train+val 668400 single trials, no cached EEG embeddings",
+    "device": "GPU3"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "source_sha": "5638720beb17d914d9c49f93c90c20ac9e7fec42",
+  "snapshot": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/multiblur_v2_b512_e200/source-5638720beb17",
+  "archive_sha256": "7fbb3fe3fe1035820c27e17e6acc114129e10b885c73246cef7cb8832a80a174",
+  "gpus": "0,1",
+  "parent_data_run": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/multiblur_v1",
+  "initialization": "fresh seed21; no checkpoint resume",
+  "global_batch": 1024,
+  "epochs": 200,
+  "early_stopping": false
+}

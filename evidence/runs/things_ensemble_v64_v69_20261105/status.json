@@ -1,0 +1,4 @@
+{
+  "state": "complete",
+  "protocol": "Fixed checkpoints, equal weights; public test diagnostic, no weight search. Each trial predicted separately; raw ensemble predictions averaged by subject and image before cosine retrieval. Blur galleries are model-specific, so no cross-model blur-vector ensemble."
+}

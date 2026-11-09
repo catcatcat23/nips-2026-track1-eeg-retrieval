@@ -1,0 +1,29 @@
+{
+  "run_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v40_blur_distill_recovery",
+  "source_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v13_reference",
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v33_b_stability/dropout/best.pt",
+  "checkpoint_sha256": "c7093ff8b099eaf01a7ec2d70a180af08e2f35570a2d36d3e73494f36cb6aa8e",
+  "seed": 33,
+  "batch_size": 256,
+  "epochs": 40,
+  "patience": 5,
+  "lr": 0.0001,
+  "weight_decay": 0.05,
+  "scheduler": "OneCycleLR pct_start=0.1 default div_factor=25 final_div_factor=10000",
+  "training_splits": [
+    "train",
+    "val"
+  ],
+  "selection": "public test single_trial top5; not independent evaluation",
+  "arms": {
+    "B": "original B head with original clean ClipLoss + tau^2 KL blur teacher ranking"
+  },
+  "frozen": "v33 REVE/projection and image adapter eval frozen; original B head trained only",
+  "output": "raw output; official average predictions then normalize",
+  "precision": "float32 TF32 disabled",
+  "initial_reference": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/recovery_v15_frozen_v13/B/initial_head.pt",
+  "source_sha": "fd6dfc2f0c5308e064a5326e658b9ddbeb743383",
+  "cache_root": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v38_frozen_v33_recovery/cache",
+  "distill_temperature": 0.07,
+  "distill_weight": 1.0
+}

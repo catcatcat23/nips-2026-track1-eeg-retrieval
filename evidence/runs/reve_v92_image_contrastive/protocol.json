@@ -1,0 +1,13 @@
+{
+  "dataset": "THINGS-EEG2; original train+val combined",
+  "retrieval": "unchanged clean+blur+0.1 Local OT, original random batch256",
+  "auxiliary": "32 images x4 distinct subjects x2 distinct trials=256; no EEG augmentation",
+  "positive": "same image, including same and different subjects; self excluded; 7",
+  "negative": "different image, regardless of subject; 248",
+  "loss": "mean-positive supervised contrastive CE on normalized pooled512, temperature0.1, weight1",
+  "optimization": "one step after retrieval backward and weighted auxiliary backward; shared gradient clipping",
+  "model": "fresh pretrained REVE; original heads; no identity loss or new classifier",
+  "comparison": "v82 matches two-batch sampling and compute. Positive/negative composition and loss semantics both change. Weight1 does not guarantee equal encoder gradient strength; log actual gradient norms and cosine.",
+  "evaluation": "all four clean/blur single/aggregate metrics; raw and EMA; public-test development selection unchanged",
+  "status": "prepared only; CPU/GPU preflight and training not yet run"
+}

@@ -1,0 +1,10 @@
+{
+  "data_path": "/mnt/DATA-2/Yanhao/Visual_EEG_Decoding_processed_data/things-eeg",
+  "subject": 1,
+  "output_dir": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/upstream_multiblur_mean_sub01_seed21/results",
+  "epochs": 200,
+  "batch_size": 1024,
+  "lr": 0.001,
+  "seed": 21,
+  "device": "cuda:0"
+}

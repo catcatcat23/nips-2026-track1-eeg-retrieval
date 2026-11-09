@@ -1,0 +1,72 @@
+{
+  "best": {
+    "alpha": 0.025,
+    "score": 0.6205,
+    "tune": {
+      "single_trial": {
+        "top1": 0.043872089581689026,
+        "top5": 0.14490430149960537,
+        "count": 162176
+      },
+      "subject_aggregated": {
+        "top1": 0.2995,
+        "top5": 0.6205,
+        "count": 2000
+      }
+    },
+    "tag": "soup_0.02500"
+  },
+  "holdout": {
+    "single_trial": {
+      "top1": 0.03361132014952072,
+      "top5": 0.126050160993844,
+      "count": 162118
+    },
+    "subject_aggregated": {
+      "top1": 0.2515,
+      "top5": 0.5315,
+      "count": 2000
+    }
+  },
+  "full_public_diagnostic": {
+    "single_trial": {
+      "top1": 0.03874262243519769,
+      "top5": 0.13547891727876557,
+      "count": 324294
+    },
+    "subject_aggregated": {
+      "top1": 0.2755,
+      "top5": 0.576,
+      "count": 4000
+    }
+  },
+  "baseline_holdout": {
+    "v69": {
+      "single_trial": {
+        "top1": 0.033321407863408134,
+        "top5": 0.12320655325133545,
+        "count": 162118
+      },
+      "subject_aggregated": {
+        "top1": 0.269,
+        "top5": 0.559,
+        "count": 2000
+      }
+    },
+    "v85": {
+      "single_trial": {
+        "top1": 0.033586646763468585,
+        "top5": 0.12563688177747073,
+        "count": 162118
+      },
+      "subject_aggregated": {
+        "top1": 0.2585,
+        "top5": 0.5375,
+        "count": 2000
+      }
+    }
+  },
+  "single_model": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/alljoined_bayesian_soup_v69_v85_20261106/best_soup.pt",
+  "reload_passed": true,
+  "interpretation": "Endpoint optimum is allowed: parameter mixing may fail despite output-ensemble gains. No hidden-test claim."
+}

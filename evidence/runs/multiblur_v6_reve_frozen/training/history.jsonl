@@ -1,0 +1,1 @@
+{"epoch": 1, "loss": 9.020516591053813, "validation": {"single_trial": {"top1": 8.228605625374028e-05, "top5": 0.0003441053261520048, "count": 133680}, "subject_aggregated": {"top1": 8.056719303899453e-05, "top5": 0.00029004189494038026, "count": 62060}, "candidate_images": 16500}, "epoch_seconds": 205.22920179367065, "elapsed_seconds": 205.23067378997803}

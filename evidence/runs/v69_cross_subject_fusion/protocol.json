@@ -1,0 +1,17 @@
+{
+  "checkpoint": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v69_joint_stage1/stage1/ema0.9998_epoch_015.pt",
+  "counts": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "seeds": [
+    101,
+    102,
+    103
+  ],
+  "paired": true,
+  "rule": "same image; same total trials; cross includes anchor subject once and k-1 distinct others; within uses k distinct anchor trials; same selected anchor trial; separate datasets; no retraining",
+  "limitation": "seen-subject public-test diagnostic, not evidence of unseen-subject generalization"
+}

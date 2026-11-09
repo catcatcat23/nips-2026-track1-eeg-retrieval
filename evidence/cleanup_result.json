@@ -1,0 +1,8 @@
+{
+  "date": "2026-11-09 21:52:39 +0800",
+  "deleted_files": 216,
+  "reclaimed_bytes": 139809990618,
+  "preserved_epoch_files": 141,
+  "audit": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/handoff_cleanup_20261109",
+  "all_kept_exist": true
+}

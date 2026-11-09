@@ -1,0 +1,32 @@
+{
+  "seed": 33,
+  "batch": 256,
+  "epochs": 200,
+  "patience": 20,
+  "lr_encoder": 1e-05,
+  "lr_heads": 0.0001,
+  "selection": "THINGS public test single Top5",
+  "loss": "image-balanced multi-positive clean+blur equal weights",
+  "data": {
+    "things": {
+      "train": 601586,
+      "val": 66814
+    },
+    "Xu2024Alljoined": {
+      "train": 44583,
+      "val": 4958
+    },
+    "Xu2025Alljoined": {
+      "train": 1203097,
+      "val": 133632
+    }
+  },
+  "sampler": "each trial once per epoch; shuffled native-channel homogeneous batches",
+  "preprocessing": "unchanged official caches and existing REVE input adaptation",
+  "initialization": "original pretrained REVE; fresh heads",
+  "source_epoch": null,
+  "test_role": "public test used for stage2/control selection, scheduling and early stopping; not independent evaluation",
+  "stage_training_samples": {
+    "things": 668400
+  }
+}

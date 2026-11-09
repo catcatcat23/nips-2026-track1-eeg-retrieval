@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "gradients": {
+    "encoder": 43232.12909048796,
+    "blur_head": 1773.7152593135834,
+    "recovery": 7649.456582284765,
+    "image_adapter": 7751.044539451599
+  },
+  "initial_loss": 6.3863420486450195,
+  "final_loss": 2.2793076038360596,
+  "tiny_blur_top1": 1.0,
+  "steps": 4,
+  "updates_discarded": true
+}

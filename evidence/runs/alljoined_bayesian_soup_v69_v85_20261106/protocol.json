@@ -1,0 +1,15 @@
+{
+  "members": [
+    "v69 ep15 EMA .9998",
+    "v85 ep8 EMA .9998"
+  ],
+  "target": "clean subject aggregated Top5",
+  "fusion": "alpha*v69+(1-alpha)*v85",
+  "output_search": "raw and per-model unit vectors, alpha0/.25/.5/.75/1",
+  "parameter_search": "GP Matern expected improvement: 5 initial +7 BO evaluations; all floating parameters except positions; native32 channel canonicalization",
+  "tune": "100 images seed910033",
+  "check": "remaining100, same complete200 candidate gallery",
+  "limitations": "Public test previously used for checkpoint selection; no unbiased independent-test claim. Blur galleries differ, clean only.",
+  "storage": "data disk",
+  "cpu_checks": "score averaging equivalence, sklearn GP, syntax passed"
+}

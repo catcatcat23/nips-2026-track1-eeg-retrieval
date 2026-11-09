@@ -1,0 +1,22 @@
+{
+  "paper": "https://arxiv.org/html/1511.05547v2",
+  "section": "3.2 Algorithm1",
+  "covariance_regularizer": 1,
+  "ridge_regularizer": 10,
+  "ridge_objective": "mean squared Frobenius residual +10||W||\u00b2",
+  "source_trials": 9000,
+  "target_labels": 0,
+  "readout": "source-labelled Ridge replaces original projection; compare identical no-CORAL source Ridge",
+  "budgets": [
+    50,
+    200
+  ],
+  "seeds": [
+    33,
+    34,
+    35,
+    36,
+    37
+  ],
+  "preprocessing": "feature centering, no dimensionwise scale; source->target CORAL; target test untouched"
+}

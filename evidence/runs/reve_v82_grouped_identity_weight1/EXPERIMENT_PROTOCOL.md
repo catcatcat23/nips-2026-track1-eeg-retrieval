@@ -1,0 +1,1 @@
+v82 follows v81 exactly except identity_weight=1.0 (previously 0.1). Fresh pretrained REVE, seed33, two independent batches of 256, one optimizer update. All data/sampling/loss/EMA/selection settings and source hashes identical. Public test used for development selection, not independent test. Gradient monitoring retained. All preflight updates discarded.

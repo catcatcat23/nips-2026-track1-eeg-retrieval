@@ -1,0 +1,16 @@
+{
+  "architecture_max_abs_error_on_real_preprocessed_EEG": 0.0,
+  "warmup_63ch_120samples": "passed",
+  "variable_batch_sizes": [
+    1,
+    3
+  ],
+  "32_channel_shape_check": "passed (synthetic; not sealed-data validation)",
+  "network_disabled": "passed",
+  "constant_input_finite": "passed",
+  "submission_weights": "strict state_dict load",
+  "platform_submission": "not uploaded",
+  "preprocessing_caveat": "window resampling/standardization is a bridge; does not reproduce recording-level training preprocessing",
+  "official_benchopt_simulated": "passed: 63 channels,120Hz,120 samples,1536 outputs; training=False",
+  "benchopt_log": "logs/reve-submission-benchopt.log"
+}

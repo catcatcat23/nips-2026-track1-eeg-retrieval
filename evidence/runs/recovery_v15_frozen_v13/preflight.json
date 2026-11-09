@@ -1,0 +1,23 @@
+{
+  "A": {
+    "initial_loss": 1.5903451442718506,
+    "final_loss": 0.17984704673290253,
+    "steps": 3,
+    "top1": 1.0,
+    "train_mode_gradients_finite": true
+  },
+  "B": {
+    "initial_loss": 2.1066832542419434,
+    "final_loss": 0.05440394580364227,
+    "steps": 4,
+    "top1": 1.0,
+    "train_mode_gradients_finite": true
+  },
+  "D": {
+    "initial_loss": 2.203392267227173,
+    "final_loss": 0.48406487703323364,
+    "steps": 2,
+    "top1": 1.0,
+    "train_mode_gradients_finite": true
+  }
+}

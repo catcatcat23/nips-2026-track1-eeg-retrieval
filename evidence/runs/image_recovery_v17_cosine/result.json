@@ -1,0 +1,11 @@
+{
+  "best_epoch": 51,
+  "selection": {
+    "top1": 1.0,
+    "top5": 1.0,
+    "cosine": 0.9708937406539917,
+    "count": 200,
+    "candidate_images": 200
+  },
+  "role": "image-only public test model selection; not EEG accuracy or independent test"
+}

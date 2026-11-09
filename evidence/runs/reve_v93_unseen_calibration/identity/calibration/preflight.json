@@ -1,0 +1,112 @@
+{
+  "fingerprint": "8e6ea6e6717c88bce51a5e6351c1a351cab163b3b5146ef14bb132d0d7cd68ab",
+  "checkpoint": {
+    "path": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v93_unseen_calibration/identity/stage1/ema0.9998_epoch_011.pt",
+    "sha256": "bab8e1a02c2d4ac84d538a8cc45b3d32000feb8eb8ffdceb7c9261d32995ea58",
+    "variant": "ema0.9998",
+    "epoch": 11,
+    "selection": "S3--S10 image-disjoint validation blur single Top5 only"
+  },
+  "fit_records": [
+    {
+      "split": "val",
+      "row": 85696,
+      "image": 201,
+      "subject": "Gifford2022Large/7"
+    },
+    {
+      "split": "train",
+      "row": 186664,
+      "image": 202,
+      "subject": "Gifford2022Large/4"
+    },
+    {
+      "split": "train",
+      "row": 406482,
+      "image": 203,
+      "subject": "Gifford2022Large/8"
+    },
+    {
+      "split": "val",
+      "row": 34611,
+      "image": 204,
+      "subject": "Gifford2022Large/4"
+    },
+    {
+      "split": "val",
+      "row": 107679,
+      "image": 205,
+      "subject": "Gifford2022Large/7"
+    },
+    {
+      "split": "val",
+      "row": 113437,
+      "image": 206,
+      "subject": "Gifford2022Large/7"
+    },
+    {
+      "split": "train",
+      "row": 255142,
+      "image": 207,
+      "subject": "Gifford2022Large/5"
+    },
+    {
+      "split": "train",
+      "row": 521183,
+      "image": 208,
+      "subject": "Gifford2022Large/10"
+    }
+  ],
+  "passed": true,
+  "samples": 8,
+  "steps": 2,
+  "device": "cuda:0",
+  "torch_version": "2.14.1+cu126",
+  "data": "first eight distinct seen_fit images; no development/test data",
+  "zero_step_tensor_exact": true,
+  "original_heads_unchanged": true,
+  "bypass_exact": true,
+  "save_reload_exact": true,
+  "batch_order_tolerance": 2e-05,
+  "production_initialization_unchanged": true,
+  "gradients": [
+    {
+      "step": 1,
+      "loss": 1.0754120349884033,
+      "clean_loss": 0.5930970311164856,
+      "blur_loss": 0.4823150634765625,
+      "gradient_norm": 0.3921758830547333,
+      "per_parameter_gradient_norm": {
+        "net.0.weight": 0.0,
+        "net.0.bias": 0.0,
+        "net.1.weight": 0.0,
+        "net.1.bias": 0.0,
+        "net.3.weight": 0.3714688718318939,
+        "net.3.bias": 0.12574902176856995
+      },
+      "component_gradient_norm": {
+        "clean": 0.210959330201149,
+        "blur": 0.18125711381435394
+      }
+    },
+    {
+      "step": 2,
+      "loss": 1.074105143547058,
+      "clean_loss": 0.5924000144004822,
+      "blur_loss": 0.48170509934425354,
+      "gradient_norm": 0.3916245698928833,
+      "per_parameter_gradient_norm": {
+        "net.0.weight": 0.0002614978002384305,
+        "net.0.bias": 0.0001643397699808702,
+        "net.1.weight": 0.00522187352180481,
+        "net.1.bias": 0.0002735011512413621,
+        "net.3.weight": 0.3709190785884857,
+        "net.3.bias": 0.1255444586277008
+      },
+      "component_gradient_norm": {
+        "clean": 0.21067863702774048,
+        "blur": 0.18098127841949463
+      }
+    }
+  ]
+}

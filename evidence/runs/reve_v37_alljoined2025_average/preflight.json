@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "steps": [
+    {
+      "loss": 12.976886749267578,
+      "gradient_l1": {
+        "encoder": 26893.257800221443,
+        "projection": 3878.084774017334,
+        "adapter": 18897.63117980957,
+        "recovery": 1767.5011677125003
+      },
+      "requested_counts": [
+        0,
+        128,
+        64,
+        0,
+        64
+      ],
+      "actual_counts": [
+        0,
+        128,
+        64,
+        0,
+        64
+      ]
+    },
+    {
+      "loss": 12.310062408447266,
+      "gradient_l1": {
+        "encoder": 20485.027238368988,
+        "projection": 2217.6356480121613,
+        "adapter": 9958.989776611328,
+        "recovery": 2129.256915366277
+      },
+      "requested_counts": [
+        0,
+        128,
+        64,
+        0,
+        64
+      ],
+      "actual_counts": [
+        0,
+        128,
+        64,
+        0,
+        64
+      ]
+    },
+    {
+      "loss": 12.217630386352539,
+      "gradient_l1": {
+        "encoder": 18445.36116039753,
+        "projection": 2377.9622926712036,
+        "adapter": 9204.959651947021,
+        "recovery": 2243.193693900481
+      },
+      "requested_counts": [
+        0,
+        128,
+        64,
+        0,
+        64
+      ],
+      "actual_counts": [
+        0,
+        128,
+        64,
+        0,
+        64
+      ]
+    }
+  ],
+  "updates_discarded": true
+}

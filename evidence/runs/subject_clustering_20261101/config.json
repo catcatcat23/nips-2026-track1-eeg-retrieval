@@ -1,0 +1,19 @@
+{
+  "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/subject_identity_probe_20261101",
+  "subset": "probe test split only, 50 images, 4 trials/person/image",
+  "methods": [
+    "raw KMeans",
+    "L2-normalized KMeans"
+  ],
+  "seeds": [
+    33,
+    34,
+    35
+  ],
+  "n_init": 10,
+  "pca": false,
+  "labels_used_for_fit": false,
+  "k": "known number of subjects",
+  "source_sha256": "d3c73c35dd5c71600818e77ddf609bfdbf32872c3ce2fc07048d270296547a6b",
+  "limitations": "transductive clustering; no session holdout; seed SD is not statistical confidence; matched accuracy is posthoc Hungarian matching"
+}

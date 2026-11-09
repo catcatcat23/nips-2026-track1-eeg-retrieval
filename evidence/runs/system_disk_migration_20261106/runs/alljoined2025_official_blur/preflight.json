@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "batch256_loss": 12.345460891723633,
+  "gradient_l1": {
+    "encoder": 15747.557169795036,
+    "projection": 2395.611118555069,
+    "adapter": 10952.434432983398,
+    "recovery": 2173.9312933697365
+  },
+  "tiny_steps": 5,
+  "tiny_initial_loss": 4.176912784576416,
+  "tiny_final_loss": 0.8924165368080139,
+  "tiny_clean_top1": 1.0,
+  "tiny_blur_top1": 1.0,
+  "updates_discarded": true
+}

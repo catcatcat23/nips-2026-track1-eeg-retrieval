@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "steps": 30,
+  "initial_mse": 1.3117704391479492,
+  "final_mse": 0.06567024439573288,
+  "sampled_top1": 1.0,
+  "condition_effect": 0.19912266731262207,
+  "condition_gradients": {
+    "encoder.0.condition.weight": 0.9478861093521118,
+    "encoder.1.condition.weight": 0.04079292714595795,
+    "encoder.2.condition.weight": 0.0019958659540861845,
+    "middle.condition.weight": 0.0013247369788587093,
+    "decoder.0.condition.weight": 0.015375524759292603,
+    "decoder.1.condition.weight": 0.29613614082336426,
+    "decoder.2.condition.weight": 6.048269271850586
+  },
+  "batch_invariance": true,
+  "updates_discarded": true,
+  "parameters": 15434240
+}

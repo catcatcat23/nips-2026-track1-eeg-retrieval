@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "parameters": 42707205,
+  "initial_gate": 0.1,
+  "initial_output_matches_v45": true,
+  "initial_loss": 2.079441547393799,
+  "final_loss": 7.397370063699782e-05,
+  "steps": 5,
+  "tiny_top1": 1.0,
+  "gradient_l1": {
+    "linear": 0.26679684680129867,
+    "gate": 0.002210082564261029,
+    "residual": 0.030087869576277626,
+    "extra_block1": 0.0036884627946847104,
+    "extra_block2": 0.004098988037299023
+  },
+  "batch_invariance": true,
+  "updates_discarded": true
+}

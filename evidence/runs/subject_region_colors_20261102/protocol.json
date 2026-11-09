@@ -1,0 +1,7 @@
+{
+  "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/direct_tsne_full_aggregate_20261101",
+  "change": "subject-level color permutation only; each subject retains one color within each panel",
+  "matching": "Hungarian minimum squared distance of subject centroids after panel centering/isotropic RMS scaling; reference v70 separately per domain/dimension/condition",
+  "unchanged": "coordinates, subject membership, KMeans, metrics, and feature data",
+  "limitation": "Display convenience only; matched colors imply neither shared identity nor correspondence of high-dimensional representations"
+}

@@ -1,0 +1,246 @@
+{
+ "check_ema0.999_ep9": {
+  "variant": "ema0.999",
+  "epochs": [
+   9
+  ],
+  "blur": {
+   "single_trial": {
+    "top1": 0.22071005917159764,
+    "top5": 0.49364521696252467,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.878,
+    "top5": 0.9865,
+    "count": 2000
+   }
+  },
+  "clean": {
+   "single_trial": {
+    "top1": 0.1940396942800789,
+    "top5": 0.45079511834319524,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.708,
+    "top5": 0.9445,
+    "count": 2000
+   }
+  },
+  "seconds": 154.37372708320618,
+  "matches_history": true
+ },
+ "swa_raw_6-10": {
+  "variant": "raw",
+  "epochs": [
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "blur": {
+   "single_trial": {
+    "top1": 0.21997041420118343,
+    "top5": 0.49236932938856015,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.849,
+    "top5": 0.985,
+    "count": 2000
+   }
+  },
+  "clean": {
+   "single_trial": {
+    "top1": 0.19236316568047337,
+    "top5": 0.4507088264299803,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.674,
+    "top5": 0.934,
+    "count": 2000
+   }
+  },
+  "seconds": 158.12949442863464
+ },
+ "swa_raw_7-11": {
+  "variant": "raw",
+  "epochs": [
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "blur": {
+   "single_trial": {
+    "top1": 0.22079018737672584,
+    "top5": 0.49364521696252467,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.872,
+    "top5": 0.987,
+    "count": 2000
+   }
+  },
+  "clean": {
+   "single_trial": {
+    "top1": 0.19233851084812623,
+    "top5": 0.4498828895463511,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.6865,
+    "top5": 0.941,
+    "count": 2000
+   }
+  },
+  "seconds": 160.04165363311768
+ },
+ "swa_raw_8-12": {
+  "variant": "raw",
+  "epochs": [
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "blur": {
+   "single_trial": {
+    "top1": 0.21976084812623276,
+    "top5": 0.49196252465483237,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.8785,
+    "top5": 0.986,
+    "count": 2000
+   }
+  },
+  "clean": {
+   "single_trial": {
+    "top1": 0.19196868836291914,
+    "top5": 0.446961291913215,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.704,
+    "top5": 0.947,
+    "count": 2000
+   }
+  },
+  "seconds": 158.19091773033142
+ },
+ "swa_raw_6-12": {
+  "variant": "raw",
+  "epochs": [
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "blur": {
+   "single_trial": {
+    "top1": 0.223194033530572,
+    "top5": 0.49619699211045365,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.8675,
+    "top5": 0.9865,
+    "count": 2000
+   }
+  },
+  "clean": {
+   "single_trial": {
+    "top1": 0.19471153846153846,
+    "top5": 0.4518367850098619,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.692,
+    "top5": 0.9415,
+    "count": 2000
+   }
+  },
+  "seconds": 157.00889563560486
+ },
+ "swa_ema0.999_7-11": {
+  "variant": "ema0.999",
+  "epochs": [
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "blur": {
+   "single_trial": {
+    "top1": 0.22535133136094673,
+    "top5": 0.4997965976331361,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.878,
+    "top5": 0.988,
+    "count": 2000
+   }
+  },
+  "clean": {
+   "single_trial": {
+    "top1": 0.19846523668639054,
+    "top5": 0.45627465483234714,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.704,
+    "top5": 0.944,
+    "count": 2000
+   }
+  },
+  "seconds": 155.42294907569885
+ },
+ "swa_ema0.9998_8-12": {
+  "variant": "ema0.9998",
+  "epochs": [
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "blur": {
+   "single_trial": {
+    "top1": 0.22342825443786982,
+    "top5": 0.49727564102564104,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.8635,
+    "top5": 0.9865,
+    "count": 2000
+   }
+  },
+  "clean": {
+   "single_trial": {
+    "top1": 0.19784270216962524,
+    "top5": 0.4566999506903353,
+    "count": 162240
+   },
+   "subject_aggregated": {
+    "top1": 0.6975,
+    "top5": 0.9405,
+    "count": 2000
+   }
+  },
+  "seconds": 153.93964195251465
+ }
+}

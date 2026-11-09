@@ -1,0 +1,9 @@
+{
+  "state": "complete",
+  "fingerprint": "7463a5e55d6d9442ae8e98ea3498c8b6094b03ffb18dd4f5b8e3200f608f63c7",
+  "artifacts_sha256": {
+    "best.pt": "aa90e14cb01609bb154ff7dc9c4c8a69734152915362e14e958267a9842bdfd5",
+    "last.pt": "aa90e14cb01609bb154ff7dc9c4c8a69734152915362e14e958267a9842bdfd5",
+    "history.json": "aa90e14cb01609bb154ff7dc9c4c8a69734152915362e14e958267a9842bdfd5"
+  }
+}

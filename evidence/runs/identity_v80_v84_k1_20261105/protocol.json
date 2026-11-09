@@ -1,0 +1,12 @@
+{
+  "images": [
+    30,
+    73
+  ],
+  "selection": "maximum available blur aggregate Top5; ties earliest epoch; v83 interim",
+  "input": "all single trials from fixed test images; no augmentation or averaging",
+  "features": "REVE pooled512 and EEG blur prediction1536, FP32 eval mode, raw unnormalized",
+  "tsne": "direct feature input, PCA initialization only, perplexity30, 2000 iterations, seed5, 2D",
+  "clustering": "KMeans10 n_init20 seed5 in original and 2D spaces; labels used only for metrics/color matching",
+  "interpretation": "two preselected illustrative images; not evidence of dataset-wide superiority"
+}

@@ -1,7 +1,15 @@
 __pycache__/
 *.pyc
-runs/
+/runs/
 *.pt
 *.npy
 *.npz
 submission/*.zip
+*.pth
+*.ckpt
+*.safetensors
+*.zip
+.env
+.env.*
+*credentials*
+wandb/

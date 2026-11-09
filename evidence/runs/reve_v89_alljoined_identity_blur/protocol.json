@@ -1,0 +1,13 @@
+{
+  "baseline": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v86_alljoined_identity_image",
+  "scope": "image",
+  "original_batch": 256,
+  "auxiliary_batch": 256,
+  "auxiliary_layout": "32 images x4 subjects x2 trials",
+  "identity_weight": 1.0,
+  "temperature": 0.1,
+  "projection": "existing blur_head, normalized h1536",
+  "selection": "unchanged v67: public-test blur single-trial Top5 early stopping; retain all epochs for aggregate Top5 comparison",
+  "limitation": "public test used for model selection; not independent test. Grouped controls add encoder compute and change positive/negative composition.",
+  "only_change": "identity loss location pooled512 -> blur1536; same auxiliary batch, weight1, temperature0.1"
+}

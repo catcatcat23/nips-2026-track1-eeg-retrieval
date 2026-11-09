@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "initial_function_exactly_matches_B": true,
+  "parameters": {
+    "baseline": 23617538,
+    "deeper": 42507268
+  },
+  "initial_loss": 2.1692023277282715,
+  "final_loss": 0.15010923147201538,
+  "steps": 3,
+  "tiny_top1": 1.0,
+  "extra_block_gradients": {
+    "4": 36.86385024152696,
+    "5": 34.802232103422284
+  },
+  "updates_discarded": true
+}

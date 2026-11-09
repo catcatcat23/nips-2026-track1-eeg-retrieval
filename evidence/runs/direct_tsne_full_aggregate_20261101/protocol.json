@@ -1,0 +1,26 @@
+{
+  "sklearn_version": "1.9.1",
+  "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/subject_full_aggregate_20261101",
+  "features": "raw512; no PCA preprocessing or L2; PCA initialization only",
+  "tsne": {
+    "perplexity": 30,
+    "dimensions": [
+      2,
+      3
+    ],
+    "max_iter": 2000,
+    "seed": 5,
+    "learning_rate": "auto",
+    "method": "barnes_hut",
+    "metric": "euclidean",
+    "angle": 0.5
+  },
+  "kmeans": {
+    "k": "known subject count 10 or20",
+    "n_init": 20,
+    "seed": 5,
+    "max_iter": 300
+  },
+  "labels": "not used for fit; Hungarian matching for color and descriptive matched accuracy only",
+  "limitations": "single trials: image30; aggregate: all test images; all valid trials per subject/image; one seed; t-SNE changes geometry; this is low-dimensional clustering, not high-dimensional classifier accuracy; each condition independently fitted"
+}

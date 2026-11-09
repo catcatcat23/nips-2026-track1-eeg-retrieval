@@ -1,0 +1,12 @@
+{
+  "source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/controlled_tsne_20261101",
+  "image_id": 30,
+  "k": 1,
+  "normalization": "PCA centering only; no L2, same as PCA-only control",
+  "perplexity": 30,
+  "seed": 33,
+  "iterations": 1000,
+  "init": "pca",
+  "learning_rate": "auto",
+  "labels": "color only; no supervised fitting"
+}
