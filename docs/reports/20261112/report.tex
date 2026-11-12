@@ -1,0 +1,373 @@
+\documentclass[UTF8,a4paper,11pt,fontset=none]{ctexart}
+\usepackage[margin=18mm]{geometry}
+\setCJKmainfont{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans Mono CJK SC}
+\usepackage{booktabs,longtable,array,xcolor}
+\usepackage{xurl}
+\usepackage[unicode,colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!55!black]{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small EEG 图像检索实验汇报}\fancyhead[R]{\small 2026年11月12日}\fancyfoot[C]{\thepage}
+\setlength{\headheight}{15pt}
+\setlength{\parskip}{5pt}
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{4pt}
+\setlength{\LTpre}{8pt}\setlength{\LTpost}{8pt}
+\emergencystretch=2em
+\hypersetup{pdftitle={EEG图像检索实验汇报},pdfauthor={项目实验记录}}
+\title{EEG 图像检索实验汇报\\\large THINGS-EEG2 与 Alljoined 2025}
+\author{}\date{2026年11月12日}
+\begin{document}
+\maketitle
+\begin{abstract}
+本报告按研究问题整理模型改造、试次增强、EMA、身份监督、联合训练、LOSO 和新受试者适配实验。每组对照交代设置、指标及结论，并区分已见受试者检索、未见受试者泛化和少标签适配。结果以保存的配置和评估记录为依据；正在运行的实验保留状态，不计入有效性判断。
+\end{abstract}
+\tableofcontents
+\clearpage
+汇报目的：梳理已经完成的工作，区分哪些改动改善了检索，哪些只有局部收益，哪些没有支持原来的假设，为下一步研究设计提供依据。本报告以运行配置、逐轮日志和结果文件为依据；完整机器记录仍保留在项目仓库和数据盘。
+
+\section{目前可以确认的结论}
+同人试次混合和 EMA 是收益最清楚的两项训练改进。身份监督能让特征更容易按受试者区分，在已见受试者检索中也有小幅收益，尤其是 Alljoined；但这些收益没有稳定迁移到 THINGS 的 LOSO 和少标签适配。不能把“身份更容易识别”直接解释为“新受试者更容易适配”。
+
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.311cm}>{\raggedright\arraybackslash}p{6.623cm}>{\raggedright\arraybackslash}p{6.623cm}}
+\toprule
+\textbf{方向} & \textbf{THINGS-EEG2} & \textbf{Alljoined 2025} \\
+\midrule\endfirsthead
+\textbf{方向} & \textbf{THINGS-EEG2} & \textbf{Alljoined 2025} \\
+\midrule\endhead
+\bottomrule\endfoot
+同人混合＋少量遮挡 & 有改善；混合的证据强于遮挡单独增益 & clean-only匹配对照有改善 \\
+EMA & 同轨迹Raw/EMA比较有清楚收益 & 同样有清楚收益 \\
+跨人混合／100\%平均 & 总体不如保留单试次的同人混合 & 方向相同 \\
+身份监督 & 单试次有小幅改善，聚合接近 & 部分Top-5改善约1个百分点 \\
+联合训练 & 保持接近成绩，指标有升有降 & clean改善，blur并非全面改善 \\
+LOSO与适配 & 身份监督无稳定优势，四折LOSO下降 & 尚无对应完整验证，不能套用THINGS结论 \\
+枚举伪试次扩充 & v94已完成，聚合Top-1改善，Top-5未全面超过基线 & v95运行中，暂不判断 \\
+模型集成 & 已进行相关对照，具体原始记录见附件索引 & 三模型完整公开集clean聚合Top-5为61.03\% \\
+\end{longtable}
+}
+\section{共用模型、训练与评估口径}
+模型从预训练 REVE 开始全参数微调。EEG 经固定预处理进入 REVE，池化得到512维表示，再投影为1536维 blur 预测 h。图像由冻结 DINOv2 提取多尺度模糊特征，经可学习 adapter 作为 blur 对齐目标；恢复头将 h 映射到 clean 特征空间。训练主损失为 clean＋blur＋0.1×Local OT。clean 和 blur 对比损失为单向、仅图像侧归一化的既有实现。
+
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.368cm}>{\raggedright\arraybackslash}p{13.470cm}}
+\toprule
+\textbf{设置} & \textbf{主线v64／v67的实际配置} \\
+\midrule\endfirsthead
+\textbf{设置} & \textbf{主线v64／v67的实际配置} \\
+\midrule\endhead
+\bottomrule\endfoot
+数据组织 & THINGS：原train＋val合并；Alljoined：官方训练图片及训练事件。各自原始200张测试图片用于本地评估。 \\
+输入 & 比赛缓存120 Hz；模型内沿用120 → 200点插值、逐通道时间z-score、截断±15。THINGS原生63通道，Alljoined原生32通道及电极坐标。 \\
+优化 & seed33；AdamW；主干和头学习率1e-4；weight decay 0.05；batch256；梯度裁剪1；最多40轮；OneCycle，前10\%步数升学习率。 \\
+增强 & 50\%单试次、25\%同人同图2次平均、25\%4次平均；20\%样本随机遮挡1通道；图像adapter dropout 0.2。 \\
+EMA & 每次参数更新后计算0.999和0.9998两份EMA，仅用于评估，不反馈到训练。 \\
+选模与早停 & 按blur单试次Top-5分别记录Raw和EMA最佳；全部分支连续5轮未改善则早停。历史主线使用公开测试选模，属于开发结果。 \\
+评估 & 200候选；单试次逐条推理；同人同图全部有效试次的原始输出均值用于聚合检索，不强制截取80条。 \\
+指标单位 & 本报告表格为百分数；成对数值为Top-1／Top-5。不同轮次代表性结果不能视为等预算因果对照。 \\
+\end{longtable}
+}
+原生 blur 评估使用各模型自己的图像 adapter 候选空间；clean 使用官方干净图像特征。比赛输出对应 clean 空间。仅能用单条 EEG 的推理接口，不能直接部署依赖目标受试者整批数据和候选库的传导式校正。
+
+\section{THINGS：试次混合、噪声、遮挡与EMA}
+\subsection{混合试次是否有帮助}
+验证问题：在模型、损失和基础配方保持一致时，加入同人同图平均试次能否改善检索？v53无EEG增强；v55 mixed以50／25／25比例混入1／2／4次输入；noise分支再加高斯噪声；v57增加20\%单通道遮挡。以下统一比较第10轮Raw。
+
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}}
+\toprule
+\textbf{实验／权重} & \textbf{clean单试次} & \textbf{clean聚合} & \textbf{blur单试次} & \textbf{blur聚合} \\
+\midrule\endfirsthead
+\textbf{实验／权重} & \textbf{clean单试次} & \textbf{clean聚合} & \textbf{blur单试次} & \textbf{blur聚合} \\
+\midrule\endhead
+\bottomrule\endfoot
+v53 无增强 & 15.56／39.06 & 58.90／88.70 & 17.75／42.92 & 77.75／96.80 \\
+v55 mixed & 17.23／41.17 & 63.35／90.25 & 19.38／45.28 & 79.95／97.15 \\
+v55 noise & 16.88／40.85 & 62.40／90.35 & 19.04／44.90 & 79.95／97.45 \\
+v57 混合＋遮挡 & 17.16／40.98 & 63.65／90.25 & 19.38／45.17 & 79.75／97.50 \\
+\end{longtable}
+}
+结论：加入混合试次后，单试次和聚合指标都有改善。高斯噪声、通道遮挡的额外收益较小，且依赖指标。相同输出样本数不代表相同原始EEG曝光量；要解释机制，还需控制原始试次访问次数。
+
+\subsection{EMA是否只是改善了预测范数}
+验证问题：相同训练轨迹上，参数平均是否优于当前Raw权重？v64只在既有配方上增加被动EMA。以下比较第10轮。
+
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}}
+\toprule
+\textbf{实验／权重} & \textbf{clean单试次} & \textbf{clean聚合} & \textbf{blur单试次} & \textbf{blur聚合} \\
+\midrule\endfirsthead
+\textbf{实验／权重} & \textbf{clean单试次} & \textbf{clean聚合} & \textbf{blur单试次} & \textbf{blur聚合} \\
+\midrule\endhead
+\bottomrule\endfoot
+Raw & 16.71／40.77 & 62.30／90.30 & 18.92／44.80 & 80.50／97.75 \\
+EMA .9998 & 19.76／45.58 & 69.80／93.95 & 22.35／49.72 & 86.65／98.60 \\
+\end{longtable}
+}
+结论：EMA同时改善单试次和聚合。额外诊断中，先对每条预测归一化再聚合，EMA优势仍然存在；末轮参数均值也有收益。因此，现有证据支持把EMA作为强基线，但不支持将收益主要归因于聚合范数校正，也没有证明EEG专属去噪机制。
+
+\section{两数据集的增强方式对照}
+验证问题：同人混合是否优于跨人混合，以及能否全部用平均试次训练？v70—v76为clean-only联合模型；使用相同系列训练配置、EMA .9998及第10轮比较。它们不是完整v64结构，不能与v64直接归因比较。
+
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}}
+\toprule
+\textbf{实验} & \textbf{THINGS单试次} & \textbf{THINGS聚合} & \textbf{Alljoined单试次} & \textbf{Alljoined聚合} \\
+\midrule\endfirsthead
+\textbf{实验} & \textbf{THINGS单试次} & \textbf{THINGS聚合} & \textbf{Alljoined单试次} & \textbf{Alljoined聚合} \\
+\midrule\endhead
+\bottomrule\endfoot
+v70 无增强 & 17.61／42.73 & 62.30／90.40 & 3.13／11.53 & 19.07／47.05 \\
+v71 同人混合＋遮挡 & 18.05／43.06 & 66.25／92.50 & 3.26／11.77 & 21.20／50.28 \\
+v72 跨人等权混合 & 17.54／42.86 & 61.75／89.20 & 3.01／11.16 & 16.45／44.27 \\
+v73 100\%同人四次平均 & 6.88／20.89 & 20.35／46.60 & 1.75／7.06 & 8.65／24.18 \\
+v74 跨人加权混合 & 18.08／43.70 & 62.55／91.00 & 3.14／11.48 & 18.65／46.70 \\
+v75 100\%四人等权 & 9.17／25.98 & 29.15／59.30 & 2.54／9.65 & 12.53／34.92 \\
+v76 100\%四人加权 & 15.80／39.68 & 56.90／86.60 & 3.02／11.18 & 17.12／44.60 \\
+\end{longtable}
+}
+设置补充：混合组保留50\%单试次，另外25\%混合2条、25\%混合4条；跨人时限定同图、不同人。加权两人使用0.7／0.3，四人使用0.7／0.1／0.1／0.1。100\%四次平均组全部使用平均输入。通道遮挡等其他开关以对应config为准。
+
+结论：两个数据集都以保留单试次的同人混合表现更好。跨人加权比强等权混合温和，但仍没有超过同人混合。全部改为平均输入明显下降，提示训练输入与单试次测试输入的匹配很重要；这仍不能单独证明个体身份信息是收益来源。
+
+完整v64结构下还有v77：只改为100\%同人同图四条不同试次平均，保留遮挡。第10轮EMA .9998的clean聚合Top-5为55.15\%，blur为62.60\%，明显低于v64同轮93.95\%和98.60\%。
+
+\section{THINGS：身份监督的粒度、位置与强度}
+验证问题：增强受试者可辨识性，是否会帮助共同模型读出图片信息？以下所有身份对比温度为0.1。全局身份对比在原检索batch上计算；同图／同概念方案使用额外256条原始单试次的辅助batch，因此计算预算增加。
+
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.311cm}>{\raggedright\arraybackslash}p{6.623cm}>{\raggedright\arraybackslash}p{6.623cm}}
+\toprule
+\textbf{实验} & \textbf{具体设置} & \textbf{约束对象／验证目的} \\
+\midrule\endfirsthead
+\textbf{实验} & \textbf{具体设置} & \textbf{约束对象／验证目的} \\
+\midrule\endhead
+\bottomrule\endfoot
+v78 & REVE512 → LN → Linear256 → GELU → Linear128；权重0.1 & 同人正例、异人负例；是对比投影头，不是身份交叉熵分类器 \\
+v80 & 直接在pooled512计算；权重0.1 & 同人正例、异人负例；不加新头 \\
+v84 & 同v80；权重改为1.0 & 检查身份约束是否过弱 \\
+v81 & pooled512；权重0.1；32图×4人×2试次 & 同图同人为正；同图异人为负；其他图不参与身份对比 \\
+v82 & 同v81；权重改为1.0 & 检查同图身份监督强度 \\
+v83 & pooled512；权重1.0；16概念×4人×2图×2试次 & 同概念同人为正，同概念异人为负，其他概念排除 \\
+v88 & 在v82辅助batch上增加blur1536图片对比；权重0.1 & 同人同图靠近、同人异图分开；复用前向，不再增加batch \\
+v92 & 将辅助身份对比替换为pooled512图片对比；权重1.0 & 32图×4人×2试次；每条7个同图正例，248个异图负例 \\
+\end{longtable}
+}
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}}
+\toprule
+\textbf{实验／权重} & \textbf{clean单试次} & \textbf{clean聚合} & \textbf{blur单试次} & \textbf{blur聚合} \\
+\midrule\endfirsthead
+\textbf{实验／权重} & \textbf{clean单试次} & \textbf{clean聚合} & \textbf{blur单试次} & \textbf{blur聚合} \\
+\midrule\endhead
+\bottomrule\endfoot
+v64 ep10 & 19.76／45.58 & 69.80／93.95 & 22.35／49.72 & 86.65／98.60 \\
+v78 ep10 & 19.79／45.86 & 69.80／94.00 & 22.17／49.71 & 86.25／98.45 \\
+v80 ep10 & 20.15／46.25 & 70.70／94.00 & 22.48／50.18 & 85.90／98.75 \\
+v81 ep10 & 20.18／46.19 & 70.10／93.80 & 22.38／50.07 & 85.25／98.60 \\
+v82 ep10 & 19.77／45.90 & 69.10／93.90 & 22.10／49.67 & 85.20／98.95 \\
+v83 ep10 & 19.67／45.69 & 68.00／93.65 & 21.94／49.24 & 84.65／98.65 \\
+v84 ep10 & 19.92／45.94 & 68.50／93.80 & 21.93／49.41 & 84.70／98.65 \\
+v88 ep10 & 19.85／45.96 & 69.35／93.60 & 22.36／49.86 & 84.55／98.70 \\
+v92 ep10 & 18.68／44.10 & 66.65／92.75 & 21.20／48.06 & 85.20／98.25 \\
+\end{longtable}
+}
+结论：v80单试次Top-5有小幅改善，但聚合基本接近。增大权重、改为同图或同概念，没有持续增加收益。v88的额外图片约束、v92的同图跨人拉近，也未超过主线。现有结果不支持把身份监督作为稳定提升所有检索指标的主要方法。
+
+表征诊断与任务成绩需要分开。原始REVE已经能以线性分类器较准确地识别受试者；身份监督后部分高维聚类更清楚，但这不等于图片信息更容易读出。t-SNE展示受选图、随机种子和降维影响，不能用最分开的单图证明全局机制。
+
+\section{Alljoined：EMA与身份监督}
+\subsection{EMA对照}
+设置：v67采用原始训练图片、20位受试者和32通道，在同一训练轨迹中比较Raw与EMA。与THINGS保持同类模型、损失与优化设置，Local OT权重由Alljoined训练数据计算。以下为第6轮。
+
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}}
+\toprule
+\textbf{实验／权重} & \textbf{clean单试次} & \textbf{clean聚合} & \textbf{blur单试次} & \textbf{blur聚合} \\
+\midrule\endfirsthead
+\textbf{实验／权重} & \textbf{clean单试次} & \textbf{clean聚合} & \textbf{blur单试次} & \textbf{blur聚合} \\
+\midrule\endhead
+\bottomrule\endfoot
+Raw & 3.27／11.94 & 19.28／47.95 & 3.57／12.57 & 28.35／58.45 \\
+EMA .9998 & 3.79／13.22 & 24.43／54.30 & 4.05／13.85 & 38.15／68.95 \\
+\end{longtable}
+}
+结论：EMA在Alljoined上同样有效，clean聚合Top-5从47.95\%提高到54.30\%，blur从58.45\%提高到68.95\%。该比较只改变评估权重，比跨实验挑选最高分更直接。
+
+\subsection{三种粒度与直接blur监督}
+设置：v85在pooled512进行全局身份对比；v86在pooled512进行同图身份对比；v87在pooled512进行同概念身份对比；v89将v86的监督位置移到blur1536。权重均为1.0，温度0.1。全局使用原batch，同图／同概念使用额外辅助batch。以下固定第8轮EMA .9998。
+
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}}
+\toprule
+\textbf{实验／权重} & \textbf{clean单试次} & \textbf{clean聚合} & \textbf{blur单试次} & \textbf{blur聚合} \\
+\midrule\endfirsthead
+\textbf{实验／权重} & \textbf{clean单试次} & \textbf{clean聚合} & \textbf{blur单试次} & \textbf{blur聚合} \\
+\midrule\endhead
+\bottomrule\endfoot
+v67 ep8 & 3.64／12.83 & 27.57／56.65 & 3.90／13.36 & 40.30／70.30 \\
+v85 ep8 & 3.86／13.50 & 27.82／57.50 & 4.12／13.98 & 39.20／70.53 \\
+v86 ep8 & 3.84／13.29 & 27.62／57.53 & 4.02／13.75 & 38.40／69.92 \\
+v87 ep8 & 3.88／13.37 & 26.45／57.63 & 4.01／13.85 & 39.50／70.83 \\
+v89 ep8 & 3.87／13.31 & 27.07／57.73 & 4.06／13.75 & 38.65／71.12 \\
+\end{longtable}
+}
+结论：Alljoined上并非没有收益。四组身份方案的clean单试次Top-5和聚合Top-5都高于该轮基线，聚合Top-5提高约0.85—1.08个百分点。blur聚合Top-1却都低于基线。准确说法是“局部指标小幅改善”，尚需多训练种子确认，不应概括为全部无效，也不能称为全面提升。
+
+\section{联合训练与集成}
+验证问题：一个共享模型能否兼顾两个数据集？v69用各自原生通道及坐标处理THINGS和Alljoined，每次更新分别处理两个数据集的batch后合并梯度。位置编码能力来自REVE。以下为代表性checkpoint，训练预算不同。
+
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}}
+\toprule
+\textbf{实验／权重} & \textbf{clean单试次} & \textbf{clean聚合} & \textbf{blur单试次} & \textbf{blur聚合} \\
+\midrule\endfirsthead
+\textbf{实验／权重} & \textbf{clean单试次} & \textbf{clean聚合} & \textbf{blur单试次} & \textbf{blur聚合} \\
+\midrule\endhead
+\bottomrule\endfoot
+THINGS单独v64 ep14 & 18.81／43.89 & 70.45／94.90 & 21.51／48.15 & 88.75／99.00 \\
+THINGS联合v69 ep15 & 18.75／43.66 & 71.70／94.05 & 21.51／48.10 & 87.20／99.25 \\
+Alljoined单独v67 ep8 & 3.64／12.83 & 27.57／56.65 & 3.90／13.36 & 40.30／70.30 \\
+Alljoined联合v69 ep15 & 3.74／12.95 & 29.00／58.73 & 3.93／13.48 & 36.78／69.17 \\
+\end{longtable}
+}
+结论：联合训练保持了THINGS的接近表现，Alljoined clean成绩提高，blur没有全面改善。不能将不同预算下的全部差异归因于融合训练。
+
+集成设置：将三个模型的clean输出按0.6×v69＋0.1×v85＋0.3×v87加权。实际提交ZIP重新加载后在完整公开测试集回放，clean单试次为4.31／14.57，聚合为30.03／61.03。v69单模型为3.74／12.95、29.00／58.73。
+
+结论：本地完整集合上集成提高了成绩。不过权重在公开测试的一部分上开发，保留部分三模型聚合Top-5为57.15\%，两模型为57.25\%。因此不能说三模型在独立数据上稳定优于两模型。v90把旧公开测试加入训练，其原公开测试分数不再是独立评价；隐藏平台反馈也未显示比v69更好，不能用它证明数据越多越有效。
+
+\section{THINGS：LOSO零校准与少标签适配}
+LOSO将目标受试者完全留出源训练。v79是无身份模型，十折已完成；v91身份模型完成S1—S4，其余折按要求暂停。比较应使用共同四折。源模型选择依赖源受试者验证集，而不是留出人的测试成绩。
+
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}}
+\toprule
+\textbf{留出人} & \textbf{无身份单试次} & \textbf{无身份聚合} & \textbf{身份单试次} & \textbf{身份聚合} \\
+\midrule\endfirsthead
+\textbf{留出人} & \textbf{无身份单试次} & \textbf{无身份聚合} & \textbf{身份单试次} & \textbf{身份聚合} \\
+\midrule\endhead
+\bottomrule\endfoot
+S1 & 6.18／19.83 & 24.00／64.00 & 5.23／17.90 & 26.00／57.50 \\
+S2 & 3.96／13.90 & 10.50／27.00 & 3.92／13.69 & 12.00／29.00 \\
+S3 & 5.36／17.29 & 14.00／38.00 & 4.71／15.81 & 12.00／33.00 \\
+S4 & 4.88／16.67 & 18.00／48.50 & 4.57／15.58 & 14.00／38.50 \\
+\end{longtable}
+}
+共同四折blur聚合Top-5均值为44.38\%与39.50\%，身份模型低约4.88个百分点。S2略好，其余三人较低。无身份十折均值为单试次5.183／17.298、聚合16.35／41.00；不能用四折身份结果与十折基线直接比较。
+
+\subsection{适配方法的具体设置}
+目的：判断身份信息是否只有在少量标签校准后才有用。主要开发受试者为S1、S2；主要预算50／200张训练图片，每图一条固定EEG；共同种子33—37；两模型共享支持样本。原始200张测试图片与校准图片分离。固定步数方案以200步为主结果，另有内部开发集选参方案。
+
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.311cm}>{\raggedright\arraybackslash}p{6.623cm}>{\raggedright\arraybackslash}p{6.623cm}}
+\toprule
+\textbf{方法} & \textbf{具体实现} & \textbf{要验证什么} \\
+\midrule\endfirsthead
+\textbf{方法} & \textbf{具体实现} & \textbf{要验证什么} \\
+\midrule\endhead
+\bottomrule\endfoot
+共同目标读出 & 冻结REVE，用相同视觉目标重新训练线性或MLP读出；与原生adapter目标结果分表 & 身份表示是否更容易读出共同图片信息 \\
+残差适配 & 保留原投影；pooled512 → LN → Linear64 → GELU → Linear512 → 加回输入；末层零初始化。仅训练该模块；AdamW、WD0.01、batch50、200步、裁剪1；LR分别1e-4／3e-5 & 保留已有能力时，是否更容易校准 \\
+LoRA & 仅最后两个Transformer block的Q/K/V和注意力输出投影加rank4更新；alpha4、dropout0；原权重冻结；LR1e-4、200步 & 是否需要调整编码器才能利用身份信息 \\
+统计对齐 & 用无标签支持EEG估计均值／对角方差／收缩协方差，源参考为源人单试次；不使用测试EEG估计统计 & 简单分布校正是否足够 \\
+Ridge／残差Ridge & 512维到归一化原生blur目标，或预测目标减原归一化预测的残差；alpha为1／10／100，通过预算内80／20开发集选取再全预算拟合 & 线性修正是否能利用身份表示 \\
+身份参考／配对对齐 & 源身份参考偏移、配对中心及正交映射等；部分为pilot设置 & 身份方向或坐标变化是否可校正 \\
+SATTC／SCORE部署对照 & 冻结模型，使用目标EEG集合与候选库做白化、几何／得分校正或伪配对恢复 & 传导式部署校正是否使身份模型更受益；不属于单条EEG接口 \\
+\end{longtable}
+}
+\subsection{200张支持图片的结果}
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{4.069cm}>{\raggedright\arraybackslash}p{4.069cm}>{\raggedright\arraybackslash}p{4.069cm}>{\raggedright\arraybackslash}p{4.069cm}}
+\toprule
+\textbf{方法} & \textbf{S1 无身份／身份} & \textbf{S2 无身份／身份} & \textbf{结论} \\
+\midrule\endfirsthead
+\textbf{方法} & \textbf{S1 无身份／身份} & \textbf{S2 无身份／身份} & \textbf{结论} \\
+\midrule\endhead
+\bottomrule\endfoot
+零校准 & 64.0／57.5 & 27.0／29.0 & 起点没有整体身份优势 \\
+残差LR1e-4 & 79.7／73.0 & 71.8／68.5 & 适配有效，身份未更好 \\
+残差LR3e-5 & 73.7／70.0 & 62.8／65.8 & S2有优势，S1没有 \\
+LoRA & 76.8／71.5 & 69.0／67.1 & 身份未更好 \\
+对角方差对齐 & 78.4／75.6 & 66.1／68.2 & 方向不一致 \\
+收缩协方差对齐 & 78.3／66.4 & 66.7／66.2 & 无身份更好或接近 \\
+从头Ridge & 17.8／13.0 & 13.7／11.4 & 当前设置表现差 \\
+残差Ridge & 37.3／31.7 & 27.8／33.4 & 没有稳定收益 \\
+\end{longtable}
+}
+本表仅为blur聚合Top-5，适配结果为五种子均值。无标签与有标签方法不能按相同数据访问权限视为直接竞争。没有方法达到预设的跨受试者、配对种子筛选标准，LoRA的50图片分支及S3/S4扩展验证未触发。适配有效与身份监督有效是两个问题：前者得到支持，后者未得到稳定支持。
+
+\subsection{v93：在一个新人上学出的校准能否迁移}
+设置：源REVE与检索模型只用S3—S10训练并冻结。在512维输出上训练零初始化小残差模块，保留原投影和图像adapter；比较已见源人拟合、在S1拟合后测试S2、在S2拟合后测试S1。每个捐赠人使用14886张拟合图片、1654张开发图片，每图一条EEG，测试使用原始200张图片全部有效试次。模块67136参数，AdamW 3e-5、WD0.01、batch256、最多20轮、patience5，以开发排名选模，允许第0轮。30个模块、40项评估完成。
+
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.311cm}>{\raggedright\arraybackslash}p{6.623cm}>{\raggedright\arraybackslash}p{6.623cm}}
+\toprule
+\textbf{源模型} & \textbf{S1零校准 → S2拟合后} & \textbf{S2零校准 → S1拟合后} \\
+\midrule\endfirsthead
+\textbf{源模型} & \textbf{S1零校准 → S2拟合后} & \textbf{S2零校准 → S1拟合后} \\
+\midrule\endhead
+\bottomrule\endfoot
+无身份 & 65.50 → 38.00 & 28.50 → 27.10 \\
+身份 & 58.50 → 36.90 & 30.00 → 28.20 \\
+\end{longtable}
+}
+结论：捐赠人开发排名改善，但跨新人迁移下降。当前模块没有学到通用校准。该试验是固定编码器上的跨人校准，不是完整episodic训练；已见8人和新1人的拟合组织也不同。报告哈希字段曾出错，已修复，当前calibration\_report为准。上述适配结论主要来自THINGS，Alljoined未完成相同LOSO适配链，不能直接推广。
+
+\section{恢复头路线与伪试次扩充}
+恢复头路线尝试过ridge＋残差、去ridge、更深网络、条件修正、图像侧辅助、蒸馏、U-Net、扩散和REVE token条件。已有记录没有形成“越复杂越好”的结果。这些历史实验的来源checkpoint、损失和预算并不全部相同，不能合并成一个严格的容量消融。需要逐项复现时，使用交接仓库中的原始配置和快照。
+
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.311cm}>{\raggedright\arraybackslash}p{6.623cm}>{\raggedright\arraybackslash}p{6.623cm}}
+\toprule
+\textbf{重要对照} & \textbf{设置／指标} & \textbf{结论} \\
+\midrule\endfirsthead
+\textbf{重要对照} & \textbf{设置／指标} & \textbf{结论} \\
+\midrule\endhead
+\bottomrule\endfoot
+v39b与v45 & 保留早期有效二阶段版本及去ridge对照；v45用于后续匹配恢复实验 & 没有证据表明ridge是达到较好结果的必要条件 \\
+v57 ep18 → 恢复 & 源blur聚合Top-5 98.45；二阶段clean 90.65 & 最高blur聚合并不保证最好恢复 \\
+v57 ep9 → v60 & 源blur聚合Top-5 96.50；二阶段clean 93.40；另两种子93.70、93.55 & 第一阶段表示选择比单纯扩网络更关键 \\
+EMA之后继续stage2 & v64 ep9 EMA .999的clean单试次Top-5 45.08 → 43.16；聚合94.45 → 94.35 & 强EMA源模型之后，stage2未必再改善 \\
+\end{longtable}
+}
+\subsection{v94：THINGS全部平均组合扩充}
+目的：检查在保留原始样本的同时加入大量伪试次，是否优于在线随机替换。按同人同图分组，枚举无放回的2／3／4条平均组合，相同集合不重复。原始668400条，新增1915700条，总2584100条；在读取时生成。原始输入占25.9\%，平均输入占74.1\%。其他主线设置沿用v64，从预训练REVE重新开始。每轮10094步，原v64为2610步，因此训练预算与比例同时改变。
+
+{\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}>{\raggedright\arraybackslash}p{3.199cm}}
+\toprule
+\textbf{实验／权重} & \textbf{clean单试次} & \textbf{clean聚合} & \textbf{blur单试次} & \textbf{blur聚合} \\
+\midrule\endfirsthead
+\textbf{实验／权重} & \textbf{clean单试次} & \textbf{clean聚合} & \textbf{blur单试次} & \textbf{blur聚合} \\
+\midrule\endhead
+\bottomrule\endfoot
+v64 ep14 & 18.81／43.89 & 70.45／94.90 & 21.51／48.15 & 88.75／99.00 \\
+v94 ep5 选中 & 19.23／44.39 & 72.25／94.20 & 21.69／48.76 & 88.05／99.00 \\
+v94 ep7 & 18.48／42.83 & 72.75／93.95 & 20.77／47.19 & 89.15／99.15 \\
+v94 ep8 & 18.12／42.39 & 72.75／94.40 & 20.35／46.50 & 89.00／99.00 \\
+\end{longtable}
+}
+结论：v94第10轮早停，按blur单试次Top-5选中第5轮。部分聚合Top-1改善，clean聚合Top-5没有超过v64。后期训练损失继续下降、单试次成绩回落，说明增加组合并没有持续改善泛化。不能只按相同epoch比较，因为更新次数相差约3.87倍。
+
+\subsection{v95：Alljoined同策略扩充，运行中}
+设置：沿用v67，原始1335616条，新增3822122条2／3／4次平均伪试次，总5157738条；原生32通道；训练16540图、测试200图及324294条有效试次；每轮20147步。数据隔离、梯度和8样本拟合检查已通过。
+
+2026年11月12日整理报告时，v95 正在运行第1轮，已完成7000／20147步。该步训练损失为10.6897，梯度范数为4.5120，学习率约为0.00000578。尚无完整轮次测试结果。
+
+\section{向老师汇报的研究判断}
+已见受试者检索、未见受试者泛化和少标签适配需要分开讨论。身份监督在前者有局部收益，Alljoined比THINGS更明显；但这并没有带来稳定的LOSO或适配优势。我们原来希望通过身份聚类解释检索改善，目前证据不足。
+
+更有依据的方向是检验同人同图响应的跨试次稳定性，以及不同图片的信息是否更容易被共同读出利用。下一步先控制原始EEG曝光量和更新次数，再量化图片差异、受试者偏移、交互与试次噪声。EMA作为强基线保留；身份可辨识性作为诊断，不再直接当成最终目标。
+
+论文目前可以报告可靠配方、局部增益及负结果边界。若要提出机制贡献，还需能区分“噪声减少”“曝光量增加”“身份信息利用”几种解释的实验，不能只用聚类图或性能提升代替机制验证。
+
+\section{附录：记录位置与复核方式}
+项目仓库：\url{https://github.com/catcatcat23/nips-2026-track1-eeg-retrieval} 。实验代码交接基准提交为 b419cde，涵盖至 v93；本报告补充 v94／v95 的后续记录。入口为\path{docs/HANDOFF.md}、\path{docs/EXPERIMENT_MAP.md}及\path{evidence/runs/}。原始源码映射见\path{evidence/source_snapshots.json}。
+
+主要数据盘目录：\path{/mnt/DATA-4/anteng/eeg-retrieval/experiments/}。少标签结果见\path{staged_adaptation_20261108/OVERNIGHT_REPORT.md}；v93见\path{reve_v93_unseen_calibration/calibration_report/}；集成回放见\path{submission_alljoined_v69_v85_v87_ensemble_20261106/real_replay.json}。
+
+早期增强与恢复数字沿用已归档汇报，近期主线表由history.jsonl直接生成。本报告未重新训练或重跑全部评估。身份对比、图片对比与身份分类器的名称已区分；未完成实验和不同协议结果不混入统一排名。
+
+\end{document}

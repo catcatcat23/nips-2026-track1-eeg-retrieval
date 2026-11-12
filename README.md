@@ -6,6 +6,7 @@
 
 | 需要了解什么 | 入口 |
 |---|---|
+| 向导师汇报：实验设置、指标和结论（2026-11-12） | [LaTeX 实验报告](docs/reports/20261112/) |
 | 当前问题、主要结果、下一步研究方向 | [项目交接](docs/HANDOFF.md) |
 | 各实验做了什么，哪些应继续使用 | [实验路线表](docs/EXPERIMENT_MAP.md) |
 | 运行 v64 THINGS／v67 Alljoined 基线 | [基线复现说明](docs/BASELINE_V64_V67.md)、`run.py` |

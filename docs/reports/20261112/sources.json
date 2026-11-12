@@ -1,0 +1,166 @@
+{
+  "report_date": "2026-11-12",
+  "note": "动态指标表的文件来源；历史增强、恢复与适配数字另见正文附录及 docs/HANDOFF.md。v95 状态为报告生成时快照。",
+  "files": [
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v64_stage1_ema/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v64_stage1_ema/stage1/history.jsonl",
+      "sha256": "4cb5e95fe7c1b64848fd249de93f477f35c3da6b763ee3209b3d52683bd0bd45"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v67_alljoined2025_v64recipe/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v67_alljoined2025_v64recipe/stage1/history.jsonl",
+      "sha256": "891822b55828eed6552d4d3353dc04f28097079f8d701efc27b1f3e545747658"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v69_joint_stage1/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v69_joint_stage1/stage1/history.jsonl",
+      "sha256": "2130e50211bd85638a22666c4e1ee17878fd4ebd273612532b1750b856e02e3d"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v70_clean_ema_control/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v70_clean_ema_control/stage1/history.jsonl",
+      "sha256": "cc77a2fe032ee4ed79a8cae6909cb646cf031b258e0dc9b5f96e158e41d6031a"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v71_clean_ema_control/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v71_clean_ema_control/stage1/history.jsonl",
+      "sha256": "efcae7605d7941d9d7f14705a318017646a5f002073e0237574a0043807396b9"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v72_cross_subject_mix/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v72_cross_subject_mix/stage1/history.jsonl",
+      "sha256": "ae0e9872ca564cc703602b5a4a8eb57a1d19c6138aec1b6061e7a76feb326d89"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v73_within_subject_mean4/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v73_within_subject_mean4/stage1/history.jsonl",
+      "sha256": "c5f8ecc5b832eab5bb98bda1997a75538251bddd40568f27b16e38d5adac0c31"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v74_weighted_cross_subject_mix/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v74_weighted_cross_subject_mix/stage1/history.jsonl",
+      "sha256": "49735914f4827e224f0585a6909e2fd48688cefb4803fa8e82d2b45f3bf567d0"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v75_cross_subject_four_equal/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v75_cross_subject_four_equal/stage1/history.jsonl",
+      "sha256": "6fc0f2ddc1c116bea1699402494e53ec41306219004f30a195c3f3c2008f6000"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v76_cross_subject_four_weighted/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v76_cross_subject_four_weighted/stage1/history.jsonl",
+      "sha256": "f6b9dbc6da2a86688a3328228cbde475ea0945d1f6462d3dd477d81e952a1778"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v78_v64_identity/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v78_v64_identity/stage1/history.jsonl",
+      "sha256": "0366e6724e676e05815ffd2c939de847148ae2b4835c66f3772fcd2d4e1f9406"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v79_v64_loso/fold_01/heldout_test.json",
+      "repository_file": "evidence/runs/reve_v79_v64_loso/fold_01/heldout_test.json",
+      "sha256": "ef5052b6f7d7ed14019c49877d193154d1632e64f10fd543e99b6a82e52d3f59"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v79_v64_loso/fold_02/heldout_test.json",
+      "repository_file": "evidence/runs/reve_v79_v64_loso/fold_02/heldout_test.json",
+      "sha256": "a461a1009f204c41f5df10ddf28eeb2555c95e449c57dd9c379cae6aad4a052b"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v79_v64_loso/fold_03/heldout_test.json",
+      "repository_file": "evidence/runs/reve_v79_v64_loso/fold_03/heldout_test.json",
+      "sha256": "c4e00b257df91109ee8baa0929788d7bb744e3b09ee13426c01671cc4a9c5a98"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v79_v64_loso/fold_04/heldout_test.json",
+      "repository_file": "evidence/runs/reve_v79_v64_loso/fold_04/heldout_test.json",
+      "sha256": "36b0db5c7dda72e356877545c97c882add93c18b83f6e9a5d4485f1ce1b21a9b"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v80_v64_identity_direct/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v80_v64_identity_direct/stage1/history.jsonl",
+      "sha256": "aa8d83e90d50e2317a54e27f3afcff9be2c77f203e89bba49cb6483611bbb326"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v81_grouped_identity_dualbatch/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v81_grouped_identity_dualbatch/stage1/history.jsonl",
+      "sha256": "92589974facd532dd4315b4c5278949b254dd476d68c181615225df881c28be7"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v82_grouped_identity_weight1/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v82_grouped_identity_weight1/stage1/history.jsonl",
+      "sha256": "89d8ace682180b516cfd3f068effa2198045c59b813506cf22575076ed5f3cca"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v83_concept_identity_weight1/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v83_concept_identity_weight1/stage1/history.jsonl",
+      "sha256": "f9ff36fabcc4749abb50c831b0d770d7492a2659d76396ab4b0d4e823de51e43"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v84_global_identity_weight1/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v84_global_identity_weight1/stage1/history.jsonl",
+      "sha256": "de5211c1e797af4be5b422955507e6ff26535813f8c8c280a32e0aad13b1f20c"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v85_alljoined_identity_global/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v85_alljoined_identity_global/stage1/history.jsonl",
+      "sha256": "570bc15c08917e915c6829604b7f3f2d5282d3384d420c31a79a523368cfa325"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v86_alljoined_identity_image/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v86_alljoined_identity_image/stage1/history.jsonl",
+      "sha256": "17ed3e3044b62aebe12fd34df3617fa93c6bd634c87505f0b8fc4b23bbb1d6d5"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v87_alljoined_identity_concept/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v87_alljoined_identity_concept/stage1/history.jsonl",
+      "sha256": "570655fdccdaabe3f278f7b5f9d0708650dbb050423fa4e3a2eb725770851eeb"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v88_things_identity_picture/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v88_things_identity_picture/stage1/history.jsonl",
+      "sha256": "dabcc6de95c191c3f8ef3f319f1f82cac4780a46f2962b3a185bf997fd818b71"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v89_alljoined_identity_blur/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v89_alljoined_identity_blur/stage1/history.jsonl",
+      "sha256": "45680251d15c2e049ffe1eaf8aee8e4e0daa3f9d15a634bcfd8a208806d462f2"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v91_identity_loso_calibration/fold_01/heldout_test.json",
+      "repository_file": "evidence/runs/reve_v91_identity_loso_calibration/fold_01/heldout_test.json",
+      "sha256": "764c14ec7789f5b6a529e85a420fc704bee79444115f44cdce4748e0a7befd19"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v91_identity_loso_calibration/fold_02/heldout_test.json",
+      "repository_file": "evidence/runs/reve_v91_identity_loso_calibration/fold_02/heldout_test.json",
+      "sha256": "ff60560dc01f7454b000e64a8bbf55865375105829210367920b3cd192e3414b"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v91_identity_loso_calibration/fold_03/heldout_test.json",
+      "repository_file": "evidence/runs/reve_v91_identity_loso_calibration/fold_03/heldout_test.json",
+      "sha256": "fe4f047af8997d9a240270ed1433b6c6ed2621a4a1ef725e0e13214e4a86111b"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v91_identity_loso_calibration/fold_04/heldout_test.json",
+      "repository_file": "evidence/runs/reve_v91_identity_loso_calibration/fold_04/heldout_test.json",
+      "sha256": "9f4cc0446acd267bb3d3c4f46a72420373baa2c75f10251b86308c0dd4dc8415"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v92_image_contrastive/stage1/history.jsonl",
+      "repository_file": "evidence/runs/reve_v92_image_contrastive/stage1/history.jsonl",
+      "sha256": "855f9e3ff71466f0b26620c47e01d93b6a8765018e4978dd768aee207fd09928"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v94_expanded_pseudotrials/stage1/history.jsonl",
+      "repository_file": "docs/reports/20261112/evidence/reve_v94_expanded_pseudotrials/stage1/history.jsonl",
+      "sha256": "27fadc7b41cb14118d3bf45746737e0be8e118464c7555b36bf5f7ff8ad8e538"
+    },
+    {
+      "local_source": "/mnt/DATA-4/anteng/eeg-retrieval/experiments/reve_v95_alljoined_expanded_pseudotrials/launch_status.json",
+      "repository_file": "docs/reports/20261112/evidence/reve_v95_alljoined_expanded_pseudotrials/launch_status.json",
+      "sha256": "6dd721d3cd21e386b73a55470be840eb0bc55b8baa598b7f741e07f0de185f88"
+    }
+  ]
+}
